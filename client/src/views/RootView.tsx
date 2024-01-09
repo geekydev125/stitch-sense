@@ -1,7 +1,17 @@
+import { useTheme } from "@mui/system";
+
 function RootView() {
-  return (
-    <div>RootView</div>
-  )
+	const theme = useTheme();
+
+    return (
+        <div
+            style={{
+                color: theme.palette.main.lightGreen,
+            }}
+        >
+            RootView
+        </div>
+    );
 }
 
-export default RootView
+export default RootView;
