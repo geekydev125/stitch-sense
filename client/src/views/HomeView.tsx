@@ -1,7 +1,11 @@
+import Header from "../components/Header/Header"
 
 function HomeView() {
   return (
-    <div>HomeView</div>
+    <>
+        <Header />
+    
+    </>
   )
 }
 

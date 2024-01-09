@@ -2,14 +2,20 @@ import { PaletteColor, PaletteColorOptions } from "@mui/material"
 
 declare module '@mui/material/styles' {
     interface Palette {
-        main: {
-            lightGreen: PaletteColor
+        custom: {
+            header: {
+                lightGreen: PaletteColor
+            }   
+            
         }
     }
 
     interface PaletteOptions {
-        main: {
-            lightGreen: string | PaletteColorOptions
+        custom: {
+            header: {
+                lightGreen: string | PaletteColorOptions
+            }
+            
         }
     }
 }
