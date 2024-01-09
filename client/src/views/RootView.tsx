@@ -1,16 +1,9 @@
-import { useTheme } from "@mui/system";
+import { Outlet } from "react-router-dom";
 
 function RootView() {
-	const theme = useTheme();
 
     return (
-        <div
-            style={{
-                color: theme.palette.main.lightGreen,
-            }}
-        >
-            RootView
-        </div>
+		<Outlet />
     );
 }
 
