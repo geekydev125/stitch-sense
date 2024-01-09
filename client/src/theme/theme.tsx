@@ -8,6 +8,11 @@ const theme = createTheme({
             }
             
         }
+    },
+    typography: {
+        h1: {
+            fontSize: '7rem'
+        }
     }
 })
 
