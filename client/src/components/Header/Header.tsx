@@ -94,6 +94,7 @@ function Header(props: Props) {
                                     to={`${page.path}`}
                                     sx={{
                                         color: 'white',
+                                        margin: '0 15px',
                                         borderBottom: '3px solid transparent',
                                         borderRadius: 0,
                                         '&.active': {
