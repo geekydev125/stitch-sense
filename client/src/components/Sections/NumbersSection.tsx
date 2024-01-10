@@ -8,8 +8,6 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-
-
 function NumbersSection() {
 
     return (
@@ -45,7 +43,6 @@ function NumbersSection() {
                                     <Typography variant='h2' component='h5' textAlign='left' color='white'><u>2</u> STATE-OF-THE-ART</Typography>
                                     <Typography variant='h5' component='h5' textAlign='left' color='white'>cutting lasers</Typography>
                                 </Box>
-
                             </Stack>
 
                             <Divider variant="middle" color='white' />
