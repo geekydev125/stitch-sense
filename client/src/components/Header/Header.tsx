@@ -17,6 +17,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
+import Paper from "@mui/material/Paper";
 
 const drawerWidth = 240;
 const pages = [
@@ -68,48 +69,48 @@ function Header(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <AppBar position="sticky" sx={{ backgroundColor: "custom.header.lightGreen" }}>
+        <AppBar position="sticky" sx={{ backgroundColor: "custom.header.lightGreen" }} component={Paper} elevation={10}>
             {/* Desktop Menu */}
-            <Toolbar sx={{ display: { xs: 'none', md: 'block' } }}>
-                <Container>
-                    <Stack direction='row' alignItems='center'>
-                        {/* Logo */}
-                        <Button component={NavLink} to='/'>
-                            <Box component="img"
-                                sx={{
-                                    width: 'auto',
-                                    maxHeight: 70,
-                                }}
-                                alt="Stitch Sense Logo"
-                                src="/assets/img/stitchSense-logo.png"
-                            />
-                        </Button>
-
-                        {/* Nav items desktop */}
-                        <Box sx={{ ml: "auto", display: { xs: "none", md: "flex" } }}>
-                            {pages.map((page) => (
-                                <Button
-                                    key={uniqid()}
-                                    component={NavLink}
-                                    to={`${page.path}`}
+                <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
+                    <Container>
+                        <Stack direction='row' alignItems='center'>
+                            {/* Logo */}
+                            <Button component={NavLink} to='/'>
+                                <Box component="img"
                                     sx={{
-                                        color: 'white',
-                                        margin: '0 15px',
-                                        borderBottom: '3px solid transparent',
-                                        borderRadius: 0,
-                                        '&.active': {
-                                            borderBottom: '3px solid white',
-                                            fontWeight: 'bold'
-                                        }
+                                        width: 'auto',
+                                        maxHeight: 70,
                                     }}
-                                >
-                                    {page.title}
-                                </Button>
-                            ))}
-                        </Box>
-                    </Stack>
-                </Container>
-            </Toolbar>
+                                    alt="Stitch Sense Logo"
+                                    src="/assets/img/stitchSense-logo.png"
+                                />
+                            </Button>
+
+                            {/* Nav items desktop */}
+                            <Box sx={{ ml: "auto", display: { xs: "none", md: "flex" } }}>
+                                {pages.map((page) => (
+                                    <Button
+                                        key={uniqid()}
+                                        component={NavLink}
+                                        to={`${page.path}`}
+                                        sx={{
+                                            color: 'white',
+                                            margin: '0 15px',
+                                            borderBottom: '3px solid transparent',
+                                            borderRadius: 0,
+                                            '&.active': {
+                                                borderBottom: '3px solid white',
+                                                fontWeight: 'bold'
+                                            }
+                                        }}
+                                    >
+                                        {page.title}
+                                    </Button>
+                                ))}
+                            </Box>
+                        </Stack>
+                    </Container>
+                </Toolbar>
 
             {/* Mobile menu */}
             <Toolbar sx={{ display: { xs: 'block', md: 'none' } }}>
@@ -181,7 +182,7 @@ function Header(props: Props) {
                                                 component={NavLink}
                                                 to={page.path}
                                             >
-                                                <ListItemText primary={page.title}/>
+                                                <ListItemText primary={page.title} />
                                             </ListItemButton>
                                         </ListItem>
                                     ))}
