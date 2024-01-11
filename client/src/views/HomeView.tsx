@@ -6,6 +6,7 @@ import WhatWeDoSection from "../components/Sections/HomeViewSections/WhatWeDoSec
 import NumbersSection from "../components/Sections/HomeViewSections/NumbersSection"
 import WhyChooseUsSection from "../components/Sections/HomeViewSections/WhyChooseUsSection"
 import WhyTrustUsSection from "../components/Sections/HomeViewSections/WhyTrustUsSection"
+import OurClientsSection from "../components/Sections/HomeViewSections/OurClientsSection"
 
 function HomeView() {
 	return (
@@ -23,8 +24,10 @@ function HomeView() {
 			<Container>
 				<WhyChooseUsSection />
 				<WhyTrustUsSection />
-
 			</Container>
+
+			<OurClientsSection />
+
 
 		</>
 	)
