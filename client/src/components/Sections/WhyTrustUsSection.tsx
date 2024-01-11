@@ -26,8 +26,6 @@ const cardsContent = [
     }
 ]
 
-
-
 function WhyTrustUsSection() {
     return (
         <Box mt={10}>
