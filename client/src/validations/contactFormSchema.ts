@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { LATIN_CHARACTERS_REGEX } from '../utils/regex';
+import { LATIN_CHARACTERS_REGEX, PHONE_PATTERN_REGEX } from '../utils/regex';
 
 export const contactFormSchemaShape = {
     firstName: yup
@@ -16,13 +16,16 @@ export const contactFormSchemaShape = {
         .max(40, "Last Name should be at most 40 characters long"),
     phone: yup
         .string()
-        .required('Phone Number is required'),
+        .required('Phone Number is required')
+        .matches(PHONE_PATTERN_REGEX, 'The input should be a valid phone number')
+        .min(6, "Phone number should be at least 6 characters long")
+        .max(14, "Phone number should be at most 14 characters long"),
     email: yup
         .string()
-        .required(),
+        .required('Email is required')
+        .email('Input should be an e-mail address in a valid format'),
     message: yup
         .string()
-        .required()
 }
 
 const contactFormSchema = yup.object().shape(contactFormSchemaShape)
