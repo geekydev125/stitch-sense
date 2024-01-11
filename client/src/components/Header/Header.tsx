@@ -17,7 +17,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
-import Paper from "@mui/material/Paper";
 
 const drawerWidth = 240;
 const pages = [
