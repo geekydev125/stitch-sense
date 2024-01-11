@@ -43,7 +43,7 @@ const pages = [
     },
     {
         title: "CONTACT US",
-        path: "/contact- us",
+        path: "/contact-us",
         order: 5,
     },
 ];
