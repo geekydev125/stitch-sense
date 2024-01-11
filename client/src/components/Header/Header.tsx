@@ -48,7 +48,6 @@ const pages = [
     },
 ];
 
-
 interface Props {
     /**
      * Injected by the documentation to work in an iframe.
@@ -69,7 +68,7 @@ function Header(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <AppBar position="sticky" sx={{ backgroundColor: "custom.header.lightGreen" }} component={Paper} elevation={10}>
+        <AppBar position="sticky" sx={{ backgroundColor: "custom.theme.lightGreen" }} component={Paper} elevation={10}>
             {/* Desktop Menu */}
                 <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
                     <Container>

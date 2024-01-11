@@ -3,7 +3,7 @@ import { PaletteColor, PaletteColorOptions } from "@mui/material"
 declare module '@mui/material/styles' {
     interface Palette {
         custom: {
-            header: {
+            theme: {
                 lightGreen: PaletteColor
             }   
             
@@ -12,7 +12,7 @@ declare module '@mui/material/styles' {
 
     interface PaletteOptions {
         custom: {
-            header: {
+            theme: {
                 lightGreen: string | PaletteColorOptions
             }
             
