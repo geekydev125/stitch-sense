@@ -6,7 +6,6 @@ import WhatWeDoSection from "../components/Sections/WhatWeDoSection"
 import NumbersSection from "../components/Sections/NumbersSection"
 import WhyChooseUsSection from "../components/Sections/WhyChooseUsSection"
 import WhyTrustUsSection from "../components/Sections/WhyTrustUsSection"
-import BottomFooter from "../components/Footer/BottomFooter"
 
 function HomeView() {
 	return (
@@ -27,7 +26,6 @@ function HomeView() {
 
 			</Container>
 
-			<BottomFooter />
 		</>
 	)
 }
