@@ -8,7 +8,7 @@ import distributionImage from '/assets/img/distribution.jpg'
 import samplingImage from '/assets/img/sampling.jpg'
 
 
-import FlipCard from '../FlipCard';
+import FlipCard from '../../FlipCard';
 
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';

@@ -5,7 +5,7 @@ import puzzleIcon from '/assets/img/puzzle-icon.png'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import SimpleCard from '../SimpleCard'
+import SimpleCard from '../../SimpleCard'
 import uniqid from 'uniqid'
 
 const cardsContent = [
