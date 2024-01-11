@@ -68,8 +68,9 @@ function Header(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <AppBar position="sticky" sx={{ backgroundColor: "custom.theme.lightGreen" }} component={Paper} elevation={10}>
-            {/* Desktop Menu */}
+        <Box component='header'>
+            <AppBar position="sticky" sx={{ backgroundColor: "custom.theme.lightGreen" }} component={Paper} elevation={10}>
+                {/* Desktop Menu */}
                 <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
                     <Container>
                         <Stack direction='row' alignItems='center'>
@@ -111,100 +112,101 @@ function Header(props: Props) {
                     </Container>
                 </Toolbar>
 
-            {/* Mobile menu */}
-            <Toolbar sx={{ display: { xs: 'block', md: 'none' } }}>
-                <Stack width='100%' direction='row' justifyContent='space-between' alignContent='center'>
-                    <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleDrawerToggle}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
+                {/* Mobile menu */}
+                <Toolbar sx={{ display: { xs: 'block', md: 'none' } }}>
+                    <Stack width='100%' direction='row' justifyContent='space-between' alignContent='center'>
+                        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleDrawerToggle}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
 
-                        <Drawer
-                            container={container}
-                            variant="temporary"
-                            open={mobileOpen}
-                            onClose={handleDrawerToggle}
-                            ModalProps={{
-                                keepMounted: true, // Better open performance on mobile.
-                            }}
-                            sx={{
-                                display: { xs: 'block', sm: 'none' },
-                                '& .MuiDrawer-paper': {
-                                    boxSizing: 'border-box',
-                                    width: drawerWidth,
-                                    backgroundColor: 'custom.header.lightGreen'
-                                },
+                            <Drawer
+                                container={container}
+                                variant="temporary"
+                                open={mobileOpen}
+                                onClose={handleDrawerToggle}
+                                ModalProps={{
+                                    keepMounted: true, // Better open performance on mobile.
+                                }}
+                                sx={{
+                                    display: { xs: 'block', sm: 'none' },
+                                    '& .MuiDrawer-paper': {
+                                        boxSizing: 'border-box',
+                                        width: drawerWidth,
+                                        backgroundColor: 'custom.header.lightGreen'
+                                    },
 
-                            }}
-                        >
-                            <Box sx={{ textAlign: 'center' }}>
-                                {/* Logo with text in Drawer */}
-                                <Button
-                                    sx={{ display: { xs: 'block', md: 'none' } }}
-                                    component={NavLink}
-                                    to='/'
-                                >
-                                    <Box component="img"
-                                        sx={{
-                                            width: '100%',
-                                            maxHeight: { xs: 'auto' },
-                                        }}
-                                        alt="Stitch Sense Logo"
-                                        src="/assets/img/logo-with-title.png"
-                                    />
-                                </Button>
-                                <Divider />
+                                }}
+                            >
+                                <Box sx={{ textAlign: 'center' }}>
+                                    {/* Logo with text in Drawer */}
+                                    <Button
+                                        sx={{ display: { xs: 'block', md: 'none' } }}
+                                        component={NavLink}
+                                        to='/'
+                                    >
+                                        <Box component="img"
+                                            sx={{
+                                                width: '100%',
+                                                maxHeight: { xs: 'auto' },
+                                            }}
+                                            alt="Stitch Sense Logo"
+                                            src="/assets/img/logo-with-title.png"
+                                        />
+                                    </Button>
+                                    <Divider />
 
-                                {/* Nav items mobile */}
-                                <List>
-                                    {pages.map((page) => (
-                                        <ListItem key={uniqid()} disablePadding>
-                                            <ListItemButton
-                                                sx={{
-                                                    textAlign: 'center',
-                                                    color: 'white',
-                                                    margin: '0 15px',
-                                                    '&.active': {
-                                                        borderBottom: '3px solid white',
-                                                        paddingBottom: 0,
-                                                    }
-                                                }}
+                                    {/* Nav items mobile */}
+                                    <List>
+                                        {pages.map((page) => (
+                                            <ListItem key={uniqid()} disablePadding>
+                                                <ListItemButton
+                                                    sx={{
+                                                        textAlign: 'center',
+                                                        color: 'white',
+                                                        margin: '0 15px',
+                                                        '&.active': {
+                                                            borderBottom: '3px solid white',
+                                                            paddingBottom: 0,
+                                                        }
+                                                    }}
 
-                                                onClick={handleDrawerToggle}
-                                                component={NavLink}
-                                                to={page.path}
-                                            >
-                                                <ListItemText primary={page.title} />
-                                            </ListItemButton>
-                                        </ListItem>
-                                    ))}
-                                </List>
-                            </Box>
-                        </Drawer>
-                    </Box>
+                                                    onClick={handleDrawerToggle}
+                                                    component={NavLink}
+                                                    to={page.path}
+                                                >
+                                                    <ListItemText primary={page.title} />
+                                                </ListItemButton>
+                                            </ListItem>
+                                        ))}
+                                    </List>
+                                </Box>
+                            </Drawer>
+                        </Box>
 
 
-                    {/* Logo on mobile */}
-                    <Button sx={{ display: { xs: 'block', md: 'none', padding: 0, paddingTop: '5px' } }} component={NavLink} to='/'>
-                        <Box component="img"
-                            sx={{
-                                width: 'auto',
-                                maxHeight: { xs: 50 },
-                            }}
-                            alt="Stitch Sense Logo"
-                            src="/assets/img/stitchSense-logo.png"
-                        />
-                    </Button>
-                </Stack>
-            </Toolbar>
-        </AppBar>
+                        {/* Logo on mobile */}
+                        <Button sx={{ display: { xs: 'block', md: 'none', padding: 0, paddingTop: '5px' } }} component={NavLink} to='/'>
+                            <Box component="img"
+                                sx={{
+                                    width: 'auto',
+                                    maxHeight: { xs: 50 },
+                                }}
+                                alt="Stitch Sense Logo"
+                                src="/assets/img/stitchSense-logo.png"
+                            />
+                        </Button>
+                    </Stack>
+                </Toolbar>
+            </AppBar>
+        </Box>
     );
 }
 
