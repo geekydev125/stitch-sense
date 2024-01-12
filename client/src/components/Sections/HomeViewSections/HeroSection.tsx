@@ -10,12 +10,19 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/system/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import { IconButton } from '@mui/material';
 
-function HeroSection() {
+interface Props {
+    scrollTo: () => void
+}
+
+function HeroSection({
+    scrollTo
+}: Props) {
     const videoRef = useRef<null | HTMLVideoElement>(null);
+
 
     const handlePlay = () => {
         if (videoRef.current != null) {
@@ -70,8 +77,8 @@ function HeroSection() {
                             transform: 'translate(-50%, -8%)'
                         }}
                     >
-                        <IconButton>
-                            <ArrowCircleDownIcon sx={{fontSize: 45}} />
+                        <IconButton onClick={scrollTo}>
+                            <ArrowCircleDownIcon sx={{ fontSize: 45 }} />
                         </IconButton>
                     </motion.div>
                 </AnimatePresence>

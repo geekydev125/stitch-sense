@@ -1,13 +1,22 @@
+import { MutableRefObject } from 'react'
+
 import euFlag from '/assets/img/eu-flag-transparent.png'
 
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 
-function AboutSection() {
+
+interface Props {
+	aboutSectionRef: MutableRefObject<HTMLDivElement | null>
+}
+
+function AboutSection({
+	aboutSectionRef
+}:Props) {
 	return (
 		<>
-			<Box>
-				<Typography variant="h3" component='h4' textAlign='center' my={4}>ABOUT US</Typography>
+			<Box ref={aboutSectionRef}>
+				<Typography variant="h3" component='h4' textAlign='center' mt={4} mb={2}>ABOUT US</Typography>
 				<Box
 					sx={{
 						background: `url(${euFlag}) no-repeat`,
