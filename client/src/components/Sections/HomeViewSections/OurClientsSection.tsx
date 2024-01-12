@@ -45,14 +45,14 @@ function OurClientsSection() {
                 </Grid>
             </Container>
 
-            <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: '200px', maxHeight: '300px' }} mt={2}>
+            <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: '200px', maxHeight: '100%' }} mt={2}>
                 <Container>
                     <Grid container>
                         {
                             logos.map(logo => {
                                 return (
                                     <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
-                                        <Box component='img' src={logo.imageSrc} alt={`${logo.title} Logo`} maxHeight='250px' />
+                                        <Box component='img' src={logo.imageSrc} alt={`${logo.title} Logo`} maxWidth='100%' />
                                     </Grid>
                                 )
                             })
