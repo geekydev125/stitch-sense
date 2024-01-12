@@ -138,7 +138,7 @@ function Header(props: Props) {
                                     '& .MuiDrawer-paper': {
                                         boxSizing: 'border-box',
                                         width: drawerWidth,
-                                        backgroundColor: 'custom.header.lightGreen'
+                                        backgroundColor: 'custom.theme.lightGreen'
                                     },
 
                                 }}
