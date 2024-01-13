@@ -30,23 +30,14 @@ const cardsContent = [
 
 function WhyTrustUsSection() {
     return (
-        <Box mt={10}
-
-        >
+        <Box mt={10}>
             <SectionTitle title='WHY TRUST US?' p={2} />
 
-            <Grid container
-                sx={{
-                    borderLeft: '1px solid lightgray',
-                    borderRight: '1px solid lightgray',
-                    borderBottom: '1px solid lightgray',
-                }}
-            >
+            <Grid container>
                 {cardsContent.map(card => {
                     return (
                         <Grid key={uniqid()} item xs={12} md={4}>
                             <SimpleCard title={card.title} content={card.content} imageSrc={card.imageSrc} />
-
                         </Grid>
                     )
                 })}
