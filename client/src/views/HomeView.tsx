@@ -1,10 +1,12 @@
 import { useRef } from 'react'
 
-import wavyLinesTop from '/assets/img/wavy-lines-top.png'
-import wavyLinesBottom from '/assets/img/wavy-lines-bottom.png'
+import wavyLinesTop from '../assets/img/wavy-lines-top.png'
+import wavyLinesBottom from '../assets/img/wavy-lines-bottom.png'
 
 import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
+import Box from '@mui/material/Box'
+
 import AboutSection from "../components/Sections/HomeViewSections/AboutSection"
 import HeroSection from "../components/Sections/HomeViewSections/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeViewSections/WhatWeDoSection"
@@ -12,8 +14,6 @@ import NumbersSection from "../components/Sections/HomeViewSections/NumbersSecti
 import WhyChooseUsSection from "../components/Sections/HomeViewSections/WhyChooseUsSection"
 import WhyTrustUsSection from "../components/Sections/HomeViewSections/WhyTrustUsSection"
 import OurClientsSection from "../components/Sections/HomeViewSections/OurClientsSection"
-import Box from '@mui/material/Box'
-
 
 function HomeView() {
 	const aboutSectionRef = useRef<null | HTMLDivElement>(null);

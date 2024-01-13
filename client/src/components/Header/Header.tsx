@@ -3,7 +3,7 @@ import uniqid from "uniqid";
 
 import { NavLink } from "react-router-dom";
 
-import stitchSenseLogo from '/assets/img/stitchSense-logo.png'
+import stitchSenseLogo from '../../assets/img/stitchSense-logo.png'
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";

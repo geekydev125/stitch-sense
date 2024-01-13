@@ -1,6 +1,6 @@
 import styled from '@mui/material/styles/styled'
 
-import stitchSenseLogo from '/assets/img/stitchSense-logo.png'
+import stitchSenseLogo from '../assets/img/stitchSense-logo.png'
 
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'

@@ -1,4 +1,4 @@
-import challengesImage from '/assets/img/challenges.png'
+import challengesImage from '../../../assets/img/challenges.png'
 
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"

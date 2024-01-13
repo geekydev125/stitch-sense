@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import stitchingVideo from '/assets/video/stitching-hd-black-white.mp4'
-import paperPatternTransparent from '/assets/img/paper-pattern-with-transparency.png'
-import blackLogo from '/assets/img/stitchSense-black-logo.png'
+import stitchingVideo from '../../../assets/video/stitching-hd-black-white.mp4'
+import paperPatternTransparent from '../../../assets/img/paper-pattern-with-transparency.png'
+import blackLogo from '../../../assets/img/stitchSense-black-logo.png'
 
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';

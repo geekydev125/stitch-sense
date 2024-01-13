@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 
-import wavyLinesTop from '/assets/img/wavy-lines-top.png'
-import wavyLinesBottom from '/assets/img/wavy-lines-bottom.png'
+import wavyLinesTop from '../assets/img/wavy-lines-top.png'
+import wavyLinesBottom from '../assets/img/wavy-lines-bottom.png'
 
 import Header from "../components/Header/Header";
 import Stack from "@mui/material/Stack";
