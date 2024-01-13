@@ -23,27 +23,26 @@ const pages = [
     {
         title: "HOME",
         path: "/",
-        order: 1,
     },
     {
-        title: "WHO WE ARE",
-        path: "/who-we-are",
-        order: 2,
+        title: "SERVICES",
+        path: "/services",
     },
     {
         title: "OUR PROCESS",
         path: "/our-process",
-        order: 3,
     },
     {
         title: "PORTFOLIO",
         path: "/portfolio",
-        order: 4,
+    },
+    {
+        title: "WHO WE ARE",
+        path: "/who-we-are",
     },
     {
         title: "CONTACT US",
         path: "/contact-us",
-        order: 5,
     },
 ];
 
