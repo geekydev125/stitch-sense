@@ -3,6 +3,8 @@ import uniqid from "uniqid";
 
 import { NavLink } from "react-router-dom";
 
+import stitchSenseLogo from '/assets/img/stitchSense-logo.png'
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -79,7 +81,7 @@ function Header(props: Props) {
                                         maxHeight: 70,
                                     }}
                                     alt="Stitch Sense Logo"
-                                    src="/assets/img/stitchSense-logo.png"
+                                    src={stitchSenseLogo}
                                 />
                             </Button>
 
@@ -197,7 +199,7 @@ function Header(props: Props) {
                                     maxHeight: { xs: 50 },
                                 }}
                                 alt="Stitch Sense Logo"
-                                src="/assets/img/stitchSense-logo.png"
+                                src={stitchSenseLogo}
                             />
                         </Button>
                     </Stack>
