@@ -16,7 +16,7 @@ function WhyChooseUsSection() {
                     borderRight: '1px solid lightgray',
                     borderBottom: '1px solid lightgray',
                 }}
-                py={3}
+                py={6}
                 px={2}
             >
                 <Typography variant="h5" component='p' mb={5} px={2} textAlign='justify'>
@@ -25,7 +25,7 @@ function WhyChooseUsSection() {
 
                 <Box component='img' src={challengesImage} alt='Challenges' sx={{ width: '100%' }} />
 
-                <Typography variant="h4" component='p' mt={3} textAlign='center'>
+                <Typography variant="h5" component='p' mt={3} textAlign='center'>
                     Our services are carefully designed to <b>take care of all of your production needs</b>.
                 </Typography>
 
