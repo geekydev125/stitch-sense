@@ -8,19 +8,47 @@ const StyledBox = styled(Box)`
 `
 
 interface Props {
-    title: string
+    title: string,
+    mt?: number,
+    mb?: number,
+    my?: number,
+    ml?: number,
+    mr?: number,
+    mx?: number,
+    m?: number,
+    pt?: number,
+    pb?: number,
+    py?: number,
+    pl?: number,
+    pr?: number,
+    px?: number,
+    p?: number
 }
 
-function SectionTItle({
-    title
+function SectionTitle({
+    title,
+    mt,
+    mb,
+    my,
+    ml,
+    mr,
+    mx,
+    m,
+    pt,
+    pb,
+    py,
+    pl,
+    pr,
+    px,
+    p
 }: Props) {
     return (
         <StyledBox>
-            <Typography variant="h3" component='h4' textAlign='center' mt={4} mb={0} p={2}>
+            <Typography variant="h3" component='h4' textAlign='center' mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p} >
                 {title}
             </Typography>
-        </StyledBox>
+        </StyledBox >
     )
 }
 
-export default SectionTItle
+export default SectionTitle

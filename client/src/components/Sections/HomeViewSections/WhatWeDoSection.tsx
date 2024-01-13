@@ -1,5 +1,7 @@
 import uniqid from 'uniqid'
 
+
+
 import designImage from '/assets/img/fashion-design.jpg'
 import productionImage from '/assets/img/stitching.jpg'
 import submilationImage from '/assets/img/sublimation.png'
@@ -7,12 +9,10 @@ import sourcingImage from '/assets/img/fabrics.jpg'
 import distributionImage from '/assets/img/distribution.jpg'
 import samplingImage from '/assets/img/sampling.jpg'
 
-
 import FlipCard from '../../FlipCard';
+import SectionTitle from '../../SectionTitle'
 
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
 
 const cardsContent = [
 	{
@@ -51,9 +51,8 @@ const cardsContent = [
 function WhatWeDoSection() {
 	return (
 		<>
-			<Typography variant="h3" component="h4" textAlign="center" my={4}>
-				WHAT WE DO
-			</Typography>
+			<SectionTitle title='WHAT WE DO' mt={4} mb={2} p={2}/>
+
 			<Grid container spacing={1}>
 
 				{cardsContent.map((card) => {

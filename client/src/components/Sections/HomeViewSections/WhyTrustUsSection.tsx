@@ -1,12 +1,14 @@
+import uniqid from 'uniqid'
+
 import customerCareIcon from '/assets/img/customer-care-icon.png'
 import arrowsIcon from '/assets/img/arrows-icon.png'
 import puzzleIcon from '/assets/img/puzzle-icon.png'
 
+import SimpleCard from '../../SimpleCard'
+import SectionTitle from '../../SectionTitle'
+
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import Typography from '@mui/material/Typography'
-import SimpleCard from '../../SimpleCard'
-import uniqid from 'uniqid'
 
 const cardsContent = [
     {
@@ -28,12 +30,18 @@ const cardsContent = [
 
 function WhyTrustUsSection() {
     return (
-        <Box mt={10}>
-            <Typography variant="h3" component="h4" textAlign="center" my={4} >
-                WHY TRUST US?
-            </Typography>
+        <Box mt={10}
 
-            <Grid container spacing={1}>
+        >
+            <SectionTitle title='WHY TRUST US?' p={2} />
+
+            <Grid container
+                sx={{
+                    borderLeft: '1px solid lightgray',
+                    borderRight: '1px solid lightgray',
+                    borderBottom: '1px solid lightgray',
+                }}
+            >
                 {cardsContent.map(card => {
                     return (
                         <Grid key={uniqid()} item xs={12} md={4}>
