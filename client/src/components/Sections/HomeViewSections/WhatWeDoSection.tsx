@@ -1,7 +1,5 @@
 import uniqid from 'uniqid'
 
-
-
 import designImage from '/assets/img/fashion-design.jpg'
 import productionImage from '/assets/img/stitching.jpg'
 import submilationImage from '/assets/img/sublimation.png'
