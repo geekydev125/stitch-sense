@@ -1,7 +1,8 @@
+import styled from '@mui/material/styles/styled'
+
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import styled from '@mui/material/styles/styled'
 
 const StyledTitleBox = styled(Box)`
 	background-color: #f1f1f1;
@@ -12,8 +13,8 @@ const StyledTitleBox = styled(Box)`
 function ObjectivesSolutionSection() {
     return (
         <>
-            <Grid container my={6}>
-                <Grid item xs={12} md={6}>
+            <Grid container my={6} spacing={2}>
+                <Grid item xs={12} md={6} >
                     <StyledTitleBox mb={1} px={3} >
                         <Typography variant='h4' component='h4' py={1} px={2} width='auto'>OBJECTIVES</Typography>
                     </StyledTitleBox>
