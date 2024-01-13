@@ -1,12 +1,10 @@
-import designImage from '/assets/img/fashion-design.jpg'
+import designImage from '../assets/img/fashion-design.jpg'
 
 import ViewTopTitleSection from "../components/ViewTopTitleSection"
 
 import Container from "@mui/material/Container"
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
-
-
-
+import ServicesTabs from '../components/Tabs/ServicesTabs'
 
 function ServicesView() {
 	return (
@@ -14,6 +12,8 @@ function ServicesView() {
 			<ViewTopTitleSection viewTitle="Services" imageSrc={designImage} />
 			<Container>
 				<ObjectivesSolutionSection />
+
+				<ServicesTabs />
 			</Container>
 		</>
 
