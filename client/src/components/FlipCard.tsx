@@ -1,12 +1,15 @@
 import { useState } from "react";
 import styled from "@emotion/styled";
+import { Link as RouterLink } from 'react-router-dom';
 
 import Typography from "@mui/material/Typography";
 
 import RotateLeftIcon from '@mui/icons-material/RotateLeft';
 import Icon from "@mui/material/Icon";
+import Button from "@mui/material/Button";
+import Paper from "@mui/material/Paper";
 
-const CardMainContainer = styled('div')`
+const CardMainContainer = styled(Paper)`
     position: relative;
     width: 100%;
     height: 320px;
@@ -14,11 +17,12 @@ const CardMainContainer = styled('div')`
     border-radius: 25px;
 
     .card-overlay {
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.50);
         height: 100%;
         width: 100%;
 
         border-radius: 25px;
+        transition: all 0.5s ease;
     }
 
     .card {
@@ -66,7 +70,7 @@ const CardMainContainer = styled('div')`
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 `;
@@ -74,16 +78,17 @@ const CardMainContainer = styled('div')`
 interface Props {
     title: string,
     content: string,
-    imageSrc: string
+    imageSrc: string,
+    linkTo: string
 }
 
 function FlipCard({
     title,
     content,
-    imageSrc
+    imageSrc,
+    linkTo
 }: Props) {
     const [hovered, setHovered] = useState<boolean>(false);
-    console.log('hovered:', hovered)
 
     const handleFlip = () => {
         setHovered(!hovered)
@@ -92,20 +97,33 @@ function FlipCard({
 
     return (
         <>
-            <CardMainContainer onMouseEnter={handleFlip} onMouseLeave={handleFlip} className='card-main-container' style={{
-                backgroundImage: `url('${imageSrc}')`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-            }}>
-                <div className="card-overlay">
-                    <div className='card'  style={ hovered ? { transform: "rotateY(180deg)" } : undefined}>
+            <CardMainContainer
+                onMouseEnter={handleFlip}
+                onMouseLeave={handleFlip}
+                className='card-main-container'
+                elevation={6}
+                style={{
+                    backgroundImage: `url('${imageSrc}')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
+                <div className="card-overlay" style={hovered ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
+                    <div className='card' style={hovered ? { transform: "rotateY(180deg)" } : undefined}>
                         <div className='card-front'>
-                            <Typography variant="h4" component="h4">{title}</Typography>
-                            <Icon className="rotate-icon" component={RotateLeftIcon} />                               
+                            <Typography variant="h3" component="h4">{title}</Typography>
+                            <Icon className="rotate-icon" component={RotateLeftIcon} />
                         </div>
                         <div className='card-back'>
                             {/* <Typography variant="h4" component="h4" mb={4}>{title}</Typography> */}
                             <Typography variant="body1" component="p">{content}</Typography>
+
+                            <Button
+                                component={RouterLink}
+                                to={`/${linkTo}`}
+                                size="large"
+                                sx={{ color: "custom.theme.lightGreen" }}
+                            >Learn More</Button>
                         </div>
                     </div>
                 </div>
