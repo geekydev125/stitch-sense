@@ -18,6 +18,7 @@ function ServiceDescriptionColumn() {
 
             <Button
                 variant='contained'
+                size='large'
                 sx={{
                     margin: '20px auto 0px auto',
                     display: 'block',
