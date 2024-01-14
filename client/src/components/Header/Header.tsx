@@ -39,8 +39,8 @@ const pages = [
         path: "/portfolio",
     },
     {
-        title: "WHO WE ARE",
-        path: "/who-we-are",
+        title: "ABOUT US",
+        path: "/about-us",
     },
     {
         title: "CONTACT US",
