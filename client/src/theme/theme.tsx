@@ -4,7 +4,8 @@ let theme = createTheme({
     palette: {
         custom: {
             theme: {
-                lightGreen: '#45b6b2'
+                lightGreen: '#45b6b2',
+                darkGreen: '#35908d'
             }
             
         }

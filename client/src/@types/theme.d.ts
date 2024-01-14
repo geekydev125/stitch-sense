@@ -4,7 +4,8 @@ declare module '@mui/material/styles' {
     interface Palette {
         custom: {
             theme: {
-                lightGreen: PaletteColor
+                lightGreen: PaletteColor,
+                darkGreen: PaletteColor
             }   
             
         }
@@ -13,7 +14,8 @@ declare module '@mui/material/styles' {
     interface PaletteOptions {
         custom: {
             theme: {
-                lightGreen: string | PaletteColorOptions
+                lightGreen: string | PaletteColorOptions,
+                darkGreen: string | PaletteColorOptions
             }
             
         }
