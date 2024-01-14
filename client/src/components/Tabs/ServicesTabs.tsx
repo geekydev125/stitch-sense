@@ -77,62 +77,46 @@ function ServicesTabs() {
                 </Tabs>
             </Box>
 
-            <CustomTabPanel value={value} index={0}>
-                <Grid container>
-                    <Grid item xs={12} md={4} >
-                        <Typography variant='body1' component='p'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
-                        </Typography>
-                        <br />
-                        <Typography variant='body1' component='p'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
-                        </Typography>
-                        <br />
-                        <Typography variant='body1' component='p'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero.
-                        </Typography>
+            {
+                services.map((service, index) => (
+                    <CustomTabPanel key={uniqid()} value={value} index={index}>
+                        <Grid container>
+                            <Grid item xs={12} md={4} >
+                                <Typography variant='body1' component='p'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
+                                </Typography>
+                                <br />
+                                <Typography variant='body1' component='p'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
+                                </Typography>
+                                <br />
+                                <Typography variant='body1' component='p'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero.
+                                </Typography>
 
-                        <Button
-                            variant='contained'
-                            sx={{
-                                margin: '20px auto 0px auto',
-                                display: 'block',
-                                backgroundColor: 'custom.theme.lightGreen',
-                                "&:hover": {
-                                    backgroundColor: 'custom.theme.darkGreen',
-                                }
-                            }}
-                        >
-                            GET A QUOTE
-                        </Button>
-                    </Grid>
-                    <Grid item xs={12} md={8}>
-                        <MasonryImageList images={services[0].images} />
-                    </Grid>
-                </Grid>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-                <Grid container>
-                    <Grid item xs={12} md={4}>
-                        Item 2
-                    </Grid>
-                    <Grid item xs={12} md={8}>
-                        {/* <MasonryImageList /> */}
-                    </Grid>
-                </Grid>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-                Item 3
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={3}>
-                Item 4
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={4}>
-                Item 5
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={5}>
-                Item 6
-            </CustomTabPanel>
+                                <Button
+                                    variant='contained'
+                                    sx={{
+                                        margin: '20px auto 0px auto',
+                                        display: 'block',
+                                        backgroundColor: 'custom.theme.lightGreen',
+                                        "&:hover": {
+                                            backgroundColor: 'custom.theme.darkGreen',
+                                        }
+                                    }}
+                                >
+                                    GET A QUOTE
+                                </Button>
+                            </Grid>
+                            <Grid item xs={12} md={8}>
+                                <MasonryImageList images={service.images} />
+                            </Grid>
+                        </Grid>
+
+                    </CustomTabPanel>
+                ))
+            }
+
         </>
     )
 }
