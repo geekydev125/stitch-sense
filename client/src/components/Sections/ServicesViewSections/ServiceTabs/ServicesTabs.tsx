@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 import CustomTabPanel from './CustomTabPanel';
 import ServiceImageList from './ServiceImageList';
 
-import services from '../../data/services.json'
+import services from '../../../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
 
 const tabsStyles = {
@@ -58,6 +58,7 @@ function ServicesTabs() {
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+        
         setValue(newValue);
     };
 

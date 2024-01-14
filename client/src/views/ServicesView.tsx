@@ -1,7 +1,7 @@
 import designImage from '../assets/img/fashion-design.jpg'
 
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
-import ServicesTabs from '../components/ServiceTabs/ServicesTabs'
+import ServicesTabs from '../components/Sections/ServicesViewSections/ServiceTabs/ServicesTabs'
 
 import isTitledView from '../HOC/isTitledView'
 
