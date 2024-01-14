@@ -103,7 +103,7 @@ function FlipCard({
                 className='card-main-container'
                 elevation={6}
                 style={{
-                    backgroundImage: `url('${imageSrc}')`,
+                    backgroundImage: `url('../../src/assets/img/${imageSrc}')`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat'
                 }}
@@ -115,7 +115,6 @@ function FlipCard({
                             <Icon className="rotate-icon" component={RotateLeftIcon} />
                         </div>
                         <div className='card-back'>
-                            {/* <Typography variant="h4" component="h4" mb={4}>{title}</Typography> */}
                             <Typography variant="body1" component="p">{content}</Typography>
 
                             <Button
