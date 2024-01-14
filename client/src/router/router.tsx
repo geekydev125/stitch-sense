@@ -1,14 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom'
 
-// import RootView from '../views/RootView';
 import ErrorView from '../views/ErrorView';
-// import HomeView from '../views/HomeView';
-// import AboutView from '../views/AboutView';
-// import OurProcessView from '../views/OurProcessView';
-// import PortfolioView from '../views/PortfolioView';
-// import ContactUsView from '../views/ContactUsView';
-// import ServicesView from '../views/ServicesView';
 
 import Loader from '../components/Loader';
 
