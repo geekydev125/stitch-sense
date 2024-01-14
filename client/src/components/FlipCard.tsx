@@ -103,7 +103,7 @@ function FlipCard({
                 className='card-main-container'
                 elevation={6}
                 style={{
-                    backgroundImage: `url('../../src/assets/img/${imageSrc}')`,
+                    backgroundImage: `url('/assets/img/${imageSrc}')`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat'
                 }}
