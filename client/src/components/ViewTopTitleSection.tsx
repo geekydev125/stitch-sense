@@ -48,7 +48,7 @@ function ViewTopTitleSection({
                 <Container sx={{ height: '100%' }} >
                     <Stack pl={{md: 10}} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
                         <Typography variant='h2' component='h2' color='white'>{viewTitle}</Typography>
-                        <img className='logo' alt="Stitch Sense Logo" src={stitchSenseLogo} />
+                        <img className='logo' alt="Stitch Sense Logo" src={stitchSenseLogo} height={100}/>
                     </Stack>
                 </Container>
             </Box>
