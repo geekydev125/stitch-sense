@@ -1,9 +1,9 @@
-import portfolioImg from '../assets/img/portfolio.png'
+import femaleTailorImg from '../assets/img/female-tailor.png'
 import ViewTopTitleSection from '../components/ViewTopTitleSection'
 
 function WhoWeAreView() {
   return (
-    <ViewTopTitleSection viewTitle="Portfolio" imageSrc={portfolioImg} backgroundPosition="bottom" />
+    <ViewTopTitleSection viewTitle="About Us" imageSrc={femaleTailorImg} backgroundPosition="top" />
   )
 }
 
