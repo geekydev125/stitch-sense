@@ -7,8 +7,6 @@ import Grid from '@mui/material/Grid'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 import CustomTabPanel from './CustomTabPanel';
 import ServiceImageList from './ServiceImageList';
@@ -17,6 +15,10 @@ import services from '../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
 
 const tabsStyles = {
+    '.MuiTabs-flexContainer': {
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    },
     '& button': {
         borderRadius: '20px 20px 0 0',
         xs: {
@@ -69,7 +71,8 @@ function ServicesTabs() {
                     value={value}
                     onChange={handleChange}
                     aria-label="services tabs"
-                    variant={isXs ? 'scrollable' : isMd ? 'fullWidth' : 'standard'}
+                    visibleScrollbar
+                    variant={isXs ? 'standard' : isMd ? 'fullWidth' : 'standard'}
                     sx={tabsStyles}
                 >
                     {services.map((service, index) => (
