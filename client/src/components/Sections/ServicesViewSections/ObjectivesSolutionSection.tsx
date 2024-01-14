@@ -13,7 +13,7 @@ const StyledTitleBox = styled(Box)`
 function ObjectivesSolutionSection() {
     return (
         <>
-            <Grid container my={6} spacing={2}>
+            <Grid container mb={10} spacing={2}>
                 <Grid item xs={12} md={6} >
                     <StyledTitleBox mb={1} px={3} >
                         <Typography variant='h4' component='h4' py={1} px={2} width='auto'>OBJECTIVES</Typography>
