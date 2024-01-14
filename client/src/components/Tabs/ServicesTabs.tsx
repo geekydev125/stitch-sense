@@ -1,20 +1,23 @@
 import { useState } from 'react';
 import uniqid from 'uniqid';
 import { useTheme } from '@mui/system';
-import { useMediaQuery } from '@mui/material';
-import styled from '@mui/material/styles/styled'
+import useMediaQuery from '@mui/material/useMediaQuery';
 
+import Grid from '@mui/material/Grid'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
+import CustomTabPanel from './CustomTabPanel';
+import MasonryImageList from '../MasonryImageList';
 
 import services from '../../data/services.json'
-import CustomTabPanel from './CustomTabPanel';
-
 
 const tabsStyles = {
-    color: 'green',
     '& button': {
+        borderRadius: '20px 20px 0 0',
         xs: {
             fontSize: '18px'
         },
@@ -23,12 +26,18 @@ const tabsStyles = {
         },
     },
     '& button.Mui-selected': {
-        border: '3px solid gray',
-        borderRadius: '20px',
-        color: 'rgba(0, 0, 0, 0.6)'
+        border: '3px solid custom.theme.darkGreen',
+        borderRadius: '20px 20px 0 0',
+        backgroundColor: 'custom.theme.darkGreen',
+        color: '#ffffff',
+    },
+    '& button.Mui-selected:hover': {
+        backgroundColor: 'custom.theme.darkGreen',
     },
     '& button:hover': {
-        backgroundColor: 'custom.theme.lightGreen'
+        borderRadius: '20px 20px 0 0',
+        backgroundColor: 'custom.theme.lightGreen',
+        color: '#ffffff',
     }
 }
 
@@ -51,9 +60,9 @@ function ServicesTabs() {
 
     return (
         <>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'custom.theme.lightGreen' }}>
                 <Tabs
-                    TabIndicatorProps={{hidden: true}}
+                    TabIndicatorProps={{ hidden: true }}
                     scrollButtons={true}
                     allowScrollButtonsMobile
                     value={value}
@@ -69,10 +78,48 @@ function ServicesTabs() {
             </Box>
 
             <CustomTabPanel value={value} index={0}>
-                Item 1
+                <Grid container>
+                    <Grid item xs={12} md={4} >
+                        <Typography variant='body1' component='p'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
+                        </Typography>
+                        <br />
+                        <Typography variant='body1' component='p'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
+                        </Typography>
+                        <br />
+                        <Typography variant='body1' component='p'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero.
+                        </Typography>
+
+                        <Button
+                            variant='contained'
+                            sx={{
+                                margin: '20px auto 0px auto',
+                                display: 'block',
+                                backgroundColor: 'custom.theme.lightGreen',
+                                "&:hover": {
+                                    backgroundColor: 'custom.theme.darkGreen',
+                                }
+                            }}
+                        >
+                            GET A QUOTE
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12} md={8}>
+                        <MasonryImageList images={services[0].images} />
+                    </Grid>
+                </Grid>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                Item 2
+                <Grid container>
+                    <Grid item xs={12} md={4}>
+                        Item 2
+                    </Grid>
+                    <Grid item xs={12} md={8}>
+                        {/* <MasonryImageList /> */}
+                    </Grid>
+                </Grid>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
                 Item 3
