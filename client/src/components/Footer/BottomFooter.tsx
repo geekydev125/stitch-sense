@@ -13,7 +13,6 @@ function BottomFooter() {
                 width: '100%',
                 height: '70px',
                 backgroundColor: 'custom.theme.lightGreen',
-                position: 'sticky',
                 bottom: 0
             }}
         >
