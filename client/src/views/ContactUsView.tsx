@@ -8,9 +8,8 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 
-import ViewTopTitleSection from '../components/ViewTopTitleSection';
-
 import contactImg from '../assets/img/contact.png'
+import isTitledView from '../HOC/isTitledView';
 
 interface FormData {
 	firstName: string,
@@ -42,7 +41,7 @@ function ContactUsView() {
 
 	return (
 		<>
-			<ViewTopTitleSection viewTitle="Contact Us" imageSrc={contactImg} backgroundPosition="top" backgroundSize='contain' />
+
 
 			<Box mt={5} px={5}>
 				<Container>
@@ -131,4 +130,11 @@ function ContactUsView() {
 	)
 }
 
-export default ContactUsView
+export default isTitledView(ContactUsView,
+	{
+		viewTitle: "Contact Us",
+		imageSrc: contactImg,
+		backgroundPosition: "top",
+		backgroundSize: 'contain'
+	}
+)

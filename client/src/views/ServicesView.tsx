@@ -1,16 +1,16 @@
 import designImage from '../assets/img/fashion-design.jpg'
 
-import ViewTopTitleSection from "../components/ViewTopTitleSection"
-
-import Container from "@mui/material/Container"
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
 import ServicesTabs from '../components/ServiceTabs/ServicesTabs'
+
+import isTitledView from '../HOC/isTitledView'
+
+import Container from "@mui/material/Container"
 import Box from '@mui/material/Box'
 
 function ServicesView() {
 	return (
 		<>
-			<ViewTopTitleSection viewTitle="Services" imageSrc={designImage} backgroundPosition='bottom'/>
 			<Container>
 				<Box py={10}>
 					<ObjectivesSolutionSection />
@@ -19,8 +19,13 @@ function ServicesView() {
 				</Box>
 			</Container>
 		</>
-
 	)
 }
 
-export default ServicesView
+export default isTitledView(ServicesView,
+	{
+		viewTitle: "Services",
+		imageSrc: designImage,
+		backgroundPosition: "bottom",
+	}
+)

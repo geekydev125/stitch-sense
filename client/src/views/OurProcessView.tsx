@@ -1,14 +1,19 @@
+import isTitledView from '../HOC/isTitledView'
 import stitchingImg from '../assets/img/stitching.jpg'
 
-import ViewTopTitleSection from "../components/ViewTopTitleSection"
-
 function OurProcessView() {
-  return (
-    <>
-      <ViewTopTitleSection viewTitle="Our Process" imageSrc={stitchingImg} backgroundPosition="bottom"/>
-    
-    </>
-  )
+	return (
+		<>
+			Our Process View
+
+		</>
+	)
 }
 
-export default OurProcessView
+export default isTitledView(OurProcessView,
+	{
+		viewTitle: "Our Process Us",
+		imageSrc: stitchingImg,
+		backgroundPosition: "bottom",
+	}
+)

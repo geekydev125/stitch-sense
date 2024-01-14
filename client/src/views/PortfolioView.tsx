@@ -1,11 +1,18 @@
+import isTitledView from '../HOC/isTitledView'
 import portfolioImg from '../assets/img/portfolio.png'
-
-import ViewTopTitleSection from "../components/ViewTopTitleSection"
 
 function PortfolioView() {
 	return (
-		<ViewTopTitleSection viewTitle="Portfolio" imageSrc={portfolioImg} backgroundPosition="bottom" />
+		<>
+			PortfolioView
+		</>
 	)
 }
 
-export default PortfolioView
+export default isTitledView(PortfolioView,
+	{
+		viewTitle: "Portfolio",
+		imageSrc: portfolioImg,
+		backgroundPosition: "bottom"
+	}
+)

@@ -1,10 +1,19 @@
+import isTitledView from '../HOC/isTitledView'
 import femaleTailorImg from '../assets/img/female-tailor.png'
-import ViewTopTitleSection from '../components/ViewTopTitleSection'
 
 function AboutView() {
   return (
-    <ViewTopTitleSection viewTitle="About Us" imageSrc={femaleTailorImg} backgroundPosition="top" />
+    <>
+      About Us view
+    </>
+
   )
 }
 
-export default AboutView
+export default isTitledView(AboutView,
+  {
+    viewTitle: "About Us",
+    imageSrc: femaleTailorImg,
+    backgroundPosition: "top",
+  }
+)

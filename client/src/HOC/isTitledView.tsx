@@ -14,7 +14,7 @@ interface Props {
     backgroundSize?: string
 }
 
-function isTitleView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, imageSrc, backgroundPosition, backgroundSize }: Props) {
+function isTitledView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, imageSrc, backgroundPosition, backgroundSize }: Props) {
     return (props: T) => (
         <>
         
@@ -42,4 +42,4 @@ function isTitleView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, i
     );
 }
 
-export default isTitleView;
+export default isTitledView;
