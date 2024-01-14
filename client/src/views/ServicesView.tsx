@@ -4,7 +4,7 @@ import ViewTopTitleSection from "../components/ViewTopTitleSection"
 
 import Container from "@mui/material/Container"
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
-import ServicesTabs from '../components/Tabs/ServicesTabs'
+import ServicesTabs from '../components/ServiceTabs/ServicesTabs'
 import Box from '@mui/material/Box'
 
 function ServicesView() {

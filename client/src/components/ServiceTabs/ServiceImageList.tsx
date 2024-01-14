@@ -9,7 +9,7 @@ interface Props {
 	}[] | []
 }
 
-export default function MasonryImageList({
+export default function ServiceImageList({
 	images
 }:Props) {
 	return (
