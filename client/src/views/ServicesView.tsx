@@ -5,15 +5,18 @@ import ViewTopTitleSection from "../components/ViewTopTitleSection"
 import Container from "@mui/material/Container"
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
 import ServicesTabs from '../components/Tabs/ServicesTabs'
+import Box from '@mui/material/Box'
 
 function ServicesView() {
 	return (
 		<>
 			<ViewTopTitleSection viewTitle="Services" imageSrc={designImage} />
 			<Container>
-				<ObjectivesSolutionSection />
+				<Box py={10}>
+					<ObjectivesSolutionSection />
 
-				<ServicesTabs />
+					<ServicesTabs />
+				</Box>
 			</Container>
 		</>
 
