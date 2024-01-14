@@ -31,9 +31,6 @@ const StyledDiv = styled('div')`
 		animation-delay: 0.4s;
 	}
 `
-
-
-
 function BouncingDotsLoader() {
 	return (
 		<StyledDiv>
