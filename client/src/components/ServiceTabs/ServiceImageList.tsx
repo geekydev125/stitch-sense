@@ -14,7 +14,7 @@ export default function ServiceImageList({
 }:Props) {
 	return (
 		<Box sx={{ width: '100%', height: 620, overflowY: 'scroll' }}>
-			<ImageList variant="masonry" cols={2} gap={8}>
+			<ImageList variant="masonry" cols={3} gap={8}>
 				{	images.map((image) => (
 					<ImageListItem key={image.img}>
 						<img
