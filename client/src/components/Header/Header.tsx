@@ -68,7 +68,7 @@ function Header(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-            <AppBar position="sticky" sx={{ backgroundColor: "custom.theme.lightGreen" }} component='header' elevation={10}>
+            <AppBar position="sticky" sx={{ backgroundColor: "custom.theme.lightGreen", zIndex: 9}} component='header' elevation={10}>
                 {/* Desktop Menu */}
                 <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
                     <Container>

@@ -4,7 +4,7 @@ import TopFooter from "./TopFooter"
 
 function Footer() {
 	return (
-		<Box component="footer">
+		<Box component="footer" sx={{zIndex: 9}}>
 			<TopFooter />
 			<BottomFooter />
 		</Box>

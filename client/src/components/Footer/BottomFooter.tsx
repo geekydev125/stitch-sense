@@ -23,7 +23,7 @@ function BottomFooter() {
                         <Link href="http://www.arielbehar.com" target="_blank" sx={{textDecoration: 'none'}} style={{ color: 'gray'}}>
                             Ariel Behar
                             <Box component='span' position='relative' bottom='-7px'>
-                                <Box sx={{height: '25px'}} mx={1} component='img' src={arielbeharLogo} alt='Ariel Behar Logo' />
+                                <Box sx={{height: '25px', zIndex: 1}} mx={1} component='img' src={arielbeharLogo} alt='Ariel Behar Logo' />
                             </Box>
                         </Link>
                     </Typography>
