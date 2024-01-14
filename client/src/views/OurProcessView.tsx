@@ -1,7 +1,13 @@
+import stitchingImg from '../assets/img/stitching.jpg'
+
+import ViewTopTitleSection from "../components/ViewTopTitleSection"
 
 function OurProcessView() {
   return (
-    <div>OurProcessView</div>
+    <>
+      <ViewTopTitleSection viewTitle="Our Process" imageSrc={stitchingImg} backgroundPosition="bottom"/>
+    
+    </>
   )
 }
 

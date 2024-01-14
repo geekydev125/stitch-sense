@@ -1,7 +1,9 @@
+import portfolioImg from '../assets/img/portfolio.png'
+import ViewTopTitleSection from '../components/ViewTopTitleSection'
 
 function WhoWeAreView() {
   return (
-    <div>WhoWeAreView</div>
+    <ViewTopTitleSection viewTitle="Portfolio" imageSrc={portfolioImg} backgroundPosition="bottom" />
   )
 }
 

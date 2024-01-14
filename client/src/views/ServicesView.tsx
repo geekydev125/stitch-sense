@@ -10,7 +10,7 @@ import Box from '@mui/material/Box'
 function ServicesView() {
 	return (
 		<>
-			<ViewTopTitleSection viewTitle="Services" imageSrc={designImage} />
+			<ViewTopTitleSection viewTitle="Services" imageSrc={designImage} backgroundPosition='bottom'/>
 			<Container>
 				<Box py={10}>
 					<ObjectivesSolutionSection />

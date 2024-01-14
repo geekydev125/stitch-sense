@@ -9,11 +9,8 @@ import Typography from '@mui/material/Typography'
 
 const BackgroundBox = styled(Box)`
     min-height: 30vh;
-    background-size: cover;
-    background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-position: bottom;
 
     position: relative;
     
@@ -35,20 +32,30 @@ const BackgroundBox = styled(Box)`
 
 interface Props {
     viewTitle: string,
-    imageSrc: string
+    imageSrc: string,
+    backgroundPosition: string,
+    backgroundSize?: string
 }
 
 function ViewTopTitleSection({
     viewTitle,
-    imageSrc
+    imageSrc,
+    backgroundPosition,
+    backgroundSize = 'cover'
 }: Props) {
     return (
-        <BackgroundBox sx={{ backgroundImage: `url(${imageSrc})` }} >
+        <BackgroundBox
+            sx={{
+                backgroundImage: `url(${imageSrc})`,
+                backgroundPosition: backgroundPosition,
+                backgroundSize: backgroundSize
+            }}
+        >
             <Box className="overlay" height='100%'>
                 <Container sx={{ height: '100%' }} >
-                    <Stack pl={{md: 10}} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
+                    <Stack pl={{ md: 10 }} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
                         <Typography variant='h2' component='h2' color='white'>{viewTitle}</Typography>
-                        <img className='logo' alt="Stitch Sense Logo" src={stitchSenseLogo} height={100}/>
+                        <img className='logo' alt="Stitch Sense Logo" src={stitchSenseLogo} height={100} />
                     </Stack>
                 </Container>
             </Box>
