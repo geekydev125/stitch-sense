@@ -3,10 +3,10 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import contactFormSchema from '../validations/contactFormSchema';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
+import GreenButton from './GreenButton';
 
 interface FormData {
     firstName: string,
@@ -36,7 +36,7 @@ function ContactForm() {
         console.log(data);
     }
     return (
-        <Box mt={5} px={5}>
+        <Box my={5} px={5}>
             <Container>
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                     <Grid container spacing={3}>
@@ -111,9 +111,8 @@ function ContactForm() {
 
                         </Grid>
                         <Grid item xs={12} display='flex' justifyContent='center'>
-                            <Button color='primary' type='submit' variant='contained' disabled={!(isDirty && isValid)}>SUBMIT</Button>
+                            <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
                         </Grid>
-
                     </Grid>
                 </form>
 
