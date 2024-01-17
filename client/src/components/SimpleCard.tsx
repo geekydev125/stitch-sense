@@ -12,19 +12,24 @@ function SimpleCard({
     title,
     content,
     imageSrc,
-    variant
+    variant,
+    type
 }: Props) {
     return (
-        <Paper sx={{ borderRadius: '20px' }} elevation={6}>
+        <Paper sx={{ borderRadius: type === 'business' ? '20px' : '50px', }} elevation={6}>
             <Card
                 sx={{
-                    minHeight: {
+                    minHeight: type === 'business' ? {
                         xs: 'auto',
                         sm: '530px',
                         lg: '430px'
+                    } : {
+                        xs: 'auto',
+                        sm: 'auto',
+                        lg: '280px'
                     },
                     backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
-                    borderRadius: '20px',
+                    borderRadius: type === 'business' ? '20px' : '50px',
                     border: '2px solid',
                     borderColor: variant === 'light' ? 'custom.theme.darkGray' : 'custom.theme.almostWhite',
                 }}
@@ -32,6 +37,7 @@ function SimpleCard({
             >
                 <Box p={2}>
                     <Typography
+                        minHeight={type === 'employee' ? '104px' : ''}
                         variant='h4'
                         component='h4'
                         textAlign='center'
@@ -43,9 +49,12 @@ function SimpleCard({
                         {title}
                     </Typography>
 
-                    <Stack sx={{ width: '100%', height: '120px' }} p={1} mt={2} justifyContent='center' alignItems='center'>
-                        <Box component={'img'} src={imageSrc} alt='Customer Care Icon' height="100%" />
-                    </Stack>
+                    {type === 'business' && (
+                        <Stack sx={{ width: '100%', height: '120px' }} p={1} mt={2} justifyContent='center' alignItems='center'>
+                            <Box component={'img'} src={imageSrc} alt='Customer Care Icon' height="100%" />
+                        </Stack>
+
+                    )}
 
                     <Typography
                         variant='body1'
