@@ -12,7 +12,7 @@ function WhatWeDoSection() {
 		<>
 			<SectionTitle title='WHAT WE DO' mt={4} mb={2} p={2} />
 
-			<Typography variant='body1' component='p' textAlign='center' mt={2} mb={4}>
+			<Typography variant='body1' component='p' textAlign='center' mt={2} mb={4} color='custom.theme.darkGray'>
 				<b>StitchSense</b> specializes in sublimation on polyesters and a wide array of sewing services, with an emphasis on t-shirts, hoodies, sweaters, sportswear, loungewear, and costumes/jumpsuits. We pride ourselves in providing high-quality apparel products and speedy, customer-centric service.
 			</Typography>
 

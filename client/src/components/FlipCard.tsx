@@ -8,6 +8,7 @@ import RotateLeftIcon from '@mui/icons-material/RotateLeft';
 import Icon from "@mui/material/Icon";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 
 const CardMainContainer = styled(Paper)`
     position: relative;
@@ -43,7 +44,6 @@ const CardMainContainer = styled(Paper)`
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        color: white;
 
         display: flex;
         justify-content: center;
@@ -62,7 +62,6 @@ const CardMainContainer = styled(Paper)`
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        color: white;
         transform: rotateY(180deg);
 
         text-align: justify;
@@ -94,7 +93,6 @@ function FlipCard({
         setHovered(!hovered)
     }
 
-
     return (
         <>
             <CardMainContainer
@@ -108,14 +106,14 @@ function FlipCard({
                     backgroundRepeat: 'no-repeat'
                 }}
             >
-                <div className="card-overlay" style={hovered ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
-                    <div className='card' style={hovered ? { transform: "rotateY(180deg)" } : undefined}>
-                        <div className='card-front'>
-                            <Typography variant="h3" component="h4">{title}</Typography>
+                <Box className="card-overlay" style={hovered ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
+                    <Box className='card' style={hovered ? { transform: "rotateY(180deg)" } : undefined}>
+                        <Box className='card-front' color='custom.theme.almostWhite'>
+                            <Typography variant="h3" component="h4" color='custom.theme.almostWhite'>{title}</Typography>
                             <Icon className="rotate-icon" component={RotateLeftIcon} />
-                        </div>
-                        <div className='card-back'>
-                            <Typography variant="body2" component="p">{content}</Typography>
+                        </Box>
+                        <Box className='card-back' >
+                            <Typography variant="body2" component="p" color='custom.theme.almostWhite'>{content}</Typography>
 
                             <Button
                                 component={RouterLink}
@@ -123,11 +121,10 @@ function FlipCard({
                                 size="large"
                                 sx={{ color: "custom.theme.lightGreen" }}
                             >Learn More</Button>
-                        </div>
-                    </div>
-                </div>
+                        </Box>
+                    </Box>
+                </Box>
             </CardMainContainer>
-
         </>
     )
 }
