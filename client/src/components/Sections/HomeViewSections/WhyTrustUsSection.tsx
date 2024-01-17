@@ -4,7 +4,7 @@ import customerCareIcon from '../../../assets/img/customer-care-icon.png'
 import arrowsIcon from '../../../assets/img/arrows-icon.png'
 import puzzleIcon from '../../../assets/img/puzzle-icon.png'
 
-import SimpleCard from '../../SimpleCard'
+import SimpleCard from '../../Cards/SimpleCard'
 import SectionTitle from '../../SectionTitle'
 
 import Box from '@mui/material/Box'

@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
-import { InumbersContent } from "./Sections/HomeViewSections/NumbersSection"
+import { InumbersContent } from "../Sections/HomeViewSections/NumbersSection"
 import Paper from "@mui/material/Paper"
 
 

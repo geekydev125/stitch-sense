@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid'
 
 import uniqid from 'uniqid'
-import NumbersCard from '../../NumbersCard'
+import NumbersCard from '../../Cards/NumbersCard'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
