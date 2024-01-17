@@ -15,6 +15,9 @@ let theme = createTheme({
         fontSize: 18,
         h1: {
             fontSize: '7rem'
+        },
+        body2: {
+            fontSize: '1.2rem'
         }
     }
 })
