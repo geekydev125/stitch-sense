@@ -1,12 +1,20 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import contactFormSchema from '../validations/contactFormSchema';
+import contactFormSchema from '../../../validations/contactFormSchema';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-import GreenButton from './GreenButton';
+import GreenButton from '../../GreenButton';
+
+const fieldStyles = {
+    backgroundColor: 'white',
+    border: '1px solid',
+    borderColor: 'custom.theme.darkGray',
+    borderRadius: '7px',
+    color: 'custom.theme.darkGray'
+}
 
 interface FormData {
     firstName: string,
@@ -37,11 +45,12 @@ function ContactForm() {
     }
     return (
         <Box my={5} px={5}>
-            <Container>
+            <Container sx={{ backgroundColor: 'custom.theme.almostWhite', borderRadius: 5 }}>
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
                             <TextField
+                                sx={fieldStyles}
                                 required
                                 fullWidth
                                 autoComplete='on'
@@ -55,6 +64,7 @@ function ContactForm() {
                         </Grid>
                         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
                             <TextField
+                                sx={fieldStyles}
                                 required
                                 fullWidth
                                 autoComplete='on'
@@ -68,6 +78,7 @@ function ContactForm() {
                         </Grid>
                         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
                             <TextField
+                                sx={fieldStyles}
                                 required
                                 fullWidth
                                 autoComplete='on'
@@ -82,6 +93,7 @@ function ContactForm() {
                         </Grid>
                         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
                             <TextField
+                                sx={fieldStyles}
                                 required
                                 fullWidth
                                 autoComplete='on'
@@ -95,6 +107,16 @@ function ContactForm() {
                         </Grid>
                         <Grid item xs={12} display='flex' justifyContent='center'>
                             <TextField
+                                type='radio'
+                                
+                            />
+
+
+                        </Grid>
+
+                        <Grid item xs={12} display='flex' justifyContent='center'>
+                            <TextField
+                                sx={fieldStyles}
                                 multiline
                                 rows={4}
                                 style={{ minWidth: '400px' }}
@@ -110,7 +132,7 @@ function ContactForm() {
 
 
                         </Grid>
-                        <Grid item xs={12} display='flex' justifyContent='center'>
+                        <Grid item xs={12} display='flex' justifyContent='center' height='auto' mb={5}>
                             <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
                         </Grid>
                     </Grid>
