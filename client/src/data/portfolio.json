@@ -1,0 +1,67 @@
+[{
+        "badinka": [{
+                "title": "Love Hangover",
+                "imageSrc": "love-hangover.jpg"
+            },
+            {
+                "title": "Insatiable",
+                "imageSrc": "insatiable.jpg"
+            }, {
+                "title": "Wired",
+                "imageSrc": "wired.jpg"
+            },
+            {
+                "title": "Lucid Enchanted Wear",
+                "imageSrc": "lucid-enchanted-wear.jpg"
+            },
+            {
+                "title": "Neon",
+                "imageSrc": "neon.jpg"
+            },
+            {
+                "title": "Slumber Party",
+                "imageSrc": "slumber-party.jpg"
+            },
+            {
+                "title": "Glamourama",
+                "imageSrc": "glamourama.jpg"
+            },
+            {
+                "title": "Frequencies",
+                "imageSrc": "frequencies.jpg"
+            },
+            {
+                "title": "Cyber",
+                "imageSrc": "cyber.jpg"
+            },
+            {
+                "title": "Monochrome",
+                "imageSrc": "monochrome.jpg"
+            },
+            {
+                "title": "Goth",
+                "imageSrc": "goth.jpg"
+            },
+            {
+                "title": "Deadly Dolls",
+                "imageSrc": "deadly-dolls.jpg"
+            }
+
+        ]
+    },
+    {
+        "candyCatz": [{
+
+        }]
+    },
+    {
+        "raveKitties": [{
+
+        }]
+    },
+    {
+        "super5": [{
+
+        }]
+    }
+]
