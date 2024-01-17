@@ -14,7 +14,7 @@ function NumbersCard({
 }: Props) {
     return (
         <Stack display='flex' direction='column' alignItems='center'>
-            <Paper sx={{borderRadius: '50%'}} elevation={10}>
+            <Paper sx={{borderRadius: '50%'}} elevation={6}>
                 <Stack
                     display='flex'
                     direction='row'
