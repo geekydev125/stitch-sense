@@ -20,7 +20,7 @@ function WhatWeDoSection() {
 
 				{services.map((service) => {
 					return (
-						<Grid item xs={12} md={6} lg={4} key={uniqid()}>
+						<Grid item xs={12} sm={6} lg={4} key={uniqid()}>
 							<FlipCard
 								title={service.title}
 								content={service.content}
