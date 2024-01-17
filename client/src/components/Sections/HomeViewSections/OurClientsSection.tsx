@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 import uniqid from 'uniqid'
+import SectionTitle from '../../SectionTitle'
 
 const logos = [
     {
@@ -33,14 +34,17 @@ function OurClientsSection() {
     return (
         <Box component='section' mt={5}>
             <Container>
-                <Grid container>
+                <Grid container spacing={1}>
                     <Grid item xs={12} md={4}>
                         <Stack sx={{ height: '100%' }} justifyContent='center' alignItems='center'>
-                            <Typography variant="h3" component="h4">OUR CLIENTS</Typography>
+                            <SectionTitle title='OUR CLIENTS' p={2} />
                         </Stack>
                     </Grid>
-                    <Grid item xs={12} md={8}>
-                        <Typography variant='h6' component='p' textAlign='center'>We have years of experience in the fashion industry with highly successful clothing brands like <b>CandyCatz</b>, <b>Badinka</b>, <b>RaveKitty</b> and <b>Super 5 Clothing</b> – all dedicated to delivering top-notch quality and style.</Typography>
+                    <Grid item xs={12} md={1}>
+
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <Typography variant='body1' component='p' textAlign='center' color='custom.theme.darkGray'>We have years of experience in the fashion industry with highly successful clothing brands like <b>CandyCatz</b>, <b>Badinka</b>, <b>RaveKitty</b> and <b>Super 5 Clothing</b> – all dedicated to delivering top-notch quality and style.</Typography>
                     </Grid>
                 </Grid>
             </Container>
@@ -48,15 +52,13 @@ function OurClientsSection() {
             <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: '200px', maxHeight: '100%' }} mt={2}>
                 <Container>
                     <Grid container>
-                        {
-                            logos.map(logo => {
-                                return (
-                                    <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
-                                        <Box component='img' src={logo.imageSrc} alt={`${logo.title} Logo`} maxWidth='100%' />
-                                    </Grid>
-                                )
-                            })
-                        }
+                        {logos.map(logo => {
+                            return (
+                                <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
+                                    <Box component='img' src={logo.imageSrc} alt={`${logo.title} Logo`} maxWidth='100%' />
+                                </Grid>
+                            )
+                        })}
                     </Grid>
                 </Container>
             </Box>
