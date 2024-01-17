@@ -1,5 +1,5 @@
 import isTitledView from '../HOC/isTitledView'
-import stitchingImg from '../assets/img/stitching.jpg'
+import stitchingBackgroundImg from '/assets/img/stitching-background.jpg'
 
 function OurProcessView() {
 	return (
@@ -13,7 +13,6 @@ function OurProcessView() {
 export default isTitledView(OurProcessView,
 	{
 		viewTitle: "Our Process Us",
-		imageSrc: stitchingImg,
-		backgroundPosition: "bottom",
+		imageSrc: stitchingBackgroundImg,
 	}
 )

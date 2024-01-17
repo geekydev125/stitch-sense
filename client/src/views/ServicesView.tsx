@@ -1,4 +1,4 @@
-import designImage from '../assets/img/fashion-design.jpg'
+import fashionDesignBackgroundImage from '/assets/img/fashion-design-background.jpg'
 
 import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
 import ServicesTabs from '../components/Sections/ServicesViewSections/ServiceTabs/ServicesTabs'
@@ -25,7 +25,6 @@ function ServicesView() {
 export default isTitledView(ServicesView,
 	{
 		viewTitle: "Services",
-		imageSrc: designImage,
-		backgroundPosition: "bottom",
+		imageSrc: fashionDesignBackgroundImage,
 	}
 )

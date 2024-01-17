@@ -8,7 +8,7 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 
-import contactImg from '../assets/img/contact.png'
+import contactBackgroundImg from '/assets/img/contact-background.jpg'
 import isTitledView from '../HOC/isTitledView';
 
 interface FormData {
@@ -133,8 +133,6 @@ function ContactUsView() {
 export default isTitledView(ContactUsView,
 	{
 		viewTitle: "Contact Us",
-		imageSrc: contactImg,
-		backgroundPosition: "top",
-		backgroundSize: 'contain'
+		imageSrc: contactBackgroundImg,
 	}
 )

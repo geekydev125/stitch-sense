@@ -1,5 +1,5 @@
 import isTitledView from '../HOC/isTitledView'
-import portfolioImg from '../assets/img/portfolio.png'
+import portfolioBacgkroundImg from '/assets/img/portfolio-background.jpg'
 
 function PortfolioView() {
 	return (
@@ -12,7 +12,6 @@ function PortfolioView() {
 export default isTitledView(PortfolioView,
 	{
 		viewTitle: "Portfolio",
-		imageSrc: portfolioImg,
-		backgroundPosition: "bottom"
+		imageSrc: portfolioBacgkroundImg,
 	}
 )

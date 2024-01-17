@@ -1,5 +1,5 @@
 import isTitledView from '../HOC/isTitledView'
-import femaleTailorImg from '../assets/img/female-tailor.png'
+import fashioDesignStudioBackgroundImg from '/assets/img/fashion-design-studio-background.jpg'
 
 function AboutView() {
   return (
@@ -13,7 +13,6 @@ function AboutView() {
 export default isTitledView(AboutView,
   {
     viewTitle: "About Us",
-    imageSrc: femaleTailorImg,
-    backgroundPosition: "top",
+    imageSrc: fashioDesignStudioBackgroundImg,
   }
 )
