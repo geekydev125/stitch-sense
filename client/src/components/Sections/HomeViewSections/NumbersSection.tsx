@@ -17,7 +17,7 @@ const numbersContent: InumbersContent[] = [
         number: '50',
         mainContent: 'SEAMSTRESSES',
         subContent: '+50 ADDITIONAL ONES',
-        subSubContent: 'when volumes are higher'
+        subSubContent: '(when volumes are higher)'
     },
     {
         number: '~550',
@@ -74,7 +74,7 @@ function NumbersSection() {
             <Grid container spacing={3} mt={2}>
                 {
                     numbersContent.map(number => (
-                        <Grid item xs={12} sm={6} md={3} key={uniqid()}>
+                        <Grid item xs={6} sm={6} md={3} key={uniqid()}>
                             <NumbersCard number={number.number} mainContent={number.mainContent} subContent={number.subContent} subSubContent={number.subSubContent} />
                         </Grid>
                     ))

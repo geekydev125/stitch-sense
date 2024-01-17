@@ -22,8 +22,17 @@ function NumbersCard({
                     alignItems='center'
                     sx={{
                         borderRadius: '50%',
-                        width: '220px',
-                        height: '220px',
+                        width: {
+                            xs: '140px',
+                            md: '180px',
+                            lg: '220px'
+                        },
+                        
+                        height: {
+                            xs: '140px',
+                            md: '180px',
+                            lg: '220px'
+                        },
                         backgroundColor: 'custom.theme.darkGray',
                         border: '2px solid',
                         borderColor: 'custom.theme.almostWhite',
@@ -35,9 +44,9 @@ function NumbersCard({
             <Box mt={3}>
                 <Typography variant='h4' component='p' color='custom.theme.darkGray' textAlign='center'>{mainContent}</Typography>
 
-                {subContent && <Typography fontWeight='bold' variant='h6' component='p' color='custom.theme.darkGray' textAlign='center'>{subContent}</Typography>}
+                {subContent && <Typography fontWeight='bold' variant='body1' component='p' color='custom.theme.darkGray' textAlign='center'>{subContent}</Typography>}
 
-                {subSubContent && <Typography variant='body1' component='p' color='custom.theme.darkGray' textAlign='center'>{subSubContent}</Typography>}
+                {subSubContent && <Typography variant='body2' component='p' color='custom.theme.darkGray' textAlign='center'>{subSubContent}</Typography>}
             </Box>
         </Stack>
     )
