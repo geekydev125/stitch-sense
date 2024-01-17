@@ -115,7 +115,7 @@ function FlipCard({
                             <Icon className="rotate-icon" component={RotateLeftIcon} />
                         </div>
                         <div className='card-back'>
-                            <Typography variant="body1" component="p">{content}</Typography>
+                            <Typography variant="body2" component="p">{content}</Typography>
 
                             <Button
                                 component={RouterLink}
