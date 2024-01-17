@@ -19,7 +19,7 @@ export interface Icard {
     type: 'employee' | 'business'
 }
 
-const clientCardsContent: Icard[] = [
+const clientsImpactCardsContent: Icard[] = [
     {
         title: 'CUSTOMER CARE',
         content: 'We are here to provide you with exceptional customer service, help with designs, sourcing materials, and general consulting. We’ve got you covered.',
@@ -43,7 +43,7 @@ const clientCardsContent: Icard[] = [
     }
 ]
 
-export const employeesCardsContent: Icard[] = [
+export const employeesImpactCardsContent: Icard[] = [
     {
         title: 'FAIRLY PAID WORKERS',
         content: 'Our factory workers are paid well for their work. We stand firmly against employee exploitation.',
@@ -74,7 +74,7 @@ function WhyTrustUsSection() {
                 <SectionTitle title='OUR IMPACT ON YOU' variant='h5' justify='left' p={2} />
 
                 <Grid container spacing={2} mt={0}>
-                    {clientCardsContent.map(card => {
+                    {clientsImpactCardsContent.map(card => {
                         return (
                             <Grid key={uniqid()} item xs={12} md={4}>
                                 <SimpleCard
@@ -93,7 +93,7 @@ function WhyTrustUsSection() {
                 <SectionTitle title='OUR IMPACT ON EMPLOYEES' variant='h5' justify='left' p={2} />
 
                 <Grid container spacing={2} mt={0}>
-                    {employeesCardsContent.map(card => {
+                    {employeesImpactCardsContent.map(card => {
                         return (
                             <Grid key={uniqid()} item xs={12} md={4}>
                                 <SimpleCard
