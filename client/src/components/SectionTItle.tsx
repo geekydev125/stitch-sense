@@ -1,11 +1,5 @@
-import Box from "@mui/material/Box"
+import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
-import styled from "@mui/material/styles/styled"
-
-const StyledBox = styled(Box)`
-    background: rgba(255,255,255,0);
-    background: linear-gradient(135deg, rgba(211,211,211,1) 0%, rgba(255,255,255,0) 75%);
-`
 
 interface Props {
     title: string,
@@ -43,11 +37,23 @@ function SectionTitle({
     p
 }: Props) {
     return (
-        <StyledBox>
-            <Typography variant="h3" component='h4' textAlign='center' mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p} >
+        <Stack display='flex' direction='row' justifyContent='center'>
+            <Typography
+                sx={{
+                    display: 'inline-block',
+                    width: 'auto',
+                    backgroundColor: '#f1f1f1',
+                    borderRadius: 5,
+                    padding: '5px 40px'
+                }}
+                variant="h3"
+                component='h4'
+                textAlign='center'
+                mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p}
+            >
                 {title}
             </Typography>
-        </StyledBox >
+        </Stack>
     )
 }
 
