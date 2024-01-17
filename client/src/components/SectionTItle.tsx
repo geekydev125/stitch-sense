@@ -3,6 +3,9 @@ import Typography from "@mui/material/Typography"
 
 interface Props {
     title: string,
+    justify?: string,
+    variant?: "h6" | "h5" | "h4" | "h3" | "h2" | "h1" | "body1" | "body2",
+    component?: "h6" | "h5" | "h4" | "h3" | "h2" | "h1" | "p",
     mt?: number,
     mb?: number,
     my?: number,
@@ -21,6 +24,9 @@ interface Props {
 
 function SectionTitle({
     title,
+    justify = 'center',
+    variant = 'h3',
+    component='h4',
     mt,
     mb,
     my,
@@ -37,7 +43,7 @@ function SectionTitle({
     p
 }: Props) {
     return (
-        <Stack display='flex' direction='row' justifyContent='center'>
+        <Stack display='flex' direction='row' justifyContent={justify}>
             <Typography
                 sx={{
                     display: 'inline-block',
@@ -45,11 +51,11 @@ function SectionTitle({
                     backgroundColor: '#f1f1f1',
                     borderRadius: 5,
                     padding: '5px 40px',
-                    color: 'custom.theme.darkGray'
+                    color: 'custom.theme.darkGray',
                 }}
-                variant="h3"
-                component='h4'
                 textAlign='center'
+                variant={variant}
+                component={component}
                 mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p}
             >
                 {title}
