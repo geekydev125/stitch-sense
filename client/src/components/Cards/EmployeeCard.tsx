@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box"
 import { IemployeeCard } from "../../views/AboutView"
-import { Typography } from "@mui/material"
 
 import missingPhoto from '../../assets/img/employees/missing-photo.png'
+import Typography from "@mui/material/Typography"
 
 interface Props extends IemployeeCard { }
 
