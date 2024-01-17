@@ -1,56 +1,49 @@
-import { Parallax } from 'react-parallax';
+import Grid from '@mui/material/Grid'
 
-import manufactoringFacilityImage from '../../../assets/img/manufacturing-facility.png'
+import uniqid from 'uniqid'
+import NumbersCard from '../../NumbersCard'
 
-import Box from '@mui/material/Box'
-import Divider from '@mui/material/Divider';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+export interface InumbersContent {
+    number: string | number,
+    mainContent: string,
+    subContent?: string,
+    subSubContent?: string
+}
+
+const numbersContent: InumbersContent[] = [
+    {
+        number: '50',
+        mainContent: 'SEAMSTRESSES',
+        subContent: '+50 ADDITIONAL ONES',
+        subSubContent: 'when volumes are higher'
+    },
+    {
+        number: '~550',
+        mainContent: 'ITEMS PER DAY PRODUCTION CAPACITY',
+    },
+    {
+        number: '6',
+        mainContent: 'HIGH-QUALITY JAPANESE PRINTERS',
+    },
+    {
+        number: '2',
+        mainContent: 'STATE-OF-THE-ART CUTTING LASERS',
+    }
+]
 
 function NumbersSection() {
-
     return (
-
-        <Box mt={5}>
-            <Parallax blur={2} bgImage={manufactoringFacilityImage} bgImageAlt="Manufactoring Facility" strength={200}>
-                <Box sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
-                    <Container>
-                        <Box pb={5} px={2}>
-                            <Box py={10} px={3}>
-                                <Typography variant='h4' component='h4' textAlign='center' color='white' >
-                                    Our manufacturing operations are all handled in-house at our own fully-equipped and technically-advanced manufacturing facility.
-                                </Typography>
-                            </Box>
-                            <Divider variant="middle" color='white' />
-                            <Stack p={5} spacing={5}>
-                                <Box>
-                                    <Typography variant='h2' component='h5' textAlign='left' color='white'><u>50</u> SEAMSTRESSES</Typography>
-                                    <Typography variant='h5' component='h5' textAlign='left' color='white'>+50 additional ones when volumes are higher</Typography>
-                                </Box>
-
-                                <Box alignSelf='flex-end'>
-                                    <Typography variant='h2' component='h5' textAlign='left' color='white'><u>500 - 600</u> ITEMS PER DAY</Typography>
-                                    <Typography variant='h5' component='h5' textAlign='left' color='white'>production capacity</Typography>
-                                </Box>
-
-                                <Box>
-                                    <Typography variant='h2' component='h5' textAlign='left' color='white'><u>6</u> HIGH-QUALITY </Typography>
-                                    <Typography variant='h5' component='h5' textAlign='left' color='white'>Japanese printers</Typography>
-                                </Box>
-
-                                <Box alignSelf='flex-end'>
-                                    <Typography variant='h2' component='h5' textAlign='left' color='white'><u>2</u> STATE-OF-THE-ART</Typography>
-                                    <Typography variant='h5' component='h5' textAlign='left' color='white'>cutting lasers</Typography>
-                                </Box>
-                            </Stack>
-
-                            <Divider variant="middle" color='white' />
-                        </Box>
-                    </Container>
-                </Box>
-            </Parallax>
-        </Box >
+        <>
+            <Grid container spacing={3}>
+                {
+                    numbersContent.map(number => (
+                        <Grid item xs={12} sm={6} md={3} key={uniqid()}>
+                            <NumbersCard number={number.number} mainContent={number.mainContent} subContent={number.subContent} subSubContent={number.subSubContent} />
+                        </Grid>
+                    ))
+                }
+            </Grid>
+        </>
     )
 }
 
