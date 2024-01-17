@@ -43,7 +43,7 @@ const clientCardsContent: Icard[] = [
     }
 ]
 
-const employeesCardsContent: Icard[] = [
+export const employeesCardsContent: Icard[] = [
     {
         title: 'FAIRLY PAID WORKERS',
         content: 'Our factory workers are paid well for their work. We stand firmly against employee exploitation.',
@@ -90,7 +90,6 @@ function WhyTrustUsSection() {
             </Box>
 
             <Box mt={5}>
-
                 <SectionTitle title='OUR IMPACT ON EMPLOYEES' variant='h5' justify='left' p={2} />
 
                 <Grid container spacing={2} mt={0}>
