@@ -5,7 +5,9 @@ let theme = createTheme({
         custom: {
             theme: {
                 lightGreen: '#45b6b2',
-                darkGreen: '#35908d'
+                darkGreen: '#35908d',
+                almostWhite: '#f1f1f1',
+                darkGray: '#3e3d3d'
             }
             
         }

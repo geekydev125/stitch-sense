@@ -5,7 +5,9 @@ declare module '@mui/material/styles' {
         custom: {
             theme: {
                 lightGreen: PaletteColor,
-                darkGreen: PaletteColor
+                darkGreen: PaletteColor,
+                almostWhite: PaletteColor,
+                darkGray: PaletteColor
             }   
             
         }
@@ -15,7 +17,9 @@ declare module '@mui/material/styles' {
         custom: {
             theme: {
                 lightGreen: string | PaletteColorOptions,
-                darkGreen: string | PaletteColorOptions
+                darkGreen: string | PaletteColorOptions,
+                almostWhite: string | PaletteColorOptions,
+                darkGray: string | PaletteColorOptions
             }
             
         }
