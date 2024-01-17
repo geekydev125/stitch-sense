@@ -33,22 +33,17 @@ const BackgroundBox = styled(Box)`
 interface Props {
     viewTitle: string,
     imageSrc: string,
-    backgroundPosition: string,
-    backgroundSize?: string
 }
 
 function ViewTopTitleSection({
     viewTitle,
     imageSrc,
-    backgroundPosition,
-    backgroundSize = 'cover'
 }: Props) {
     return (
         <BackgroundBox
             sx={{
                 backgroundImage: `url(${imageSrc})`,
-                backgroundPosition: backgroundPosition,
-                backgroundSize: backgroundSize
+                backgroundSize: 'contain'
             }}
         >
             <Box className="overlay" height='100%'>

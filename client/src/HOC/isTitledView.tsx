@@ -10,15 +10,12 @@ import Box from '@mui/material/Box';
 interface Props {
     viewTitle: string,
     imageSrc: string,
-    backgroundPosition: string,
-    backgroundSize?: string
 }
 
-function isTitledView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, imageSrc, backgroundPosition, backgroundSize }: Props) {
+function isTitledView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, imageSrc }: Props) {
     return (props: T) => (
         <>
-        
-            <ViewTopTitleSection viewTitle={viewTitle} imageSrc={imageSrc} backgroundPosition={backgroundPosition} backgroundSize={backgroundSize} />
+            <ViewTopTitleSection viewTitle={viewTitle} imageSrc={imageSrc} />
             <Stack component='main' flexGrow={1}
                 sx={{
                     background: `url(${wavyLinesTop})`,
