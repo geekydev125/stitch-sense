@@ -1,25 +1,32 @@
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import uniqid from 'uniqid';
 
 interface Props {
 	images: {
-		img: string;
+		imageSrc: string;
 		title: string;
-	}[] | []
+	}[] | [],
+	variant: 'standard' | 'woven' | 'masonry',
+	cols: number,
+	gap: number
 }
 
-export default function ServiceImageList({
-	images
+export default function CustomImageList({
+	images,
+	variant,
+	cols,
+	gap
 }:Props) {
 	return (
 		<Box sx={{ width: '100%', height: 620, overflowY: 'scroll' }}>
-			<ImageList variant="masonry" cols={3} gap={8}>
+			<ImageList variant={variant} cols={cols} gap={gap}>
 				{	images.map((image) => (
-					<ImageListItem key={image.img}>
+					<ImageListItem key={uniqid()}>
 						<img
-							srcSet={`${image.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-							src={`${image.img}?w=248&fit=crop&auto=format`}
+							srcSet={`${image.imageSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
+							src={`${image.imageSrc}?w=248&fit=crop&auto=format`}
 							alt={image.title}
 							loading="lazy"
 						/>
