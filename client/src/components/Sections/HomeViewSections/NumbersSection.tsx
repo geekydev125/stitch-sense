@@ -2,6 +2,8 @@ import Grid from '@mui/material/Grid'
 
 import uniqid from 'uniqid'
 import NumbersCard from '../../NumbersCard'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
 
 export interface InumbersContent {
     number: string | number,
@@ -34,7 +36,42 @@ const numbersContent: InumbersContent[] = [
 function NumbersSection() {
     return (
         <>
-            <Grid container spacing={3}>
+
+            <Box
+                sx={{
+                    backgroundColor: '#f1f1f1',
+                    borderRadius: 5,
+                    padding: {
+                        xs: '5px 20px',
+                        md: '5px 40px'
+                    },
+                    color: 'custom.theme.darkGray',
+                    width: 'auto',
+                    display: 'inline-block'
+                }}
+            >
+                <Typography variant='h1' component='h1'
+                    sx={{
+                        display: 'inline-block',
+                        width: 'auto'
+                    }}
+                >
+                    StitchSense
+                </Typography>
+                <Typography fontStyle={'italic'} component='p' variant='h3'
+                    sx={{
+                        display: 'inline-block',
+                        width: 'auto',
+                        marginLeft: {
+                            sm: 3
+                        }
+                    }}
+                >
+                    in numbers
+                </Typography>
+            </Box >
+
+            <Grid container spacing={3} mt={2}>
                 {
                     numbersContent.map(number => (
                         <Grid item xs={12} sm={6} md={3} key={uniqid()}>
