@@ -12,20 +12,20 @@ function TopFooter() {
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={4}>
-                        <Stack height='100%' spacing={2} padding={2} flexDirection='column' justifyContent='space-around'>
+                        <Stack height='100%' spacing={2} py={2} flexDirection='column' justifyContent='space-around'>
                             <Box>
                                 <Typography variant='h4' component='h5' color='custom.theme.lightGreen'>LET’S WORK TOGETHER!</Typography>
                             </Box>
                             <Box>
-                                <Typography variant='h5' component='h5' color='white' fontWeight='bold'>Contact Details:</Typography>
-                                <Typography variant='body1' component='p' color='white'>Name: Ganimir Vangelov</Typography>
-                                <Typography variant='body1' component='p' color='white'>Phone: +(359) 888 81 11 32</Typography>
-                                <Typography variant='body1' component='p' color='white'>Email: ganimirvangelov@gmail.com</Typography>
+                                <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Contact Details:</Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>Name: <b>Ganimir Vangelov (COO)</b></Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>Phone: <b>+(359) 888 81 11 32</b></Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>Email: <b>ganimirvangelov@gmail.com</b></Typography>
                             </Box>
                             <Box>
-                                <Typography variant='h5' component='h5' color='white' fontWeight='bold'>Location:</Typography>
-                                <Typography variant='body1' component='p' color='white'>280 Tsarigradski Complex,</Typography>
-                                <Typography variant='body1' component='p' color='white'>Sofia, Bulgaria</Typography>
+                                <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold'  mb={1}>Location:</Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>280 Tsarigradski Complex,</Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>Sofia, Bulgaria</Typography>
                             </Box>
                         </Stack>
                     </Grid>
