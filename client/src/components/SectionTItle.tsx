@@ -44,7 +44,8 @@ function SectionTitle({
                     width: 'auto',
                     backgroundColor: '#f1f1f1',
                     borderRadius: 5,
-                    padding: '5px 40px'
+                    padding: '5px 40px',
+                    color: 'custom.theme.darkGray'
                 }}
                 variant="h3"
                 component='h4'
