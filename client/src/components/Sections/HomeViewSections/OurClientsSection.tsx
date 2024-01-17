@@ -1,7 +1,7 @@
-import badinkaLogo from '../../../assets/img/badinka-logo.png'
-import candycatzLogo from '../../../assets/img/candy-catz-logo.png'
-import raveKittiesLogo from '../../../assets/img/rave-kitties-logo.png'
-import super5Logo from '../../../assets/img/super5-logo.png'
+import badinkaLogo from '../../../assets/img/logos/badinka-logo.png'
+import candycatzLogo from '../../../assets/img/logos/candy-catz-logo.png'
+import raveKittiesLogo from '../../../assets/img/logos/rave-kitties-logo.png'
+import super5Logo from '../../../assets/img/logos/super5-logo.png'
 
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"

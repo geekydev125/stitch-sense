@@ -1,6 +1,6 @@
 import { MutableRefObject } from 'react'
 
-import euFlag from '../../../assets/img/eu-flag-transparent.png'
+import euFlag from '../../../assets/img/logos/eu-flag-transparent.png'
 
 import SectionTitle from '../../SectionTitle'
 
