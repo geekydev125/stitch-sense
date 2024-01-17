@@ -11,7 +11,7 @@ function ContactContent({
     isDisplayedOnView = 'contactUs'
 }: Props) {
     return (
-        <Stack mt={10} mb={7} display='flex' direction='column' alignItems='center'>
+        <Stack display='flex' direction='column' alignItems='center'>
 
             <SectionTitle title='LET"S WORK TOGETHER!' />
             <Typography variant="h4" component='p' mt={3} textAlign='center' color='custom.theme.darkGray'>
