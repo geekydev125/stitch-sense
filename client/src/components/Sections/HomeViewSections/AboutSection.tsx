@@ -28,7 +28,7 @@ function AboutSection({
 						}}
 					>
 						<Typography variant='body1' component='p' mb={5} pl={{ md: 25 }} textAlign='justify' >
-							We are a clothing manufacturer with more than 10 years of experience in the fashion industry. 
+							We are a clothing manufacturer with <b>more than 10 years of experience in the fashion industry</b>. 
 						</Typography>
 
 						<Typography variant='body1' component='p' mb={5} pl={{ md: 25 }} textAlign='justify'>
