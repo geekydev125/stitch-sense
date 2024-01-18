@@ -22,7 +22,15 @@ export default function StandardImageList({
 }: Props) {
 
 	return (
-		<Box sx={{ width: '100%', height: 850, overflowY: 'scroll' }}>
+		<Box sx={{
+			width: '100%',
+			height: 'auto',
+			minHeight: {
+				xs: '219px',
+				sm: '',
+				lg: '826px'	
+			}
+		}}>
 			<ImageList variant="standard" cols={cols} gap={gap}>
 				{images.map((image) => (
 					<Link href='#' target='_blank' key={uniqid()}>
