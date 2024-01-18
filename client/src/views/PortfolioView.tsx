@@ -112,9 +112,9 @@ function PortfolioView() {
 					</Typography>
 
 					<Stack my={5} direction='row' justifyContent={'space-around'} alignItems='center'>
-						<Arrow direction='right' />
+						<Arrow direction='right' arrowType={1} />
 						<GreenButton boxShadow variant='contained' size='large'> LET'S GET STARTED</GreenButton>
-						<Arrow direction='left' />
+						<Arrow direction='left' arrowType={1}/>
 					</Stack>
 				</Box>
 			</Container>

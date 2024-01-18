@@ -1,8 +1,11 @@
 import Stack from '@mui/material/Stack'
-import arrow from '/src/assets/img/arrow-left.png'
 import Box from '@mui/material/Box'
 
+import arrowLeft from '/src/assets/img/arrow-left.png'
+import arrowDown from '/src/assets/img/arrow-down.png'
+
 interface Props {
+    arrowType: 1 | 2
     direction: 'left' | 'right',
     mt?: number,
     mb?: number,
@@ -20,6 +23,7 @@ interface Props {
     p?: number
 }
 function Arrow({
+    arrowType,
     direction = 'left',
     mt,
     mb,
@@ -50,7 +54,7 @@ function Arrow({
                 } : {}
             }
                 component="img"
-                src={arrow}
+                src={arrowType === 1 ? arrowLeft : arrowDown}
                 alt='Arrow'
                 width={'auto'}
                 height={'auto'}
