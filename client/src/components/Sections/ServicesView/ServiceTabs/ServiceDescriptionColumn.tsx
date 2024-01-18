@@ -1,7 +1,8 @@
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+
+import GreenButton from '../../../GreenButton'
 
 function ServiceDescriptionColumn() {
     return (
@@ -21,6 +22,18 @@ function ServiceDescriptionColumn() {
                     </Typography>
                 </Box>
 
+                <Box sx={{margin: 'auto auto 20px auto'}}>
+                    <GreenButton
+                        variant='contained'
+                        size='large'
+                        boxShadow
+                    >
+                        GET A QUOTE
+                    </GreenButton>
+                </Box>
+
+
+                {/* 
                 <Button
                     variant='contained'
                     size='large'
@@ -33,7 +46,7 @@ function ServiceDescriptionColumn() {
                     }}
                 >
                     GET A QUOTE
-                </Button>
+                </Button> */}
             </Stack>
         </>
     )
