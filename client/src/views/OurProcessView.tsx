@@ -5,6 +5,7 @@ import ProcessStepArticle from '../components/Sections/OurProcessView/ProcessSte
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
+import Arrow from '../components/Arrow'
 
 export interface IStepArticle {
 	title: string,
@@ -46,6 +47,7 @@ function OurProcessView() {
 					{stepArticlesContent.map((stepArticle) => (
 						<Grid item>
 							<ProcessStepArticle key={uniqid()} {...stepArticle} />
+							<Arrow arrowType={2} direction={stepArticle.contentOrder} />
 						</Grid>
 					))}
 				</Grid>
