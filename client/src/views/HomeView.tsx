@@ -8,7 +8,7 @@ import Header from "../components/Header/Header"
 import Box from '@mui/material/Box'
 
 import AboutSection from "../components/Sections/HomeView/AboutSection"
-import HeroSection from "../components/Sections/HomeView/HeroSection"
+import HeroSection from "../components/Sections/HomeView/HereSection/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
 import ManufactoringSection from "../components/Sections/HomeView/ManufactoringSection"
 import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSection"
@@ -31,7 +31,8 @@ function HomeView() {
 	return (
 		<>
 			<HeroSection scrollTo={scrollTo} />
-			<Box>
+			
+			<Box position={"relative"} zIndex={1100}>
 				<Header />
 
 				<Box
