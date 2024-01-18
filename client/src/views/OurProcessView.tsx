@@ -7,6 +7,8 @@ import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Arrow from '../components/Arrow'
 import ProcessStepCard from '../components/Cards/ProcessStepCard'
+import CustomDivider from '../components/CustomDivider'
+import CallToActionSection from '../components/CallToActionSection'
 
 export interface IStepArticle {
 	title: string,
@@ -81,12 +83,15 @@ function OurProcessView() {
 					{stepCardsContent.map((stepCard) => (
 						<Grid item xs={12} md={4}>
 							<ProcessStepCard key={uniqid()} {...stepCard} />
-							
 						</Grid>
 					))
 					}
 
 				</Grid>
+
+				<CustomDivider mt={10} mb={5} />
+
+				<CallToActionSection />
 			</Container>
 		</Box>
 	)
