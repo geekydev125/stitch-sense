@@ -1,12 +1,11 @@
 import fashionDesignBackgroundImage from '/assets/img/fashion-design-background.jpg'
 
-import ObjectivesSolutionSection from '../components/Sections/ServicesViewSections/ObjectivesSolutionSection'
-import ServicesTabs from '../components/Sections/ServicesViewSections/ServiceTabs/ServicesTabs'
-
 import isTitledView from '../HOC/isTitledView'
 
 import Container from "@mui/material/Container"
 import Box from '@mui/material/Box'
+import ObjectivesSolutionSection from '../components/Sections/ServicesView/ObjectivesSolutionSection'
+import ServicesTabs from '../components/Sections/ServicesView/ServiceTabs/ServicesTabs'
 
 function ServicesView() {
 	return (
