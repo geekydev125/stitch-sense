@@ -9,10 +9,10 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
 import CustomTabPanel from './CustomTabPanel';
-import CustomImageList from '../../../CustomImageList';
 
 import services from '../../../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
+import MasonryImageList from './MasonryImageList';
 
 const tabsStyles = {
     '.MuiTabs-flexContainer': {
@@ -90,7 +90,7 @@ function ServicesTabs() {
                                 <ServiceDescriptionColumn />
                             </Grid>
                             <Grid item xs={12} md={8}>
-                                <CustomImageList images={service.images} variant='masonry' cols={3} gap={8} />
+                                <MasonryImageList images={service.images} cols={3} gap={8} />
                             </Grid>
                         </Grid>
                     </CustomTabPanel>
