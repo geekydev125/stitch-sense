@@ -17,16 +17,24 @@ function TopFooter() {
                                 <Typography variant='h4' component='h5' color='custom.theme.darkGreen'>LET’S WORK TOGETHER!</Typography>
                             </Box>
                             <Box>
-                                <Typography variant='h5' component='h5' color='custom.theme.darkGreen' fontWeight='bold' mb={1}>Contact Details:</Typography>
+                                <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Contact Details:</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
-                                    <Box component="span" color='custom.theme.darkGreen'>Name:</Box> <b>Ganimir Vangelov (COO)</b></Typography>
-                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'><Box component="span" color='custom.theme.darkGreen'>Phone:</Box> <b>+(359) 888 81 11 32</b></Typography>
-                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'><Box component="span" color='custom.theme.darkGreen'>Email:</Box> <b>ganimirvangelov@gmail.com</b></Typography>
+                                    Name:&nbsp;
+                                    <Box component="span" color='custom.theme.darkGreen'><b>Ganimir Vangelov (COO)</b></Box>
+                                </Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
+                                    Phone:&nbsp;
+                                    <Box component="span" color='custom.theme.darkGreen'><b>+(359) 888 81 11 32</b></Box>
+                                </Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
+                                    Email:&nbsp;
+                                    <Box component="span" color='custom.theme.darkGreen'><b>ganimirvangelov@gmail.com</b></Box>
+                                </Typography>
                             </Box>
                             <Box>
-                                <Typography variant='h5' component='h5' color='custom.theme.darkGreen' fontWeight='bold'  mb={1}>Location:</Typography>
-                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>280 Tsarigradski Complex,</Typography>
-                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>Sofia, Bulgaria</Typography>
+                                <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Location:</Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.darkGreen'>280 Tsarigradski Complex,</Typography>
+                                <Typography variant='body1' component='p' color='custom.theme.darkGreen'>Sofia, Bulgaria</Typography>
                             </Box>
                         </Stack>
                     </Grid>
