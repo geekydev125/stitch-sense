@@ -16,6 +16,7 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import uniqid from 'uniqid'
 import CustomTabPanel from '../components/Sections/ServicesView/ServiceTabs/CustomTabPanel'
+import CallToActionSection from '../components/CallToActionSection'
 
 const tabsStyles = {
 	'.MuiTabs-flexContainer': {
@@ -103,6 +104,7 @@ function PortfolioView() {
 
 				<CustomDivider mt={3} mb={5} />
 
+				<CallToActionSection />
 			</Container>
 		</Box>
 	)
