@@ -5,7 +5,7 @@ interface Props {
     type?: 'submit',
     disabled?: boolean,
     variant?: 'contained' | 'outlined' | 'text',
-    children?: React.ReactNode | string,
+    children: React.ReactNode | string,
     boxShadow?: true
 }
 
@@ -18,7 +18,7 @@ function GreenButton({
 }: Props) {
 
     return (
-        <Paper elevation={boxShadow ? 10 : 0}>
+        <Paper elevation={boxShadow ? 10 : 0} sx={{width: 'fit-content'}}>
             <Button
                 
                 sx={{
