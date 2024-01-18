@@ -70,7 +70,7 @@ function OurProcessView() {
 							<ProcessStepArticle key={uniqid()} {...stepArticle} />
 							<Arrow 
 								arrowType={2} 
-								rotation={stepArticle.step === 2 ? 180 : 0 } 
+								rotate={stepArticle.step === 2 ? 180 : 0 } 
 								scaleY={stepArticle.step === 2 ? -1 : 1} 
 								/>
 						</Grid>

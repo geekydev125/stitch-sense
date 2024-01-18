@@ -6,7 +6,7 @@ import arrowDown from '/src/assets/img/arrow-down.png'
 
 interface Props {
     arrowType: 1 | 2,
-    rotation?: number
+    rotate?: number
     scaleX?: number,
     scaleY?: number,
     mt?: number,
@@ -26,7 +26,7 @@ interface Props {
 }
 function Arrow({
     arrowType,
-    rotation,
+    rotate,
     scaleX = 1,
     scaleY = 1,
     mt,
@@ -53,7 +53,7 @@ function Arrow({
         >
 
             <Box sx={{
-                transform: `scaleX(${scaleX}) scaleY(${scaleY}) rotate(${rotation}deg)`
+                transform: `scaleX(${scaleX}) scaleY(${scaleY}) rotate(${rotate}deg)`
             }}
                 component="img"
                 src={arrowType === 1 ? arrowLeft : arrowDown}
