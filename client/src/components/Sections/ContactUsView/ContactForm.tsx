@@ -162,7 +162,7 @@ function ContactForm() {
                                 sx={fieldStyles}
                                 multiline
                                 rows={4}
-                                style={{ minWidth: '400px' }}
+                                style={{ minWidth: '200px', flexGrow: 1 }}
                                 fullWidth
                                 autoComplete='on'
                                 id='message'
