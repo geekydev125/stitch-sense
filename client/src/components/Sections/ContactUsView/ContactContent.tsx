@@ -13,7 +13,7 @@ function ContactContent({
     return (
         <Stack display='flex' direction='column' alignItems='center'>
 
-            <SectionTitle title='LET"S WORK TOGETHER!' />
+            <SectionTitle title="LET'S WORK TOGETHER!" />
             <Typography variant="h4" component='p' mt={3} textAlign='center' color='custom.theme.darkGray'>
                 Do you want to be part of our dream team?
             </Typography>
