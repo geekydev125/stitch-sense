@@ -7,15 +7,15 @@ import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
 import Box from '@mui/material/Box'
 
-import AboutSection from "../components/Sections/HomeViewSections/AboutSection"
-import HeroSection from "../components/Sections/HomeViewSections/HeroSection"
-import WhatWeDoSection from "../components/Sections/HomeViewSections/WhatWeDoSection"
-import ManufactoringSection from "../components/Sections/HomeViewSections/ManufactoringSection"
-import WhyChooseUsSection from "../components/Sections/HomeViewSections/WhyChooseUsSection"
-import WhyTrustUsSection from "../components/Sections/HomeViewSections/WhyTrustUsSection"
-import OurClientsSection from "../components/Sections/HomeViewSections/OurClientsSection"
+import AboutSection from "../components/Sections/HomeView/AboutSection"
+import HeroSection from "../components/Sections/HomeView/HeroSection"
+import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
+import ManufactoringSection from "../components/Sections/HomeView/ManufactoringSection"
+import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSection"
+import WhyTrustUsSection from "../components/Sections/HomeView/WhyTrustUsSection"
+import OurClientsSection from "../components/Sections/HomeView/OurClientsSection"
 import CustomDivider from '../components/CustomDivider'
-import NumbersSection from '../components/Sections/HomeViewSections/NumbersSection'
+import NumbersSection from '../components/Sections/HomeView/NumbersSection'
 import ContactContent from '../components/Sections/ContactUsView/ContactContent'
 import ContactForm from '../components/Sections/ContactUsView/ContactForm'
 

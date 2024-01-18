@@ -2,7 +2,7 @@ import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
-import { Icard } from "../Sections/HomeViewSections/WhyTrustUsSection"
+import { Icard } from "../Sections/HomeView/WhyTrustUsSection"
 import Paper from "@mui/material/Paper"
 
 interface Props extends Icard {
