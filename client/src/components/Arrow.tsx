@@ -5,8 +5,10 @@ import arrowLeft from '/src/assets/img/arrow-left.png'
 import arrowDown from '/src/assets/img/arrow-down.png'
 
 interface Props {
-    arrowType: 1 | 2
-    direction: 'left' | 'right',
+    arrowType: 1 | 2,
+    rotation?: number
+    scaleX?: number,
+    scaleY?: number,
     mt?: number,
     mb?: number,
     my?: number,
@@ -24,7 +26,9 @@ interface Props {
 }
 function Arrow({
     arrowType,
-    direction = 'left',
+    rotation,
+    scaleX = 1,
+    scaleY = 1,
     mt,
     mb,
     my,
@@ -48,11 +52,9 @@ function Arrow({
             mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p}
         >
 
-            <Box sx={
-                direction === "right" ? {
-                    transform: "scaleX(-1)"
-                } : {}
-            }
+            <Box sx={{
+                transform: `scaleX(${scaleX}) scaleY(${scaleY}) rotate(${rotation}deg)`
+            }}
                 component="img"
                 src={arrowType === 1 ? arrowLeft : arrowDown}
                 alt='Arrow'
