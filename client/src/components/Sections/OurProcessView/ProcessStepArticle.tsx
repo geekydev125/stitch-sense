@@ -20,7 +20,7 @@ function ProcessArticleCard({
 			<Grid item xs={12} md={7} order={contentOrder === 'left' ? 1 : 2}>
 				<Stack direction='row' justifyContent='space-between' alignItems='center'>
 					<SectionTitle title={title} variant="h4" />
-					<Typography variant="h3" component='p' color='custom.theme.darkGray'>{step}</Typography>
+					<Typography variant="h3" component='p' color='custom.theme.darkGray' pr={2}>{step}</Typography>
 				</Stack>
 
 				<Typography variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
