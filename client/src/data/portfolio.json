@@ -1,5 +1,8 @@
 [{
-        "badinka": [{
+        "title": "Badinka",
+        "folder": "badinka",
+        "logo": "badinka-logo.png",
+        "images": [{
                 "title": "Love Hangover",
                 "imageSrc": "love-hangover.jpg"
             },
@@ -50,18 +53,57 @@
         ]
     },
     {
-        "candyCatz": [{
-
-        }]
+        "title": "Candy Catz",
+        "folder": "candyCatz",
+        "logo": "candy-catz-logo.png",
+        "images": [{
+                "title": "Best Woman's",
+                "imageSrc": "best-womans.jpg"
+            },
+            {
+                "title": "Best Man's",
+                "imageSrc": "best-mans.jpg"
+            },
+            {
+                "title": "Cyber",
+                "imageSrc": "cyber.jpg"
+            },
+            {
+                "title": "Neon Faves",
+                "imageSrc": "neon-faves.jpg"
+            }
+        ]
     },
     {
-        "raveKitties": [{
+        "title": "Rave Kitties",
+        "folder": "raveKitties",
+        "logo": "rave-kitties-logo.png",
+        "images": [{
+                "title": "Enchanting Dresses",
+                "imageSrc": "enchanting-dresses.jpg"
+            },
+            {
+                "title": "Female Costumes",
+                "imageSrc": "female-costumes.jpg"
+            },
+            {
+                "title": "Shine In Latex",
+                "imageSrc": "shine-in-latex.jpg"
+            },
+            {
+                "title": "Male Costumes",
+                "imageSrc": "male-costumes.jpg"
+            }
+        ]
 
-        }]
     },
     {
-        "super5": [{
-
+        "title": "Super 5",
+        "folder": "super5",
+        "logo": "super5-logo.png",
+        "images": [{
+            "title": "Deadly Dolls",
+            "imageSrc": "deadly-dolls.jpg"
         }]
     }
 ]
