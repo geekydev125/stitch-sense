@@ -7,6 +7,11 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import GreenButton from '../../GreenButton';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Radio from '@mui/material/Radio';
 
 const fieldStyles = {
     backgroundColor: 'white',
@@ -106,10 +111,48 @@ function ContactForm() {
                             />
                         </Grid>
                         <Grid item xs={12} display='flex' justifyContent='center'>
-                            <TextField
-                                type='radio'
-                                
-                            />
+                            <FormControl>
+                                <FormLabel id="contact-preference-radio-buttons">I prefer to be contacted over:</FormLabel>
+                                <RadioGroup
+                                    row
+                                    aria-labelledby="contact-preference-radio-buttons"
+                                    name="row-radio-buttons-group"
+                                >
+                                    <FormControlLabel
+                                        
+                                        value="phone"
+                                        control={<Radio sx={{
+                                            color: 'custom.theme.darkGray',
+                                            '&.Mui-checked': {
+                                                color: 'custom.theme.darkGray',
+                                            },
+                                        }} />}
+                                        label="Phone"
+                                    />
+                                    <FormControlLabel
+                                        value="email"
+                                        control={<Radio sx={{
+                                            color: 'custom.theme.darkGray',
+                                            '&.Mui-checked': {
+                                                color: 'custom.theme.darkGray',
+                                            },
+                                        }} />}
+                                        label="Email"
+                                    />
+                                    <FormControlLabel
+                                        defaultChecked
+                                        value="phoneAndEmail"
+                                        control={<Radio sx={{
+                                            color: 'custom.theme.darkGray',
+                                            '&.Mui-checked': {
+                                                color: 'custom.theme.darkGray',
+                                            },
+                                        }} />}
+                                        label="Phone AND/OR EMAIL"
+                                    />
+
+                                </RadioGroup>
+                            </FormControl>
 
 
                         </Grid>
