@@ -18,7 +18,7 @@ function MasonryImageList({
 	gap
 }: Props) {
     return (
-        <Box sx={{ width: '100%', height: 620, overflowY: 'scroll' }}>
+        <Box sx={{ width: '100%', height: {xs: 'auto', md: 620}, overflowY: 'scroll' }}>
             <ImageList variant="masonry" cols={cols} gap={gap}>
                 {images.map((image) => (
                     <ImageListItem key={uniqid()}>

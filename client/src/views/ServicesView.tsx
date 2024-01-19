@@ -11,7 +11,7 @@ import CustomDivider from '../components/CustomDivider'
 
 function ServicesView() {
 	return (
-			<Box py={10}>
+			<Box py={{xs: 5, md: 10}}>
 				<Container>
 
 					<ObjectivesSolutionSection />
@@ -19,7 +19,7 @@ function ServicesView() {
 					<ServicesTabs />
 
 
-					<CustomDivider mb={5} />
+					<CustomDivider mb={{xs: 2, mb: 5}} />
 
 					<CallToActionSection />
 				</Container>
