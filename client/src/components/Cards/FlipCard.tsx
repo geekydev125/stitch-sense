@@ -105,7 +105,7 @@ function FlipCard({
                 onMouseLeave={handleFlip}
                 className='card-main-container'
                 elevation={6}
-                style={{
+                sx={{
                     backgroundImage: `url('/assets/img/${imageSrc}')`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat'
