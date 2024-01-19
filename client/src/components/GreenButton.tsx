@@ -24,7 +24,7 @@ function GreenButton({
             <Button
                 sx={{
                     backgroundColor: 'custom.theme.lightGreen',
-                    color: 'custom.theme.almostWhite',
+                    color: 'custom.theme.lightGray',
                     textTransform: 'uppercase',
                     '&:hover': {
                         backgroundColor: 'custom.theme.darkGreen',
