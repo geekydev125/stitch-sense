@@ -56,7 +56,7 @@ function HomeView() {
 
 					<Container>
 						<CustomDivider mb={4} />
-
+						
 						<WhatWeDoSection />
 
 						<CustomDivider my={10} />
