@@ -4,7 +4,7 @@ import isTitledView from '../HOC/isTitledView'
 
 import fashioDesignStudioBackgroundImg from '/assets/img/title-backgrounds/fashion-design-studio-background.jpg'
 import { employeesImpactCardsContent } from '../components/Sections/HomeView/WhyTrustUsSection'
-import SimpleCard from '../components/Cards/SimpleCard'
+import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
 import EmployeeCard from '../components/Cards/EmployeeCard'
 
@@ -74,7 +74,7 @@ function AboutView() {
 					{employeesImpactCardsContent.map(card => {
 						return (
 							<Grid key={uniqid()} item xs={12} md={4}>
-								<SimpleCard {...card} />
+								<SimpleEmployeeCard {...card} />
 							</Grid>
 						)
 					})}

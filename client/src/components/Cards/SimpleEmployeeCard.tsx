@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
-import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 import { Icard } from "../Sections/HomeView/WhyTrustUsSection"
 import Paper from "@mui/material/Paper"
@@ -8,28 +7,23 @@ import Paper from "@mui/material/Paper"
 interface Props extends Icard {
 }
 
-function SimpleCard({
+function SimpleEmployeeCard({
     title,
     content,
-    imageSrc,
     variant,
-    type
 }: Props) {
     return (
-        <Paper sx={{ borderRadius: type === 'business' ? '20px' : '50px', }} elevation={6}>
+        <Paper sx={{ borderRadius: '50px' }} elevation={6}>
+
             <Card
                 sx={{
-                    minHeight: type === 'business' ? {
-                        xs: 'auto',
-                        md: '530px',
-                        lg: '430px'
-                    } : {
+                    minHeight: {
                         xs: 'auto',
                         md: '300px',
                         lg: '260px'
                     },
                     backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
-                    borderRadius: type === 'business' ? '20px' : '50px',
+                    borderRadius: '50px',
                     border: '2px solid',
                     borderColor: variant === 'light' ? 'custom.theme.darkGray' : 'custom.theme.almostWhite',
                 }}
@@ -37,14 +31,10 @@ function SimpleCard({
             >
                 <Box p={2}>
                     <Typography
-                        minHeight={
-                            type === 'employee' ?
-                                {
-                                    xs: '0',
-                                    md: '104px'
-                                }
-                                : ''
-                        }
+                        minHeight={ {
+                            xs: '0',
+                            md: '104px'
+                        }}
                         variant='h4'
                         component='h4'
                         textAlign='center'
@@ -56,22 +46,13 @@ function SimpleCard({
                         {title}
                     </Typography>
 
-                    {type === 'business' && (
-                        <Stack sx={{ width: '100%', height: '120px' }} p={1} mt={2} justifyContent='center' alignItems='center'>
-                            <Box component={'img'} src={imageSrc} alt='Customer Care Icon' height="100%" />
-                        </Stack>
-
-                    )}
-
                     <Typography
                         variant='body1'
                         component='p'
-                        textAlign={
-                            type === 'business' ? 'justify' : {
-                                xs: 'center',
-                                md: 'justify'
-                            }
-                        }
+                        textAlign={{
+                            xs: 'center',
+                            md: 'justify'
+                        }}
                         mt={{
                             xs: 1,
                             md: 3
@@ -88,4 +69,4 @@ function SimpleCard({
     )
 }
 
-export default SimpleCard
+export default SimpleEmployeeCard
