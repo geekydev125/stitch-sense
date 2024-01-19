@@ -9,20 +9,20 @@ interface Props {
     rotate?: number
     scaleX?: number,
     scaleY?: number,
-    mt?: number,
-    mb?: number,
-    my?: number,
-    ml?: number,
-    mr?: number,
-    mx?: number,
-    m?: number,
-    pt?: number,
-    pb?: number,
-    py?: number,
-    pl?: number,
-    pr?: number,
-    px?: number,
-    p?: number
+    mt?: number | {},
+    mb?: number | {},
+    my?: number | {},
+    ml?: number | {},
+    mr?: number | {},
+    mx?: number | {},
+    m?: number | {},
+    pt?: number | {},
+    pb?: number | {},
+    py?: number | {},
+    pl?: number | {},
+    pr?: number | {},
+    px?: number | {},
+    p?: number | {}
 }
 function Arrow({
     arrowType,
@@ -51,16 +51,17 @@ function Arrow({
             alignItems={'center'}
             mt={mt} mb={mb} my={my} ml={ml} mr={mr} mx={mx} m={m} pt={pt} pb={pb} py={py} pl={pl} pr={pr} px={px} p={p}
         >
-
-            <Box sx={{
-                transform: `scaleX(${scaleX}) scaleY(${scaleY}) rotate(${rotate}deg)`
-            }}
-                component="img"
-                src={arrowType === 1 ? arrowLeft : arrowDown}
-                alt='Arrow'
-                width={'auto'}
-                height={'auto'}
-            />
+            <Box sx={{ transform: { xs: "scale(0.7)", md: "scale(1)"} }}>
+                <Box sx={{
+                    transform: `scaleX(${scaleX}) scaleY(${scaleY}) rotate(${rotate}deg)`
+                }}
+                    component="img"
+                    src={arrowType === 1 ? arrowLeft : arrowDown}
+                    alt='Arrow'
+                    width={'auto'}
+                    height={'auto'}
+                />
+            </Box>
         </Stack>
     )
 }
