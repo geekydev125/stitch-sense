@@ -6,9 +6,11 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import useTheme from '@mui/system/useTheme'
 
 const BackgroundBox = styled(Box)`
-    min-height: 30vh;
+    
     background-repeat: no-repeat;
     background-attachment: fixed; 
 
@@ -39,18 +41,47 @@ function ViewTopTitleSection({
     viewTitle,
     imageSrc,
 }: Props) {
+    const theme = useTheme();
+    const isXs = useMediaQuery(theme.breakpoints.down('sm'));
+
     return (
         <BackgroundBox
             sx={{
                 backgroundImage: `url(${imageSrc})`,
-                backgroundSize: 'contain'
+                backgroundPosition: {
+                    xs:  "100% 9%",
+                    sm: '100% 11%',
+                    md: '100% 10%',
+                    lg: '100% 13%'
+                },
+                backgroundSize: {
+                    xs: '100% 20%',
+                    sm: '100% 30%',
+                    md: '100% 40%',
+                    lg: '100% 40%'
+                },
+                minHeight: {
+                    xs: '15vh',
+                    sm: '30vh',
+                }
             }}
         >
             <Box className="overlay" height='100%'>
                 <Container sx={{ height: '100%' }} >
                     <Stack pl={{ md: 10 }} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
-                        <Typography variant='h2' component='h2' color='white'>{viewTitle}</Typography>
-                        <img className='logo' alt="Stitch Sense Logo" src={stitchSenseLogo} height={100} />
+                        {
+                            isXs
+                                ? <Typography variant='h2' component='h2' color='custom.theme.almostWhite'>{viewTitle}</Typography>
+                                : <Typography variant='h3' component='h2' color='custom.theme.almostWhite'>{viewTitle}</Typography>
+                        }
+
+                        <Box
+                            component='img'
+                            className='logo'
+                            alt="Stitch Sense Logo"
+                            src={stitchSenseLogo}
+                            height={{ xs: 70, md: 100 }}
+                        />
                     </Stack>
                 </Container>
             </Box>
