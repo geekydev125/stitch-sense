@@ -21,12 +21,12 @@ function SimpleCard({
                 sx={{
                     minHeight: type === 'business' ? {
                         xs: 'auto',
-                        sm: '530px',
+                        md: '530px',
                         lg: '430px'
                     } : {
                         xs: 'auto',
-                        sm: 'auto',
-                        lg: '280px'
+                        md: '300px',
+                        lg: '260px'
                     },
                     backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
                     borderRadius: type === 'business' ? '20px' : '50px',
@@ -37,7 +37,14 @@ function SimpleCard({
             >
                 <Box p={2}>
                     <Typography
-                        minHeight={type === 'employee' ? '104px' : ''}
+                        minHeight={
+                            type === 'employee' ?
+                                {
+                                    xs: '0',
+                                    md: '104px'
+                                }
+                                : ''
+                        }
                         variant='h4'
                         component='h4'
                         textAlign='center'
@@ -59,8 +66,16 @@ function SimpleCard({
                     <Typography
                         variant='body1'
                         component='p'
-                        textAlign='justify'
-                        mt={3}
+                        textAlign={
+                            type === 'business' ? 'justify' : {
+                                xs: 'center',
+                                md: 'justify'
+                            }
+                        }
+                        mt={{
+                            xs: 1,
+                            md: 3
+                        }}
                         sx={{
                             color: variant === 'light' ? 'custom.theme.darkGray' : 'custom.theme.almostWhite',
                         }}
