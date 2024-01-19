@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -10,6 +10,7 @@ function RootView() {
 
 	return (
 		<>
+			<ScrollRestoration />
 			{!isHomeView && <Header />}
 
 			<Outlet />
