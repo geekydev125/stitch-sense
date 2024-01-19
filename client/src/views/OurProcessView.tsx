@@ -99,7 +99,7 @@ function OurProcessView() {
 
 export default isTitledView(OurProcessView,
 	{
-		viewTitle: "Our Process Us",
+		viewTitle: "Our Process",
 		imageSrc: stitchingBackgroundImg,
 	}
 )
