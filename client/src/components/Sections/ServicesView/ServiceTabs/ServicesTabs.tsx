@@ -64,7 +64,7 @@ function ServicesTabs() {
 
     return (
         <>
-            <Box sx={{ borderBottom: 1, borderColor: 'custom.theme.lightGreen' }}>
+            <Box id="service-tabs" sx={{ borderBottom: 1, borderColor: 'custom.theme.lightGreen' }}>
                 <Tabs
                     TabIndicatorProps={{ hidden: true }}
                     scrollButtons={true}

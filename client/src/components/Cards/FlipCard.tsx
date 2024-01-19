@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "@emotion/styled";
-import { Link as RouterLink } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 import Typography from "@mui/material/Typography";
 
@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
+
 
 const CardMainContainer = styled(Paper)`
     position: relative;
@@ -121,8 +122,8 @@ function FlipCard({
 
                             <Button
                                 onClick={() => changeActiveTab(tabValue)}
-                                component={RouterLink}
-                                to={`/${linkTo}`}
+                                component={HashLink}
+                                to={`/${linkTo}#service-tabs`}
                                 size="large"
                                 sx={{ color: "custom.theme.lightGreen" }}
                             >Learn More</Button>
