@@ -58,22 +58,22 @@ function HomeView() {
 
 						<WhyChooseUsSection />
 
-						<CustomDivider mt={1} mb={4} />
+						<CustomDivider mt={1} mb={{xs: 2, md: 4}} />
 					</Container>
 
 					<ManufactoringSection />
 
 					<Container>
-						<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 4, md: 5}} />
+						<CustomDivider mt={{xs: 2, md: 5}} mb={{xs: 2, md: 5}} />
 						<NumbersSection />
-						<CustomDivider mt={8} mb={8} />
+						<CustomDivider mt={{xs: 3, md: 8}} mb={{xs: 5, md: 8}} />
 						<WhyTrustUsSection />
-						<CustomDivider mt={5} mb={5} />
+						<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 4, md: 5}} />
 					</Container>
 
 					<OurClientsSection />
 
-					<Box mt={10} pb={8}>
+					<Box mt={{xs: 5, md: 10}} pb={{xs: 2, md: 8}}>
 						<Container>
 							<ContactContent isDisplayedOnView='home' />
 							<ContactForm />

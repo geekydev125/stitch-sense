@@ -44,7 +44,7 @@ function OurClientsSection() {
 
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <Typography variant='body1' component='p' textAlign='center' color='custom.theme.darkGray'>We have years of experience in the fashion industry with highly successful clothing brands like <b>CandyCatz</b>, <b>Badinka</b>, <b>RaveKitty</b> and <b>Super 5 Clothing</b> – all dedicated to delivering top-notch quality and style.</Typography>
+                        <Typography variant='body1' component='p' textAlign={{xs: 'justify', md: 'center'}} color='custom.theme.darkGray'>We have years of experience in the fashion industry with highly successful clothing brands like <b>CandyCatz</b>, <b>Badinka</b>, <b>RaveKitty</b> and <b>Super 5 Clothing</b> – all dedicated to delivering top-notch quality and style.</Typography>
                     </Grid>
                 </Grid>
             </Container>
