@@ -9,6 +9,7 @@ import Icon from "@mui/material/Icon";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
 
 const CardMainContainer = styled(Paper)`
     position: relative;
@@ -78,16 +79,19 @@ interface Props {
     title: string,
     content: string,
     imageSrc: string,
-    linkTo: string
+    linkTo: string,
+    tabValue: number
 }
 
 function FlipCard({
     title,
     content,
     imageSrc,
-    linkTo
+    linkTo,
+    tabValue
 }: Props) {
     const [hovered, setHovered] = useState<boolean>(false);
+    const { changeActiveTab }= useServiceTabsContext();
 
     const handleFlip = () => {
         setHovered(!hovered)
@@ -116,6 +120,7 @@ function FlipCard({
                             <Typography variant="body2" component="p" color='custom.theme.almostWhite'>{content}</Typography>
 
                             <Button
+                                onClick={() => changeActiveTab(tabValue)}
                                 component={RouterLink}
                                 to={`/${linkTo}`}
                                 size="large"

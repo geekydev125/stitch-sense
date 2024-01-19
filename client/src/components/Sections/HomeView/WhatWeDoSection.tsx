@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 
 function WhatWeDoSection() {
+	
 	return (
 		<>
 			<SectionTitle title='WHAT WE DO' mt={4} mb={2} p={2} />
@@ -26,6 +27,7 @@ function WhatWeDoSection() {
 								content={service.content}
 								imageSrc={service.imageSrc}
 								linkTo={service.linkTo}
+								tabValue={service.tabValue}
 							/>
 						</Grid>
 					)
