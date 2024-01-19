@@ -81,7 +81,7 @@ function OurProcessView() {
 
 				<Grid container spacing={5} mt={0}>
 					{stepCardsContent.map((stepCard) => (
-						<Grid item xs={12} md={4}>
+						<Grid item xs={12} sm={6} md={4}>
 							<ProcessStepCard key={uniqid()} {...stepCard} />
 						</Grid>
 					))

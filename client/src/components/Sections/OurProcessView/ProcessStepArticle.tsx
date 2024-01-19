@@ -17,7 +17,7 @@ function ProcessArticleCard({
 }:Props) {
 	return (
 		<Grid container spacing={2} >
-			<Grid item xs={12} md={7} order={contentOrder === 'left' ? 1 : 2}>
+			<Grid item xs={12} sm={6} md={7} order={contentOrder === 'left' ? 1 : 2}>
 				<Stack direction='row' justifyContent='space-between' alignItems='center'>
 					<SectionTitle title={title} variant="h4" />
 					<Typography variant="h3" component='p' color='custom.theme.darkGray' pr={2}>{step}</Typography>
@@ -25,7 +25,7 @@ function ProcessArticleCard({
 
 				<Typography variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
 			</Grid>
-			<Grid item xs={12} md={5} order={contentOrder === 'right' ? 1 : 2}>
+			<Grid item xs={12} sm={6} md={5} order={contentOrder === 'right' ? 1 : 2}>
 				<Box component='img' src={`/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ width: '100%' }} />
 			</Grid>
 		</Grid>

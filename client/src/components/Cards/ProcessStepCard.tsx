@@ -29,7 +29,7 @@ function ProcessStepCard({
             <Typography mt={2} variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
 
             {step !== 6 && (
-                <Box position='absolute' right='-15%' top='20%'>
+                <Box position='absolute' right='-15%' top='20%' display={{xs: 'none', md: 'block' }}>
                     <Arrow arrowType={2} scaleX={-0.5} scaleY={-0.5} rotate={45}  />
                 </Box>
             )}
