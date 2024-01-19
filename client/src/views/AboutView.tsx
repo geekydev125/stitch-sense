@@ -61,16 +61,16 @@ const employeesContent: IemployeeCard[] = [
 
 function AboutView() {
 	return (
-		<Box mt={5} mb={8}>
+		<Box mt={5} mb={{xs: 3, md: 8}}>
 			<Container>
-				<Typography variant="body1" component="p" textAlign='center' color='custom.theme.darkGray'>
-					Lorem ipsum dolor sit amet, an eum habeo explicari. Et sed exerci hendrerit, no summo simul partiendo est. Modus iriure voluptua at pri, cu copiosae appetere electram mei. Solum dolorum tractatos mea at. Eu commodo gubergren mel, in vix alterum dolores laboramus.
+				<Typography variant="body1" component="p" textAlign={{xs: 'justify', md: 'center'}} color='custom.theme.darkGray'>
+					Lorem ipsum dolor sit amet, an eum habeo explarasdi. Et sed exerci hendrerit, no summo simul partiendo est. Modus iriure voluptua at pri, cu copiosae appetere electram mei. Solum dolorum tractatos mea at. Eu commodo gubergren mel, in vix alterum dolores laboramus.
 				</Typography>
 
 
-				<CustomDivider my={4} />
+				<CustomDivider mt={{xs: 3, md: 4}} mb={{xs: 2, md: 4}} />
 
-				<Grid container spacing={2} mt={0}>
+				<Grid container spacing={{xs: 1, md: 2}} >
 					{employeesImpactCardsContent.map(card => {
 						return (
 							<Grid key={uniqid()} item xs={12} md={4}>
@@ -80,7 +80,7 @@ function AboutView() {
 					})}
 				</Grid>
 
-				<CustomDivider my={5} />
+				<CustomDivider my={{xs: 3, md: 5}} />
 
 				<Grid container spacing={2}>
 					{employeesContent.map(employee => (
