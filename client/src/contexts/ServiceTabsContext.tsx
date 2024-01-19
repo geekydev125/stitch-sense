@@ -1,6 +1,11 @@
 import { createContext, useContext, useState } from "react";
 
-const ServiceTabsContext = createContext<object | null>(null);
+interface IServiceTabsContext {
+    activeTabIndex: number
+    changeActiveTab: (newIndex: number) => void
+}
+
+const ServiceTabsContext = createContext({} as IServiceTabsContext);
 
 interface Props {
     children: React.ReactNode
@@ -9,14 +14,14 @@ interface Props {
 export const ServiceTabsProvider = ({
     children
 }:Props) => {
-    const [tabIndex, setTabIndex] = useState<number>(0);
+    const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
 
-    const changeTabIndex = (newIndex: number) => {
-        setTabIndex(newIndex)
+    const changeActiveTab = (newIndex: number) => {
+        setActiveTabIndex(newIndex)
     }
     
     return (
-        <ServiceTabsContext.Provider value={{tabIndex, changeTabIndex}}>
+        <ServiceTabsContext.Provider value={{activeTabIndex, changeActiveTab}}>
             {children}
         </ServiceTabsContext.Provider>
     )
