@@ -93,6 +93,7 @@ function AboutView() {
 
 
 				<CustomDivider mt={{xs: 1, md: 3}} mb={{xs: 4, md: 5}} />
+				
 				<CallToActionSection />
 			</Container>
 		</Box>
