@@ -19,7 +19,7 @@ function ServicesView() {
 					<ServicesTabs />
 
 
-					<CustomDivider mb={{xs: 2, mb: 5}} />
+					<CustomDivider mt={{xs: 3, md: 2}} mb={{xs: 3, md: 5}} />
 
 					<CallToActionSection />
 				</Container>
