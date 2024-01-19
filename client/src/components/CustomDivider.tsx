@@ -2,20 +2,20 @@ import Stack from '@mui/material/Stack'
 import divider from '../assets/img/divider.png'
 
 interface Props {
-    mt?: number,
-    mb?: number,
-    my?: number,
-    ml?: number,
-    mr?: number,
-    mx?: number,
-    m?: number,
-    pt?: number,
-    pb?: number,
-    py?: number,
-    pl?: number,
-    pr?: number,
-    px?: number,
-    p?: number
+    mt?: number | {},
+    mb?: number | {},
+    my?: number | {},
+    ml?: number | {},
+    mr?: number | {},
+    mx?: number | {},
+    m?: number | {},
+    pt?: number | {},
+    pb?: number | {},
+    py?: number | {},
+    pl?: number | {},
+    pr?: number | {},
+    px?: number | {},
+    p?: number | {}
 }
 function CustomDivider({
     mt,
