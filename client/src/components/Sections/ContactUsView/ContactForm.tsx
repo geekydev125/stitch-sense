@@ -49,7 +49,7 @@ function ContactForm() {
         console.log(data);
     }
     return (
-        <Box my={5} px={5}>
+        <Box my={5} px={{xs: 0, md: 5}}>
             <Container sx={{ backgroundColor: 'custom.theme.almostWhite', borderRadius: 5 }}>
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                     <Grid container spacing={3}>

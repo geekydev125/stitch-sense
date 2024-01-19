@@ -23,13 +23,13 @@ function ContactContent({
 
             {isDisplayedOnView === 'contactUs' &&
                 (<>
-                    <CustomDivider my={4} />
+                    <CustomDivider my={{xs: 2, md: 4}} />
 
                     <Typography variant="body1" component='p' textAlign='center' color='custom.theme.darkGray'>
                         You can get in touch with us <b>RIGHT AWAY!</b>
                     </Typography>
 
-                    <Box py={2} px={15} mx={5} mt={2}
+                    <Box py={2} px={{xs: 1, md: 15}} mx={{xs: 0, md: 5}} mt={2}
                         sx={{
                             backgroundColor: 'custom.theme.darkGray',
                             borderRadius: 5
@@ -37,17 +37,17 @@ function ContactContent({
                         <Typography variant="h4" component='p' textAlign='center' color='custom.theme.almostWhite'>
                             CALL <b>+(359) 888 81 11 32</b>
                         </Typography>
-                        <Typography variant="h6" component='p' textAlign='center' color='custom.theme.almostWhite'>
+                        <Typography variant="body1" component='p' textAlign='center' color='custom.theme.almostWhite'>
                             for Ganimir Vangelov (Chief Operations Officer)
                         </Typography>
                     </Box>
                 </>)
             }
 
-            <CustomDivider my={4} />
+            <CustomDivider my={{xs: 2, md: 4}} />
 
             <Typography variant="h5" component='p' textAlign='center' color='custom.theme.darkGray'>
-                Otherwise, fill out the form below.
+                {isDisplayedOnView === 'contactUs' ? "Otherwise, fill out the form below." : "Fill out the form below."}
             </Typography>
             <Typography variant="body1" component='p' textAlign='center' color='custom.theme.darkGray'>
                 We respond to all of our inquiries within <b>1 BUSINESS DAY.</b>

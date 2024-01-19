@@ -11,7 +11,7 @@ function ContactUsView() {
 
 	return (
 		<Container>
-			<Box my={10}>
+			<Box my={{xs: 5, md: 10}}>
 				<ContactContent />
 
 				<ContactForm />
