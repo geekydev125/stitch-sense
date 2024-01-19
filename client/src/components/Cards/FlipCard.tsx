@@ -15,15 +15,12 @@ import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
 const CardMainContainer = styled(Paper)`
     position: relative;
     width: 100%;
-    height: 320px;
-
     border-radius: 25px;
 
     .card-overlay {
         background-color: rgba(0,0,0,0.50);
         height: 100%;
         width: 100%;
-
         border-radius: 25px;
         transition: all 0.5s ease;
     }
@@ -34,11 +31,9 @@ const CardMainContainer = styled(Paper)`
         height: 100%;
         transform-style: preserve-3d;
         transition: all 0.5s ease;
-/*         
         &:hover {
             transform: rotateY(180deg);
-        } */
-
+        }
     }
 
     .card-front {
@@ -67,7 +62,6 @@ const CardMainContainer = styled(Paper)`
         transform: rotateY(180deg);
 
         text-align: justify;
-        padding: 30px;
 
         display: flex;
         flex-direction: column;
@@ -108,7 +102,11 @@ function FlipCard({
                 sx={{
                     backgroundImage: `url('/assets/img/${imageSrc}')`,
                     backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
+                    backgroundRepeat: 'no-repeat',
+                    height: {
+                        xs: '250px',
+                        sm: '340px'
+                    }
                 }}
             >
                 <Box className="card-overlay" style={hovered ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
@@ -117,7 +115,7 @@ function FlipCard({
                             <Typography variant="h3" component="h4" color='custom.theme.almostWhite'>{title}</Typography>
                             <Icon className="rotate-icon" component={RotateLeftIcon} />
                         </Box>
-                        <Box className='card-back' >
+                        <Box className='card-back' py={{xs: 1.5, sm: 1}} px={{xs: 1.5, sm: 2}}>
                             <Typography variant="body2" component="p" color='custom.theme.almostWhite'>{content}</Typography>
 
                             <Button
