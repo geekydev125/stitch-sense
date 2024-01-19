@@ -24,7 +24,7 @@ function ProcessStepCard({
                 right: '-20px'
             }}>{step}</Typography>
 
-            <Box mt={2} component='img' src={`/src/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ height: '80px' }} />
+            <Box mt={2} component='img' src={`/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ height: '80px' }} />
 
             <Typography mt={2} variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
 

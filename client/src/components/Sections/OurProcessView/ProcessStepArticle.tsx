@@ -26,7 +26,7 @@ function ProcessArticleCard({
 				<Typography variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
 			</Grid>
 			<Grid item xs={12} md={5} order={contentOrder === 'right' ? 1 : 2}>
-				<Box component='img' src={`/src/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ width: '100%' }} />
+				<Box component='img' src={`/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ width: '100%' }} />
 			</Grid>
 		</Grid>
 	)

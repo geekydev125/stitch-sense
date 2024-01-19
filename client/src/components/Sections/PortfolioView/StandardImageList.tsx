@@ -36,8 +36,8 @@ export default function StandardImageList({
 					<Link href='#' target='_blank' key={uniqid()}>
 						<ImageListItem>
 							<img
-								srcSet={`/src/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
-								src={`/src/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format`}
+								srcSet={`/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
+								src={`/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format`}
 								alt={image.title}
 								loading="lazy"
 							/>

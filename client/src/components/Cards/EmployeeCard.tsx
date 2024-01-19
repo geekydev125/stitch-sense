@@ -16,7 +16,7 @@ function EmployeeCard({
         <Box>
             <Box
                 component="img"
-                src={imageSrc ? `/src/assets/img/employees/${imageSrc}` : missingPhoto}
+                src={imageSrc ? `/assets/img/employees/${imageSrc}` : missingPhoto}
                 alt={`${firstName} ${lastName} Photo`}
                 sx={{
                     width: '100%',
