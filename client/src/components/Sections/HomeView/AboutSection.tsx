@@ -10,7 +10,7 @@ function AboutSection() {
 		<>
 			<Box id='about-section'>
 				<SectionTitle title='ABOUT US' mt={4} mb={2} p={2} />
-				<Box p={3}>
+				<Box p={{ xs: 0, md: 3 }} >
 					<Box
 						sx={{
 							background: `url(${euFlag}) no-repeat`,

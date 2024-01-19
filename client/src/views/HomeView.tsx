@@ -21,7 +21,7 @@ function HomeView() {
 	return (
 		<>
 			<HeroSection />
-			
+
 			<Box position={"relative"} zIndex={1100}>
 				<Header />
 
@@ -39,17 +39,22 @@ function HomeView() {
 						backgroundSize: 'cover',
 						backgroundPosition: 'top'
 					}}>
-						<Container sx={{ padding: '30px 0 0 0' }}>
+						<Container sx={{
+							paddingTop: {
+								xs: '0',
+								md: '30px'
+							}
+						}}>
 							<AboutSection />
 						</Container>
 					</Box>
 
 					<Container>
-						<CustomDivider/>
-						
+						<CustomDivider />
+
 						<WhatWeDoSection />
 
-						<CustomDivider my={5} />
+						<CustomDivider my={{xs: 3, md: 5}} />
 
 						<WhyChooseUsSection />
 
