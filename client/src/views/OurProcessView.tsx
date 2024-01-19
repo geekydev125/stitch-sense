@@ -9,6 +9,8 @@ import Arrow from '../components/Arrow'
 import ProcessStepCard from '../components/Cards/ProcessStepCard'
 import CustomDivider from '../components/CustomDivider'
 import CallToActionSection from '../components/CallToActionSection'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export interface IStepArticle {
 	title: string,
@@ -63,18 +65,24 @@ const stepCardsContent: Omit<IStepArticle, 'contentOrder'>[] = [
 	}
 ]
 function OurProcessView() {
+	const theme = useTheme();
+	const isXs = useMediaQuery(theme.breakpoints.down('sm'));
+
 	return (
-		<Box my={10}>
+		<Box mt={{ xs: 5, md: 10 }} mb={{ xs: 7, md: 10 }}>
 			<Container>
 				<Grid container gap={5} >
 					{stepArticlesContent.map((stepArticle) => (
 						<Grid item>
 							<ProcessStepArticle key={uniqid()} {...stepArticle} />
-							<Arrow 
-								arrowType={2} 
-								rotate={stepArticle.step === 2 ? 180 : 0 } 
-								scaleY={stepArticle.step === 2 ? -1 : 1} 
+							{
+								isXs ? null : <Arrow
+									arrowType={2}
+									rotate={stepArticle.step === 2 ? 180 : 0}
+									scaleY={stepArticle.step === 2 ? -1 : 1}
 								/>
+							}
+
 						</Grid>
 					))}
 				</Grid>
@@ -89,7 +97,7 @@ function OurProcessView() {
 
 				</Grid>
 
-				<CustomDivider mt={10} mb={5} />
+				<CustomDivider mt={{xs: 4, md: 10}} mb={4} />
 
 				<CallToActionSection />
 			</Container>
