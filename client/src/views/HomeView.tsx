@@ -39,31 +39,31 @@ function HomeView() {
 						backgroundSize: 'cover',
 						backgroundPosition: 'top'
 					}}>
-						<Container sx={{ padding: '30px 0' }}>
+						<Container sx={{ padding: '30px 0 0 0' }}>
 							<AboutSection />
 						</Container>
 					</Box>
 
 					<Container>
-						<CustomDivider mb={4} />
+						<CustomDivider/>
 						
 						<WhatWeDoSection />
 
-						<CustomDivider my={10} />
+						<CustomDivider my={5} />
 
 						<WhyChooseUsSection />
 
-						<CustomDivider mt={5} mb={10} />
+						<CustomDivider mt={1} mb={4} />
 					</Container>
 
 					<ManufactoringSection />
 
 					<Container>
-						<CustomDivider mt={5} mb={10} />
+						<CustomDivider mt={4} mb={4} />
 						<NumbersSection />
 						<CustomDivider mt={8} mb={8} />
 						<WhyTrustUsSection />
-						<CustomDivider mt={8} mb={8} />
+						<CustomDivider mt={5} mb={5} />
 					</Container>
 
 					<OurClientsSection />

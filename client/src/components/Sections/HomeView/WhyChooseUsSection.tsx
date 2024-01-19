@@ -7,7 +7,7 @@ import SectionTitle from '../../SectionTitle'
 
 function WhyChooseUsSection() {
     return (
-        <Box mt={10}>
+        <Box >
             <SectionTitle title='WHY CHOOSE US?' p={2} />
 
             <Box mt={3} px={2}>
