@@ -66,15 +66,15 @@ function PortfolioView() {
 	};
 
 	return (
-		<Box my={10}>
+		<Box mt={{ xs: 5, md: 10 }} mb={{ xs: 7, md: 10 }}>
 			<Container>
-				<Box px={{ xs: 2, md: 10 }}>
-					<Typography variant="body1" component="p" textAlign='center' color='custom.theme.darkGray'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+				<Box px={{ xs: 0, md: 10 }}>
+					<Typography variant="body1" component="p" textAlign={{xs: 'justify', md: 'center'}} color='custom.theme.darkGray'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
 					</Typography>
 				</Box>
 
-				<CustomDivider my={5} />
+				<CustomDivider my={{xs: 3, md: 5}} />
 
 				<Box sx={{ borderBottom: 1, borderColor: 'custom.theme.lightGreen' }}>
 					<Tabs
@@ -97,12 +97,12 @@ function PortfolioView() {
 				{
 					portfolio.map((brand, index) => (
 						<CustomTabPanel key={uniqid()} value={value} index={index}>
-							<StandardImageList {...brand} cols={4} gap={8} />
+							<StandardImageList {...brand} cols={isXs ? 3 : 4} gap={isXs ? 4 : 8} />
 						</CustomTabPanel>
 					))
 				}
 
-				<CustomDivider mt={3} mb={5} />
+				<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 3, md: 5}} />
 
 				<CallToActionSection />
 			</Container>
