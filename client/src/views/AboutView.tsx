@@ -12,6 +12,7 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
+import CallToActionSection from '../components/CallToActionSection'
 
 export interface IemployeeCard {
 	firstName: string
@@ -82,13 +83,17 @@ function AboutView() {
 
 				<CustomDivider my={{xs: 3, md: 5}} />
 
-				<Grid container spacing={2}>
+				<Grid container spacing={{xs: 1, md: 2}}>
 					{employeesContent.map(employee => (
 						<Grid key={uniqid()} item xs={6} md={4}>
 							<EmployeeCard {...employee} />
 						</Grid>
 					))}
 				</Grid>
+
+
+				<CustomDivider mt={{xs: 1, md: 3}} mb={{xs: 4, md: 5}} />
+				<CallToActionSection />
 			</Container>
 		</Box>
 
