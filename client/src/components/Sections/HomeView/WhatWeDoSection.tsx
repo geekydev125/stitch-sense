@@ -29,12 +29,8 @@ function WhatWeDoSection() {
 							/>
 						</Grid>
 					)
-
 				})}
-
-
 			</Grid>
-
 		</>
 	);
 }
