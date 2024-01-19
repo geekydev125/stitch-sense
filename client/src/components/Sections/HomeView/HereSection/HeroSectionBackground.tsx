@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box'
 import paperPatternLg from '../../../../assets/img/paper-pattern-lg.png'
 import paperPatternMd from '../../../../assets/img/paper-pattern-md.png'
-import paperPatternXsSm from '../../../../assets/img/paper-pattern-xs-sm.png'
 import { ICustomHeights } from './HeroSection'
 
 
@@ -19,10 +18,13 @@ function HeroSectionBackground({ customHeights, children }: Props) {
                 top: 0,
                 left: 0,
                 backgroundImage: {
-                    xs: `url('${paperPatternXsSm}')`,
-                    // xs: 'rgba(0,0,0,0.5)',
+                    // xs: `url('${paperPatternXsSm}')`,
                     md: `url('${paperPatternMd}')`,
                     lg: `url('${paperPatternLg}')`,
+                },
+                backgroundColor: {
+                    xs: 'rgba(0,0,0,0.5)',
+                    md: 'initial',
                 },
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: {

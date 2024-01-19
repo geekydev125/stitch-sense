@@ -61,6 +61,7 @@ function ServicesTabs() {
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
     const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
+        console.log('event:', event)
         
         changeActiveTab(newIndex);
     };
