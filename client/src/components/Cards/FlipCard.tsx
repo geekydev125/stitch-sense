@@ -92,7 +92,7 @@ function FlipCard({
     tabValue
 }: Props) {
     const [hovered, setHovered] = useState<boolean>(false);
-    const { changeActiveTab }= useServiceTabsContext();
+    const { changeActiveTab } = useServiceTabsContext();
 
     const handleFlip = () => {
         setHovered(!hovered)
@@ -122,10 +122,18 @@ function FlipCard({
 
                             <Button
                                 onClick={() => changeActiveTab(tabValue)}
+                                variant="contained"
                                 component={HashLink}
                                 to={`/${linkTo}#service-tabs`}
-                                size="large"
-                                sx={{ color: "custom.theme.lightGreen" }}
+                                size="small"
+                                sx={{
+                                    backgroundColor: 'custom.theme.lightGreen',
+                                    color: 'custom.theme.lightGray',
+                                    textTransform: 'uppercase',
+                                    '&:hover': {
+                                        backgroundColor: 'custom.theme.darkGreen',
+                                    },
+                                }}
                             >Learn More</Button>
                         </Box>
                     </Box>
