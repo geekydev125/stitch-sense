@@ -7,7 +7,10 @@ import GreenButton from '../../../GreenButton'
 function ServiceDescriptionColumn() {
     return (
         <>
-            <Stack minHeight='620px'>
+            <Stack minHeight={{
+                xs: 0,
+                lg: '620px',
+            }}>
                 <Box mb={2}>
                     <Typography variant='body1' component='p'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.

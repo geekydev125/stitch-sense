@@ -25,6 +25,9 @@ const tabsStyles = {
             fontSize: '18px'
         },
         md: {
+            fontSize: '27px',
+        },
+        lg: {
             fontSize: '30px',
         },
     },
@@ -85,11 +88,11 @@ function ServicesTabs() {
             {
                 services.map((service, index) => (
                     <CustomTabPanel key={uniqid()} value={activeTabIndex} index={index}>
-                        <Grid container>
-                            <Grid item xs={12} md={4} >
+                        <Grid container >
+                            <Grid item xs={12} lg={4} >
                                 <ServiceDescriptionColumn />
                             </Grid>
-                            <Grid item xs={12} md={8}>
+                            <Grid item xs={12} lg={8}>
                                 <MasonryImageList images={service.images} cols={3} gap={8} />
                             </Grid>
                         </Grid>
