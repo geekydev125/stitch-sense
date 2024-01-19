@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import uniqid from 'uniqid';
 import { useTheme } from '@mui/system';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -13,6 +12,7 @@ import CustomTabPanel from './CustomTabPanel';
 import services from '../../../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
 import MasonryImageList from './MasonryImageList';
+import { useServiceTabsContext } from '../../../../contexts/ServiceTabsContext';
 
 const tabsStyles = {
     '.MuiTabs-flexContainer': {
@@ -52,14 +52,14 @@ function a11yProps(index: number) {
 }
 
 function ServicesTabs() {
-    const [value, setValue] = useState<number>(0);
+    const { activeTabIndex, changeActiveTab } = useServiceTabsContext();
     const theme = useTheme();
     const isXs = useMediaQuery(theme.breakpoints.down('sm'));
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
         
-        setValue(newValue);
+        changeActiveTab(newIndex);
     };
 
     return (
@@ -69,7 +69,7 @@ function ServicesTabs() {
                     TabIndicatorProps={{ hidden: true }}
                     scrollButtons={true}
                     allowScrollButtonsMobile
-                    value={value}
+                    value={activeTabIndex}
                     onChange={handleChange}
                     aria-label="services tabs"
                     visibleScrollbar
@@ -84,7 +84,7 @@ function ServicesTabs() {
 
             {
                 services.map((service, index) => (
-                    <CustomTabPanel key={uniqid()} value={value} index={index}>
+                    <CustomTabPanel key={uniqid()} value={activeTabIndex} index={index}>
                         <Grid container>
                             <Grid item xs={12} md={4} >
                                 <ServiceDescriptionColumn />
