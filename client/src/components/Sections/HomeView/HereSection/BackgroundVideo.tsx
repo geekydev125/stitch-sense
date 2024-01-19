@@ -20,11 +20,23 @@ function BackgroundVideo(customHeights: ICustomHeights) {
         <Stack direction='row' justifyContent='flex-end'>
             <Button sx={{ display: 'none', zIndex: 1 }} onClick={handlePlay}>Play Video</Button>
 
-            <Box component="video" ref={videoRef} sx={{ height: {...customHeights}, objectFit: {
-                xs: 'cover',
-                sm: 'cover',
-                md: 'contain',
-            }, marginLeft: 'auto' }} autoPlay muted loop>
+            <Box
+                component="video"
+                ref={videoRef}
+                sx={{
+                    height: { ...customHeights },
+                    objectFit: {
+                        xs: 'cover',
+                        sm: 'cover',
+                        md: 'contain',
+                    },
+                    marginLeft: 'auto',
+                    pointerEvents: 'none'
+                }}
+                autoPlay
+                muted
+                loop
+            >
                 <source src={stitchingVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </Box>
