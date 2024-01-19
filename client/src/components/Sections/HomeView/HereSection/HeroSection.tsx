@@ -24,9 +24,9 @@ function HeroSection() {
     const isXsSm = useMediaQuery(theme.breakpoints.down('md'));
 
     const customHeights: ICustomHeights = {
-        xs: '50vh',
+        xs: '45vh',
         sm: '70vh',
-        md: '80vh',
+        md: '90vh',
         lg: '90vh'
     }
 

@@ -25,17 +25,16 @@ function BackgroundVideo(customHeights: ICustomHeights) {
                 ref={videoRef}
                 sx={{
                     height: { ...customHeights },
-                    objectFit: {
-                        xs: 'cover',
-                        sm: 'cover',
-                        md: 'contain',
+                    margin: {
+                        xs:'0 auto',
+                        md: '0 0 0 auto'
                     },
-                    marginLeft: 'auto',
                     pointerEvents: 'none'
                 }}
                 autoPlay
                 muted
                 loop
+                playsInline
             >
                 <source src={stitchingVideo} type="video/mp4" />
                 Your browser does not support the video tag.
