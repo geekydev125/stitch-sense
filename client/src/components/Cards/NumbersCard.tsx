@@ -41,8 +41,8 @@ function NumbersCard({
                 </Stack>
             </Paper>
 
-            <Box mt={3}>
-                <Typography variant='h4' component='p' color='custom.theme.darkGray' textAlign='center'>{mainContent}</Typography>
+            <Box mt={{xs: 1, md: 3}} mb={{xs: 2, md: 0}}>
+                <Typography fontWeight='bold'  variant='h5' component='p' color='custom.theme.darkGray' textAlign='center' >{mainContent}</Typography>
 
                 {subContent && <Typography fontWeight='bold' variant='body1' component='p' color='custom.theme.darkGray' textAlign='center'>{subContent}</Typography>}
 

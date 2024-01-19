@@ -64,7 +64,7 @@ function HomeView() {
 					<ManufactoringSection />
 
 					<Container>
-						<CustomDivider mt={4} mb={4} />
+						<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 4, md: 5}} />
 						<NumbersSection />
 						<CustomDivider mt={8} mb={8} />
 						<WhyTrustUsSection />

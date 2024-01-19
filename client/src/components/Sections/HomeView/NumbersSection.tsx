@@ -71,7 +71,7 @@ function NumbersSection() {
                 </Typography>
             </Box >
 
-            <Grid container spacing={3} mt={2}>
+            <Grid container spacing={0} mt={3}>
                 {
                     numbersContent.map(number => (
                         <Grid item xs={6} sm={6} md={3} key={uniqid()}>
