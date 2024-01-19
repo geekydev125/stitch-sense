@@ -35,6 +35,12 @@ function CustomDivider({
 }: Props) {
     return (
         <Stack
+            sx={{
+                transform: {
+                    xs: "scale(0.5)",
+                    md: "scale(1)"
+                }
+            }}
             display={'flex'}
             justifyContent={'center'}
             alignItems={'center'}
