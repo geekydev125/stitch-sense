@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
 import isTitledView from '../HOC/isTitledView'
-import stitchingBackgroundImg from '/assets/img/stitching-background.jpg'
+import stitchingBackgroundImg from '/assets/img/title-backgrounds/stitching-background.jpg'
 import ProcessStepArticle from '../components/Sections/OurProcessView/ProcessStepArticle'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'

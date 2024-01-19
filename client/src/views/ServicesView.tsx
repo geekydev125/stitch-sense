@@ -1,4 +1,4 @@
-import fashionDesignBackgroundImage from '/assets/img/fashion-design-background.jpg'
+import fashionDesignBackgroundImage from '/assets/img/title-backgrounds/fashion-design-background.jpg'
 
 import isTitledView from '../HOC/isTitledView'
 

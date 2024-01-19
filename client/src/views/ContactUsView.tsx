@@ -1,4 +1,4 @@
-import contactBackgroundImg from '/assets/img/contact-background.jpg'
+import contactBackgroundImg from '/assets/img/title-backgrounds/contact-background.jpg'
 import isTitledView from '../HOC/isTitledView';
 import ContactContent from '../components/Sections/ContactUsView/ContactContent';
 import ContactForm from '../components/Sections/ContactUsView/ContactForm';

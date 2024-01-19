@@ -2,7 +2,7 @@ import uniqid from 'uniqid'
 
 import isTitledView from '../HOC/isTitledView'
 
-import fashioDesignStudioBackgroundImg from '/assets/img/fashion-design-studio-background.jpg'
+import fashioDesignStudioBackgroundImg from '/assets/img/title-backgrounds/fashion-design-studio-background.jpg'
 import { employeesImpactCardsContent } from '../components/Sections/HomeView/WhyTrustUsSection'
 import SimpleCard from '../components/Cards/SimpleCard'
 import CustomDivider from '../components/CustomDivider'

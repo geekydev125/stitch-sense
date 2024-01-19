@@ -3,7 +3,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useState } from 'react'
 
 import isTitledView from '../HOC/isTitledView'
-import portfolioBacgkroundImg from '/assets/img/portfolio-background.jpg'
+import portfolioBacgkroundImg from '/assets/img/title-backgrounds/portfolio-background.jpg'
 import portfolio from '../data/portfolio.json'
 
 import CustomDivider from '../components/CustomDivider'
