@@ -19,13 +19,7 @@ export interface ICustomHeights {
     lg: string
 }
 
-interface Props {
-    scrollTo: () => void
-}
-
-function HeroSection({
-    scrollTo
-}: Props) {
+function HeroSection() {
     const theme = useTheme();
     const isXsSm = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -54,7 +48,7 @@ function HeroSection({
                 </Container>
 
                 <Box display={{ xs: 'none', md: 'block' }}>
-                    <AnimatedArrow scrollTo={scrollTo} />
+                    <AnimatedArrow />
                 </Box>
             </HeroSectionBackground>
 

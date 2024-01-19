@@ -1,5 +1,3 @@
-import { useRef } from 'react'
-
 import wavyLinesTop from '../assets/img/wavy-lines-top.png'
 import wavyLinesBottom from '../assets/img/wavy-lines-bottom.png'
 
@@ -20,17 +18,9 @@ import ContactContent from '../components/Sections/ContactUsView/ContactContent'
 import ContactForm from '../components/Sections/ContactUsView/ContactForm'
 
 function HomeView() {
-	const aboutSectionRef = useRef<null | HTMLDivElement>(null);
-
-	const scrollTo = () => {
-		if (aboutSectionRef.current) {
-			window.scrollTo({ top: aboutSectionRef.current.offsetTop, behavior: 'smooth', })
-		}
-	};
-
 	return (
 		<>
-			<HeroSection scrollTo={scrollTo} />
+			<HeroSection />
 			
 			<Box position={"relative"} zIndex={1100}>
 				<Header />
@@ -50,7 +40,7 @@ function HomeView() {
 						backgroundPosition: 'top'
 					}}>
 						<Container sx={{ padding: '30px 0' }}>
-							<AboutSection aboutSectionRef={aboutSectionRef} />
+							<AboutSection />
 						</Container>
 					</Box>
 

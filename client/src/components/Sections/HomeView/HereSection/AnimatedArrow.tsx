@@ -1,12 +1,9 @@
 import IconButton from '@mui/material/IconButton';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { HashLink } from 'react-router-hash-link';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-
-interface Props {
-    scrollTo: () => void
-}
-function AnimatedArrow({scrollTo}:Props) {
+function AnimatedArrow() {
     const movingAnimation = {
         bottom: ["8%", "6%"], // Keyframes for pulsating effect
         transition: {
@@ -14,7 +11,7 @@ function AnimatedArrow({scrollTo}:Props) {
             repeat: Infinity, // Infinite animation loop
         },
     };
-    
+
     return (
         <AnimatePresence>
             <motion.div
@@ -27,9 +24,11 @@ function AnimatedArrow({scrollTo}:Props) {
                     transform: 'translate(-50%, -8%)'
                 }}
             >
-                <IconButton onClick={scrollTo}>
-                    <ArrowCircleDownIcon sx={{ fontSize: 45 }} />
-                </IconButton>
+                <HashLink to="/#about-section">
+                    <IconButton>
+                        <ArrowCircleDownIcon sx={{ fontSize: 45 }} />
+                    </IconButton>
+                </HashLink>
             </motion.div>
         </AnimatePresence>
     )

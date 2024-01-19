@@ -1,5 +1,3 @@
-import { MutableRefObject } from 'react'
-
 import euFlag from '../../../assets/img/logos/eu-flag-transparent.png'
 
 import SectionTitle from '../../SectionTitle'
@@ -7,17 +5,10 @@ import SectionTitle from '../../SectionTitle'
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 
-
-interface Props {
-	aboutSectionRef: MutableRefObject<HTMLDivElement | null>
-}
-
-function AboutSection({
-	aboutSectionRef
-}: Props) {
+function AboutSection() {
 	return (
 		<>
-			<Box ref={aboutSectionRef}>
+			<Box id='about-section'>
 				<SectionTitle title='ABOUT US' mt={4} mb={2} p={2} />
 				<Box p={3}>
 					<Box
