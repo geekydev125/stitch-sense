@@ -3,7 +3,9 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useState } from 'react'
 
 import isTitledView from '../HOC/isTitledView'
-import portfolioBacgkroundImg from '/assets/img/title-backgrounds/portfolio-background.jpg'
+import portfolioBackgroundSmallScreen from '/assets/img/title-backgrounds/portfolio-background-small-screen.jpg'
+import portfolioBackgroundLargeScreen from '/assets/img/title-backgrounds/portfolio-background-large-screen.jpg'
+
 import portfolio from '../data/portfolio.json'
 
 import CustomDivider from '../components/CustomDivider'
@@ -142,6 +144,7 @@ function PortfolioView() {
 export default isTitledView(PortfolioView,
 	{
 		viewTitle: "Portfolio",
-		imageSrc: portfolioBacgkroundImg,
+		imageSrcSmallScreen: portfolioBackgroundSmallScreen,
+		imageSrcLargeScreen: portfolioBackgroundLargeScreen
 	}
 )

@@ -1,11 +1,12 @@
-import contactBackgroundImg from '/assets/img/title-backgrounds/contact-background.jpg'
+import contactBackgroundSmallScreen from '/assets/img/title-backgrounds/contact-background-small-screen.jpg'
+import contactBackgroundLargeScreen from '/assets/img/title-backgrounds/contact-background-large-screen.jpg'
+
 import isTitledView from '../HOC/isTitledView';
 import ContactContent from '../components/Sections/ContactUsView/ContactContent';
 import ContactForm from '../components/Sections/ContactUsView/ContactForm';
 import Container from '@mui/material/Container';
+
 import Box from '@mui/material/Box';
-
-
 
 function ContactUsView() {
 
@@ -24,6 +25,7 @@ function ContactUsView() {
 export default isTitledView(ContactUsView,
 	{
 		viewTitle: "Contact Us",
-		imageSrc: contactBackgroundImg,
+		imageSrcSmallScreen: contactBackgroundSmallScreen,
+		imageSrcLargeScreen: contactBackgroundLargeScreen
 	}
 )

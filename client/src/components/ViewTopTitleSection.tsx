@@ -34,12 +34,14 @@ const BackgroundBox = styled(Box)`
 
 interface Props {
     viewTitle: string,
-    imageSrc: string,
+    imageSrcSmallScreen: string,
+    imageSrcLargeScreen: string
 }
 
 function ViewTopTitleSection({
     viewTitle,
-    imageSrc,
+    imageSrcSmallScreen,
+    imageSrcLargeScreen,
 }: Props) {
     const theme = useTheme();
     const isXs = useMediaQuery(theme.breakpoints.down('sm'));
@@ -47,7 +49,10 @@ function ViewTopTitleSection({
     return (
         <BackgroundBox
             sx={{
-                backgroundImage: `url(${imageSrc})`,
+                backgroundImage: {
+                    xs: `url(${imageSrcSmallScreen})`,
+                    md: `url(${imageSrcLargeScreen})`,
+                },
                 backgroundPosition: {
                     xs:  "100% 9%",
                     sm: '100% 11%',

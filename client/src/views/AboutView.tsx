@@ -2,7 +2,8 @@ import uniqid from 'uniqid'
 
 import isTitledView from '../HOC/isTitledView'
 
-import fashioDesignStudioBackgroundImg from '/assets/img/title-backgrounds/fashion-design-studio-background.jpg'
+import aboutBackgroundSmallScreen from '/assets/img/title-backgrounds/about-background-small-screen.jpg'
+import aboutBackgroundLargeScreen from '/assets/img/title-backgrounds/about-background-large-screen.jpg'
 import { employeesImpactCardsContent } from '../components/Sections/HomeView/WhyTrustUsSection'
 import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
@@ -104,6 +105,7 @@ function AboutView() {
 export default isTitledView(AboutView,
 	{
 		viewTitle: "About Us",
-		imageSrc: fashioDesignStudioBackgroundImg,
+		imageSrcSmallScreen: aboutBackgroundSmallScreen,
+		imageSrcLargeScreen: aboutBackgroundLargeScreen
 	}
 )
