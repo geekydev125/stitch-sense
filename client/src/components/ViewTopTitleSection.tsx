@@ -51,20 +51,15 @@ function ViewTopTitleSection({
             sx={{
                 backgroundImage: {
                     xs: `url(${imageSrcSmallScreen})`,
-                    md: `url(${imageSrcLargeScreen})`,
+                    lg: `url(${imageSrcLargeScreen})`,
                 },
                 backgroundPosition: {
                     xs:  "100% 9%",
                     sm: '100% 11%',
-                    md: '100% 10%',
+                    md: '100% -10%',
                     lg: '100% 13%'
                 },
-                backgroundSize: {
-                    xs: '100% 20%',
-                    sm: '100% 30%',
-                    md: '100% 40%',
-                    lg: '100% 40%'
-                },
+                backgroundSize: 'contain',
                 minHeight: {
                     xs: '15vh',
                     sm: '30vh',
