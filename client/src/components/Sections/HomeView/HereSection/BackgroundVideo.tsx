@@ -4,6 +4,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 
 import stitchingVideo from '../../../../assets/video/stitching-hd-black-white.mp4'
+import videoPoster from '../../../../assets/video/video-poster.png'
 import Stack from '@mui/material/Stack';
 import { ICustomHeights } from './HeroSection';
 
@@ -22,6 +23,7 @@ function BackgroundVideo(customHeights: ICustomHeights) {
 
             <Box
                 component="video"
+                poster={videoPoster}
                 ref={videoRef}
                 sx={{
                     height: { ...customHeights },
