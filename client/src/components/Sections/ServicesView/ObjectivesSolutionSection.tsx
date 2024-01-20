@@ -13,7 +13,7 @@ const StyledTitleBox = styled(Box)`
 function ObjectivesSolutionSection() {
     return (
         <>
-            <Grid container mb={{xs: 5, md: 10}} spacing={4}>
+            <Grid container spacing={4}>
                 <Grid item xs={12} md={6} >
                     <StyledTitleBox mb={1} px={3} >
                         <Typography variant='h4' component='h4' py={1} px={2} width='auto'>OBJECTIVES</Typography>
@@ -38,7 +38,7 @@ function ObjectivesSolutionSection() {
 
                     <br />
                     <Typography variant='body1' component='p' textAlign='justify'>
-                        We have years of experience in the industry, we have already gone through the whole process with our own successful brands and we are ready to help you in any way we can. <b>Transparency, years or experience, testimonials from satisfied customers and drive</b> is what we offer you so that you can increase your business growth and enjoy success.
+                        We have years of experience in the industry, we have already gone through the whole process with our own successful brands and we are ready to help you in any way we can. <b>Transparency, years of experience, testimonials from satisfied customers</b> and <b>drive</b> is what we offer you so that you can increase your business growth and enjoy success.
                     </Typography>
                 </Grid>
             </Grid>

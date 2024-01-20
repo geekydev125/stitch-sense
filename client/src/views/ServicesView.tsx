@@ -14,12 +14,13 @@ function ServicesView() {
 			<Box py={{xs: 5, md: 10}}>
 				<Container>
 
-					<ObjectivesSolutionSection />
-
 					<ServicesTabs />
 
-
 					<CustomDivider mt={{xs: 3, md: 2}} mb={{xs: 3, md: 5}} />
+
+					<ObjectivesSolutionSection />
+
+					<CustomDivider mt={{xs: 3, md: 5}} mb={{xs: 3, md: 5}} />
 
 					<CallToActionSection />
 				</Container>
