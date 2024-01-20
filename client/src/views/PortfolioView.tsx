@@ -20,32 +20,60 @@ import CallToActionSection from '../components/CallToActionSection'
 
 const tabsStyles = {
 	'.MuiTabs-flexContainer': {
-		flexWrap: 'wrap',
-		justifyContent: 'center',
-	},
-	'& button': {
-		borderRadius: '20px 20px 0 0',
-		xs: {
-			fontSize: '18px'
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    },
+    '& button': {
+        xs: {
+            fontSize: '18px',
+            backgroundColor: '#f1f1f1',
+            margin: '5px 5px',
+            borderRadius: '20px',
+        },
+		sm: {
+			fontSize: '23px',
 		},
-		md: {
-			fontSize: '30px',
-		},
-	},
-	'& button.Mui-selected': {
-		border: '3px solid custom.theme.darkGreen',
-		borderRadius: '20px 20px 0 0',
-		backgroundColor: 'custom.theme.darkGreen',
-		color: '#ffffff',
-	},
-	'& button.Mui-selected:hover': {
-		backgroundColor: 'custom.theme.darkGreen',
-	},
-	'& button:hover': {
-		borderRadius: '20px 20px 0 0',
-		backgroundColor: 'custom.theme.lightGreen',
-		color: '#ffffff',
-	}
+        md: {
+            fontSize: '27px',
+            borderRadius: '20px 20px 0 0',
+            margin: '0 5px',
+            '&:first-of-type': {
+                margin: '0 5px 0 0',
+            },
+            '&:last-of-type': {
+                margin: '0 0 0 5px',
+            }
+        },
+        lg: {
+            fontSize: '30px',
+        },
+    },
+    '& button.Mui-selected': {
+        xs: {
+            border: '3px solid #35908d',
+            borderRadius: '20px',
+            backgroundColor: '#35908d',
+            color: '#ffffff',
+        },
+        md: {
+            borderRadius: '20px 20px 0 0',
+        }
+
+    },
+    '& button.Mui-selected:hover': {
+        backgroundColor: '#35908d',
+    },
+    '& button:hover': {
+        xs: {
+            borderRadius: '20px',
+            backgroundColor: '#45b6b2',
+            color: '#ffffff',
+        },
+        md: {
+            borderRadius: '20px 20px 0 0',
+        }
+
+    }
 }
 
 function a11yProps(index: number) {
