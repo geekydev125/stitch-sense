@@ -78,8 +78,8 @@ function OurProcessView() {
 			<Container>
 				<Grid container gap={5} >
 					{stepArticlesContent.map((stepArticle) => (
-						<Grid item>
-							<ProcessStepArticle key={uniqid()} {...stepArticle} />
+						<Grid item key={uniqid()}>
+							<ProcessStepArticle {...stepArticle} />
 							{
 								isXs ? null : <Arrow
 									arrowType={2}
@@ -94,8 +94,8 @@ function OurProcessView() {
 
 				<Grid container spacing={5} mt={0}>
 					{stepCardsContent.map((stepCard) => (
-						<Grid item xs={12} sm={6} md={4}>
-							<ProcessStepCard key={uniqid()} {...stepCard} />
+						<Grid item xs={12} sm={6} md={4} key={uniqid()}>
+							<ProcessStepCard  {...stepCard} />
 						</Grid>
 					))
 					}
