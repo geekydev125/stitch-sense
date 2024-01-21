@@ -24,6 +24,10 @@ export const contactFormSchemaShape = {
         .string()
         .required('Email is required')
         .email('Input should be an e-mail address in a valid format'),
+    contactMethod: yup
+        .string()
+        .required('Contact Method is required')
+        .oneOf(['phone', 'email', 'phoneAndEmail'], 'Input should be a valid contact method'),
     message: yup
         .string()
 }
