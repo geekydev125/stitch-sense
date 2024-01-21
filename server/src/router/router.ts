@@ -1,6 +1,6 @@
 import { Router } from 'express'
 
-import contactFormController from '../controllers/contactFormController';
+import contactFormController from '../controllers/contactFormController.js';
 
 const router = Router()
 
