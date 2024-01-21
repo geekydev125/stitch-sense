@@ -1,13 +1,11 @@
-import express from 'express'
+import express, { Application } from 'express'
+import logger from 'morgan/index.js'
 
 const PORT = process.env.PORT || 3000;
 
-const app = express()
+const app: Application = express()
 
-const asd = (a: number, b: number) => {
-    return a + b;
-}
+app.use(logger('dev'))
 
-asd(4,5)
 
-app.listen(PORT, () => console.log('server started'))
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
