@@ -9,7 +9,11 @@ const app: Application = express()
 
 app.use(express.json())
 app.use(logger('dev'))
-app.use(cors());
+app.use(cors({
+   origin: [ "http://localhost:5173", "stitch-sense.vercel.app" ],
+   methods: ["GET", "POST"],
+   allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 app.use("/api", router);
 
