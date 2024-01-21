@@ -1,9 +1,9 @@
 import { Router } from 'express'
 
-import formController from '../controllers/formController';
+import contactFormController from '../controllers/contactFormController';
 
 const router = Router()
 
-router.use('/form', formController)
+router.use('/contact', contactFormController)
 
 export default router;
