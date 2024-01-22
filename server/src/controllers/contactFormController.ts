@@ -7,7 +7,22 @@ env.config()
 const router = Router();
 
 router.post('/', async (req: Request, res: Response) => {
-    const { firstName, lastName, phone, email, contactMethod, message } = req.body;
+    let { firstName, lastName, phone, email, contactMethod, message } = req.body;
+    // console.log(firstName, lastName, phone, email, contactMethod, message)
+
+    switch(contactMethod){
+        case 'phone':
+            contactMethod = 'Phone'
+            break;
+        case 'email':
+            contactMethod = 'Email'
+            break;
+        case 'phoneAndEmail':
+            contactMethod = 'Phone and Email'
+            break;
+        default:
+            return contactMethod
+    }
 
     const output = `
     <h2>You have a new form submission on Stitch Sense!</h2>
@@ -15,7 +30,7 @@ router.post('/', async (req: Request, res: Response) => {
     <ul>
         <li><b>Name:</b> ${firstName} ${lastName}</li>
         <li><b>Email:</b> ${email}</li>
-        <li><b>Email:</b> ${phone}</li>
+        <li><b>Phone:</b> ${phone}</li>
         <li><b>Subject:</b> ${email}</li>
         <li><b>Preferred contact mode:</b> ${contactMethod}</li>
         <li><b>Message:</b> ${message}</li>
