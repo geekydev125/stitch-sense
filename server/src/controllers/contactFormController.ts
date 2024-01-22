@@ -18,7 +18,7 @@ router.post('/', async (req: Request, res: Response) => {
             contactMethod = 'Email'
             break;
         case 'phoneAndEmail':
-            contactMethod = 'Phone and Email'
+            contactMethod = 'Phone AND/OR Email'
             break;
         default:
             return contactMethod
@@ -29,10 +29,9 @@ router.post('/', async (req: Request, res: Response) => {
     <h3>Submission Details</h3>
     <ul>
         <li><b>Name:</b> ${firstName} ${lastName}</li>
-        <li><b>Email:</b> ${email}</li>
-        <li><b>Phone:</b> ${phone}</li>
-        <li><b>Subject:</b> ${email}</li>
-        <li><b>Preferred contact mode:</b> ${contactMethod}</li>
+        <li><b>Phone number:</b> ${phone}</li>
+        <li><b>Email address:</b> ${email}</li>
+        <li><b>Preferred contact method:</b> ${contactMethod}</li>
         <li><b>Message:</b> ${message}</li>
     </ul>
 `;
