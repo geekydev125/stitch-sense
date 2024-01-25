@@ -14,7 +14,7 @@ let theme = createTheme({
     },
     typography: {
         fontFamily: 'Oswald, sans-serif',
-        fontSize: 18,
+        fontSize: 16,
         h1: {
             fontSize: '7rem'
         },
