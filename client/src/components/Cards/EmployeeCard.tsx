@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box"
-import { IemployeeCard } from "../../views/AboutView"
+import { IEmployee } from "../../views/AboutView"
 
 import missingPhoto from '../../assets/img/employees/missing-photo.png'
 import Typography from "@mui/material/Typography"
 
-interface Props extends IemployeeCard { }
+interface Props extends IEmployee { }
 
 function EmployeeCard({
     firstName,
