@@ -1,5 +1,5 @@
-import wavyLinesTop from '/assets/img/wavy-lines-top.png'
-import wavyLinesBottom from '/assets/img/wavy-lines-bottom.png'
+import wavyLinesTop from '/assets/img/wavy-lines-top.svg'
+import wavyLinesBottom from '/assets/img/wavy-lines-bottom.svg'
 
 import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
@@ -43,15 +43,15 @@ function HomeView() {
 							paddingTop: {
 								xs: '0',
 								md: '30px'
-							}
+							},
 						}}>
 							<AboutSection />
 						</Container>
+
+						<CustomDivider my={{md: 2}} />
 					</Box>
 
 					<Container>
-						<CustomDivider />
-
 						<WhatWeDoSection />
 
 						<CustomDivider my={{xs: 3, md: 5}} />
