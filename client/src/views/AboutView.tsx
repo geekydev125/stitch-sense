@@ -9,57 +9,20 @@ import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
 import EmployeeCard from '../components/Cards/EmployeeCard'
 
+import employeesData from '../data/employeesData.json'
+
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import CallToActionSection from '../components/CallToActionSection'
 
-export interface IemployeeCard {
+export interface IEmployee {
 	firstName: string
 	lastName: string
 	position: string
 	imageSrc: string | null
 }
-
-const employeesContent: IemployeeCard[] = [
-	{
-		firstName: 'Ganimir',
-		lastName: 'Vangelov',
-		position: 'Chief Operations Officer',
-		imageSrc: 'ganimir-vangelov.jpg'
-	},
-	{
-		firstName: 'Chavdar',
-		lastName: 'Dobrev',
-		position: 'Chief Operations Officer',
-		imageSrc: 'chavdar-dobrev.jpg'
-	},
-	{
-		firstName: 'Plamen',
-		lastName: 'Petrov',
-		position: 'Chief Operations Officer',
-		imageSrc: 'plamen-petrov.jpg'
-	},
-	{
-		firstName: 'Name',
-		lastName: 'Name',
-		position: 'Fashion Designer',
-		imageSrc: null
-	},
-	{
-		firstName: 'Name',
-		lastName: 'Name',
-		position: 'Designer',
-		imageSrc: null
-	},
-	{
-		firstName: 'Name',
-		lastName: 'Name',
-		position: 'Clothing Operations Manager',
-		imageSrc: null
-	},
-]
 
 function AboutView() {
 	return (
@@ -85,7 +48,7 @@ function AboutView() {
 				<CustomDivider my={{xs: 3, md: 5}} />
 
 				<Grid container spacing={{xs: 1, md: 2}}>
-					{employeesContent.map(employee => (
+					{employeesData.map((employee: IEmployee) => (
 						<Grid key={uniqid()} item xs={6} md={4}>
 							<EmployeeCard {...employee} />
 						</Grid>
