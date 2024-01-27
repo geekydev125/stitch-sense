@@ -1,4 +1,4 @@
-import googleMapPlaceHolder from '../../assets/img/google-map.png'
+import googleMapPlaceHolder from '/assets/img/google-map.png'
 
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"

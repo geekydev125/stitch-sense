@@ -2,7 +2,7 @@ import { Parallax } from 'react-parallax';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import manufactoringFacilityImage from '../../../assets/img/manufacturing-facility.png'
+import manufactoringFacilityImage from '/assets/img/manufacturing-facility.png'
 
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider';

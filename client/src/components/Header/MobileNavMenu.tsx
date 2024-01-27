@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import { IRoute } from "./Header";
 
-import stitchSenseLogo from '../../assets/img/stitchSense-logo.png'
-import stitchSenseLogoWithTitle from '../../assets/img/stitchSense-logo-with-title.png'
+import stitchSenseLogo from '/assets/img/stitchSense-logo.png'
+import stitchSenseLogoWithTitle from '/assets/img/stitchSense-logo-with-title.png'
 
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";

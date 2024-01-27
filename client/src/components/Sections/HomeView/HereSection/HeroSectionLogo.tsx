@@ -1,8 +1,8 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
-import blackLogo from '../../../../assets/img/stitchSense-black-logo.png'
-import whiteLogo from '../../../../assets/img/stitchSense-logo.png'
+import blackLogo from '/assets/img/stitchSense-black-logo.png'
+import whiteLogo from '/assets/img/stitchSense-logo.png'
 
 import Box from '@mui/material/Box'
 

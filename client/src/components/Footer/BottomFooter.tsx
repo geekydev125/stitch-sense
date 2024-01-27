@@ -1,4 +1,4 @@
-import arielbeharLogo from '../../assets/img/logos/arielbehar-logo.png'
+import arielbeharLogo from '/assets/img/logos/arielbehar-logo.png'
 
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
