@@ -1,7 +1,4 @@
-import badinkaLogo from '../../../assets/img/logos/badinka-logo.png'
-import candycatzLogo from '../../../assets/img/logos/candy-catz-logo.png'
-import raveKittiesLogo from '../../../assets/img/logos/rave-kitties-logo.png'
-import super5Logo from '../../../assets/img/logos/super5-logo.png'
+import clients from '../../../data/clients.json'
 
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
@@ -10,25 +7,6 @@ import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 import uniqid from 'uniqid'
 import SectionTitle from '../../SectionTitle'
-
-const logos = [
-    {
-        title: 'Badinka',
-        imageSrc: badinkaLogo
-    },
-    {
-        title: 'Candy Catz',
-        imageSrc: candycatzLogo
-    },
-    {
-        title: 'Rave Kitties',
-        imageSrc: raveKittiesLogo
-    },
-    {
-        title: 'Super 5',
-        imageSrc: super5Logo
-    }
-]
 
 function OurClientsSection() {
     return (
@@ -52,10 +30,10 @@ function OurClientsSection() {
             <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: '200px', maxHeight: '100%' }} mt={2}>
                 <Container>
                     <Grid container>
-                        {logos.map(logo => {
+                        {clients.map(client => {
                             return (
                                 <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
-                                    <Box component='img' src={logo.imageSrc} alt={`${logo.title} Logo`} maxWidth='100%' />
+                                    <Box component='img' src={client.imageSrc} alt={`${client.title} Logo`} maxWidth='100%' />
                                 </Grid>
                             )
                         })}
