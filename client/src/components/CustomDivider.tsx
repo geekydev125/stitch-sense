@@ -1,5 +1,5 @@
 import Stack from '@mui/material/Stack'
-import divider from '/assets/img/divider.png'
+import divider from '/assets/img/arrows-divider/divider.png'
 
 interface Props {
     mt?: number | {},

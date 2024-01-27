@@ -1,8 +1,8 @@
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 
-import arrowLeft from '/assets/img/arrow-wavy.png'
-import arrowDown from '/assets/img/arrow-curved.png'
+import arrowLeft from '/assets/img/arrows-divider/arrow-wavy.png'
+import arrowDown from '/assets/img/arrows-divider/arrow-curved.png'
 
 interface Props {
     arrowType: 1 | 2,
