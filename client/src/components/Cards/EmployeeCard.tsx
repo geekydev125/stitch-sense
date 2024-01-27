@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box"
 import { IEmployee } from "../../views/AboutView"
 
-import missingPhoto from '../../assets/img/employees/missing-photo.png'
+import missingPhoto from '/assets/img/employees/missing-photo.jpg'
 import Typography from "@mui/material/Typography"
 
 interface Props extends IEmployee { }

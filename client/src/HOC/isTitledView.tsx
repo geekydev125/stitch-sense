@@ -1,8 +1,8 @@
 import React from 'react';
 import ViewTopTitleSection from '../components/ViewTopTitleSection';
 
-import wavyLinesTop from '../assets/img/wavy-lines-top.png'
-import wavyLinesBottom from '../assets/img/wavy-lines-bottom.png'
+import wavyLinesTop from '/assets/img/wavy-lines-top.png'
+import wavyLinesBottom from '/assets/img/wavy-lines-bottom.png'
 
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
