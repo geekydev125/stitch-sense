@@ -1,7 +1,7 @@
 [{
         "title": "DESIGN",
         "content": "We can help you with designing thanks to our experienced and talented designers. You could also use our sewing patterns/cuts for your order. We can help you brainstorm design ideas, provide you with a sewing pattern, or  you can give us an already completed design that you would like us to follow.",
-        "imageSrc": "fashion-design.jpg",
+        "imageSrc": "design.jpg",
         "linkTo": "services",
         "tabValue": 0,
         "images": [
@@ -70,7 +70,7 @@
     {
         "title": "PRODUCTION",
         "content": "We can reach a daily production output ranging from 500 to 600 items, all crafted to the highest standards. Moreover, we always pay careful attention to the quality of items produced with our special quality assurance team constantly overseeing the manufactured outputs.",
-        "imageSrc": "stitching.jpg",
+        "imageSrc": "production.jpg",
         "linkTo": "services",
         "tabValue": 1,
         "images":[]
@@ -78,7 +78,7 @@
     {
         "title": "SUBLIMATION",
         "content": "In the realm of sublimation on polyesters, we take pride in our technological prowess. Six top-tier Japanese printers and two cutting-edge cutting lasers constitute the backbone of our sublimation processes. These advanced technologies underscore our dedication to precision and uncompromising quality.",
-        "imageSrc": "sublimation.png",
+        "imageSrc": "sublimation.jpg",
         "linkTo": "services",
         "tabValue": 2,
         "images":[]
