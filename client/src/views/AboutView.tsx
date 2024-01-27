@@ -9,7 +9,7 @@ import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
 import EmployeeCard from '../components/Cards/EmployeeCard'
 
-import employeesData from '../data/employeesData.json'
+import employeesData from '../data/employees.json'
 
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
