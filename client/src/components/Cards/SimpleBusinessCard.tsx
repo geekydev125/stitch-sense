@@ -11,6 +11,7 @@ function SimpleBusinessCard({
 	title,
 	content,
 	imageSrc,
+	alt,
 	variant,
 }: Props) {
 	return (
@@ -43,7 +44,7 @@ function SimpleBusinessCard({
 					</Typography>
 
 					<Stack sx={{ width: '100%', height: { xs: '80px', md: '120px'} }} p={1} mt={{xs: 0, md: 2}} justifyContent='center' alignItems='center'>
-						<Box component={'img'} src={imageSrc} alt='Customer Care Icon' height="100%" />
+						<Box component={'img'} src={imageSrc} alt={alt} height="100%" />
 					</Stack>
 
 					<Typography

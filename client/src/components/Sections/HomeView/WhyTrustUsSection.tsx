@@ -1,9 +1,5 @@
 import uniqid from 'uniqid'
 
-import customerCareIcon from '/assets/img/customer-care-icon.png'
-import arrowsIcon from '/assets/img/arrows-icon.png'
-import puzzleIcon from '/assets/img/puzzle-icon.png'
-
 import SimpleEmployeeCard from '../../Cards/SimpleEmployeeCard'
 import SectionTitle from '../../SectionTitle'
 
@@ -16,6 +12,7 @@ export interface Icard {
     title: string,
     content: string,
     imageSrc?: string,
+    alt?: string,
     variant: 'light' | 'dark',
 }
 
@@ -23,19 +20,22 @@ const clientsImpactCardsContent: Icard[] = [
     {
         title: 'CUSTOMER CARE',
         content: 'We are here to provide you with exceptional customer service, help with designs, sourcing materials, and general consulting. We’ve got you covered.',
-        imageSrc: customerCareIcon,
+        imageSrc: '/assets/img/icons/customer-care-icon.png',
+        alt: 'customer care icon',
         variant: 'light'
     },
     {
         title: 'VOLUME FLEXIBILITY',
         content: 'We are dedicated to giving you as much flexibility as you need, so whether you need a large-scale or a small-scale order to befulfilled, we’ve got your back.',
-        imageSrc: arrowsIcon,
-        variant: 'dark'
+        imageSrc: '/assets/img/icons/arrows-icon.svg',
+        alt: 'arrows icon',
+        variant: 'light'
     },
     {
         title: 'FINISHED PRODUCTS',
         content: 'We can help you solve the puzzle by takingcare of all your manufacturing needs and providing you with a completely finished product so that you can be ready to enjoy your business succes.',
-        imageSrc: puzzleIcon,
+        imageSrc: '/assets/img/icons/puzzle-icon.svg',
+        alt: 'puzzle icon',
         variant: 'light'
     }
 ]

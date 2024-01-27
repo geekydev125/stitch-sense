@@ -54,19 +54,19 @@ const stepCardsContent: Omit<IStepArticle, 'contentOrder'>[] = [
 		title: "PRODUCTION",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.",
 		step: 4,
-		imageSrc: "sewing-machine-icon.png",
+		imageSrc: "sewing-machine-icon.svg",
 	},
 	{
 		title: "PACKAGING",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.",
 		step: 5,
-		imageSrc: "packaging-icon.png",
+		imageSrc: "packaging-icon.svg",
 	},
 	{
 		title: "SHIPPING",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.",
 		step: 6,
-		imageSrc: "shipping-icon.png",
+		imageSrc: "shipping-icon.svg",
 	}
 ]
 function OurProcessView() {
