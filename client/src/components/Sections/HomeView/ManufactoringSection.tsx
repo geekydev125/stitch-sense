@@ -16,7 +16,7 @@ function ManufactoringSection() {
 
     return (
         <Box>
-            <Parallax blur={1} bgImage={manufactoringFacilityImage} bgImageAlt="Manufactoring Facility" strength={200}>
+            <Parallax blur={0} bgImage={manufactoringFacilityImage} bgImageAlt="Manufactoring Facility" strength={200}>
                 <Box sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
                     <Container>
                         <Box py={{ xs: 5, md: 10 }}>
