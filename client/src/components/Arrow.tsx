@@ -1,14 +1,15 @@
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 
-import arrowLeft from '/assets/img/arrow-left.png'
-import arrowDown from '/assets/img/arrow-down.png'
+import arrowLeft from '/assets/img/arrow-wavy.png'
+import arrowDown from '/assets/img/arrow-curved.png'
 
 interface Props {
     arrowType: 1 | 2,
     rotate?: number
     scaleX?: number,
     scaleY?: number,
+    height: number,
     mt?: number | {},
     mb?: number | {},
     my?: number | {},
@@ -29,6 +30,7 @@ function Arrow({
     rotate,
     scaleX = 1,
     scaleY = 1,
+    height,
     mt,
     mb,
     my,
@@ -59,7 +61,7 @@ function Arrow({
                     src={arrowType === 1 ? arrowLeft : arrowDown}
                     alt='Arrow'
                     width={'auto'}
-                    height={'auto'}
+                    height={height}
                 />
             </Box>
         </Stack>

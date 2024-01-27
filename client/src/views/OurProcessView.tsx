@@ -83,6 +83,8 @@ function OurProcessView() {
 							{
 								isXs ? null : <Arrow
 									arrowType={2}
+									height={50}
+									mt={1}
 									rotate={stepArticle.step === 2 ? 180 : 0}
 									scaleY={stepArticle.step === 2 ? -1 : 1}
 								/>

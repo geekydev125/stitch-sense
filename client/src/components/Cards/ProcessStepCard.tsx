@@ -30,7 +30,7 @@ function ProcessStepCard({
 
             {step !== 6 && (
                 <Box position='absolute' right='-15%' top='20%' display={{xs: 'none', md: 'block' }}>
-                    <Arrow arrowType={2} scaleX={-0.5} scaleY={-0.5} rotate={45}  />
+                    <Arrow arrowType={2} scaleX={-0.5} scaleY={-0.5} rotate={45} height={50}  />
                 </Box>
             )}
 

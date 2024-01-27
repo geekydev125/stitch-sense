@@ -19,9 +19,9 @@ function CallToActionSection() {
             </Typography>
 
             <Stack my={5} direction='row' justifyContent={'space-around'} alignItems='center'>
-               {!isXs && <Arrow arrowType={1} scaleX={-1} rotate={0} />} 
+               {!isXs && <Arrow arrowType={1} scaleX={1} rotate={0} height={20} />} 
                 <GreenButton boxShadow variant='contained' size='large'> LET'S GET STARTED</GreenButton>
-                <Arrow arrowType={1} />
+                <Arrow arrowType={1} height={20} scaleX={-1} rotate={0}/>
             </Stack>
         </Box>
     )
