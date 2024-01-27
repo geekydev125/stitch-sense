@@ -30,21 +30,21 @@ const stepArticlesContent: IStepArticle[] = [
 		title: "LOREM IPSUM",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.		Sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. ",
 		step: 1,
-		imageSrc: "fashion-design.jpg",
+		imageSrc: "placeholder-image.png",
 		contentOrder: 'left'
 	},
 	{
 		title: "LOREM IPSUM",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.		Sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. ",
 		step: 2,
-		imageSrc: "fashion-design.jpg",
+		imageSrc: "placeholder-image.png",
 		contentOrder: 'right'
 	},
 	{
 		title: "LOREM IPSUM",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus id nunc id rutrum. Fusce lacinia pellentesque est, sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. In sollicitudin metus ac magna maximus, et varius ex dapibus.		Sit amet vulputate ex blandit in. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. Donec luctus dolor eu vehicula convallis. Nulla eget luctus eros. ",
 		step: 3,
-		imageSrc: "fashion-design.jpg",
+		imageSrc: "placeholder-image.png",
 		contentOrder: 'left'
 	}
 ]
