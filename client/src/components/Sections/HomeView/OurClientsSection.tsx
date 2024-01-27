@@ -27,9 +27,9 @@ function OurClientsSection() {
                 </Grid>
             </Container>
 
-            <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: '200px', maxHeight: '100%' }} mt={2}>
+            <Box sx={{ backgroundColor: 'black', width: '100%', minHeight: 'auto', maxHeight: '100%' }} mt={2} py={{md: 3}}>
                 <Container>
-                    <Grid container>
+                    <Grid container >
                         {clients.map(client => {
                             return (
                                 <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
