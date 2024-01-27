@@ -2,7 +2,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import useMediaQuery from '@mui/material/useMediaQuery';
 import useTheme from '@mui/material/styles/useTheme';
 
-import brokenLogo from '/assets/img/stitchSense-black-broken-logo.png'
+import brokenLogo from '/assets/img/logos/stitchSense-black-broken-logo.png'
 import SectionTitle from "../components/SectionTitle";
 
 import Footer from "../components/Footer/Footer";

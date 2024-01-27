@@ -1,5 +1,5 @@
 
-import stitchSenseLogo from '/assets/img/stitchSense-logo.png'
+import stitchSenseLogo from '/assets/img/logos/stitchSense-logo.png'
 import Stack from "@mui/material/Stack"
 import BouncingDotsLoader from "./BouncingDotsLoader"
 import Box from '@mui/material/Box'
