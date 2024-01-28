@@ -1,7 +1,7 @@
 import uniqid from 'uniqid'
 
-import portfolioBackgroundSmallScreen from '../assets/img/title-backgrounds/services-background-small-screen.jpg'
-import portfolioBackgroundLargeScreen from '../assets/img/title-backgrounds/services-background-large-screen.jpg'
+import portfolioBackgroundSmallScreen from '../assets/img/title-backgrounds/portfolio-background-small-screen.jpg'
+import portfolioBackgroundLargeScreen from '../assets/img/title-backgrounds/portfolio-background-large-screen.jpg'
 
 import getImageUrl from '../utils/image-util'
 import isTitledView from '../HOC/isTitledView'
