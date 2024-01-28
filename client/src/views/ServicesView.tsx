@@ -1,5 +1,5 @@
-import servicesBackgroundSmallScreen from '/assets/img/title-backgrounds/services-background-small-screen.jpg'
-import servicesBackgroundLargeScreen from '/assets/img/title-backgrounds/services-background-large-screen.jpg'
+import servicesBackgroundSmallScreen from '../assets/img/title-backgrounds/services-background-small-screen.jpg'
+import servicesBackgroundLargeScreen from '../assets/img/title-backgrounds/services-background-large-screen.jpg'
 
 import isTitledView from '../HOC/isTitledView'
 

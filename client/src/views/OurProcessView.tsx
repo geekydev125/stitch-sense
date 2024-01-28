@@ -2,8 +2,8 @@ import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import uniqid from 'uniqid'
 
-import ourProcessBackgroundSmallScreen from '/assets/img/title-backgrounds/our-process-background-small-screen.jpg'
-import ourProcessBackgroundLargeScreen from '/assets/img/title-backgrounds/our-process-background-large-screen.jpg'
+import ourProcessBackgroundSmallScreen from '../assets/img/title-backgrounds/our-process-background-small-screen.jpg'
+import ourProcessBackgroundLargeScreen from '../assets/img/title-backgrounds/our-process-background-large-screen.jpg'
 
 import isTitledView from '../HOC/isTitledView'
 import ProcessStepArticle from '../components/Sections/OurProcessView/ProcessStepArticle'

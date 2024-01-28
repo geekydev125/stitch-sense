@@ -1,5 +1,5 @@
-import contactBackgroundSmallScreen from '/assets/img/title-backgrounds/contact-background-small-screen.jpg'
-import contactBackgroundLargeScreen from '/assets/img/title-backgrounds/contact-background-large-screen.jpg'
+import contactBackgroundSmallScreen from '../assets/img/title-backgrounds/contact-background-small-screen.jpg'
+import contactBackgroundLargeScreen from '../assets/img/title-backgrounds/contact-background-large-screen.jpg'
 
 import isTitledView from '../HOC/isTitledView';
 import ContactContent from '../components/Sections/ContactUsView/ContactContent';
