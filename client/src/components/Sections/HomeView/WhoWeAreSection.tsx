@@ -15,7 +15,11 @@ function WhoWeAreSection() {
 					<Box
 						py={4}
 						sx={{
-							background: `url(${aboutBackgroundFaded}) no-repeat`,
+							backgroundImage: {
+								xs: 'none',
+								md: `url(${aboutBackgroundFaded})`,
+							},
+							backgroundRepeat: 'no-repeat',							
 							backgroundSize: 'contain',
 							borderRadius: '10px',
 						}}
