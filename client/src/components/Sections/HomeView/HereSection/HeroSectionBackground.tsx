@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box'
-import paperPatternLg from '/assets/img/paper-pattern-lg.png'
-import paperPatternMd from '/assets/img/paper-pattern-md.png'
+import paperPatternLg from '../../../../assets/img/paper-pattern-lg.png'
+import paperPatternMd from '../../../../assets/img/paper-pattern-md.png'
 import { ICustomHeights } from './HeroSection'
-
 
 interface Props {
     customHeights: ICustomHeights
