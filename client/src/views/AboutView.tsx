@@ -31,7 +31,7 @@ function AboutView() {
 	return (
 		<Box mt={5} mb={{ xs: 3, md: 8 }}>
 			<Container>
-				<Box p={5}>
+				<Box p={{xs: 1, md: 5}}>
 					<Typography variant='body1' component='p' textAlign='justify' color='custom.theme.darkGray'>
 						With <Box component='span' textTransform='uppercase' fontWeight='bold'>over a decade of expertise in the dynamic realm of fashion</Box>, we proudly stand as a seasoned clothing manufacturer. Our commitment to excellence has propelled us into various facets of the industry.
 					</Typography>
@@ -51,7 +51,7 @@ function AboutView() {
 				<Grid container spacing={{ xs: 1, md: 2 }} >
 					{employeesImpactCardsContent.map(card => {
 						return (
-							<Grid key={uniqid()} item xs={12} md={4}>
+							<Grid key={uniqid()} item xs={12} sm={4}>
 								<SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
 							</Grid>
 						)
@@ -63,7 +63,7 @@ function AboutView() {
 				<SectionTitle title='OUR TEAM' variant='h5' justify='left' p={2} mb={2}/>
 				<Grid container spacing={{ xs: 1, md: 2 }}>
 					{employeesData.map((employee: IEmployee) => (
-						<Grid key={uniqid()} item xs={6} md={4}>
+						<Grid key={uniqid()} item xs={6} sm={4}>
 							<EmployeeCard {...employee} />
 						</Grid>
 					))}
