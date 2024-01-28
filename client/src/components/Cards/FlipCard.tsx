@@ -117,7 +117,7 @@ function FlipCard({
                             <Icon className="rotate-icon" component={RotateLeftIcon} />
                         </Box>
                         <Box className='card-back' py={{xs: 1.5, sm: 1, md: 3}} px={{xs: 1.5, sm: 2, md: 3}}>
-                            <Typography variant="body2" component="p" color='custom.theme.almostWhite'>{content}</Typography>
+                            <Typography variant="body1" component="p" color='custom.theme.almostWhite'>{content}</Typography>
 
                             <Button
                                 onClick={() => changeActiveTab(tabValue)}
