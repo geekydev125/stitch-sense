@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { IRoute } from './Header'
 
-import stitchSenseLogo from '/assets/img/logos/stitchSense-logo.png'
+import stitchSenseLogo from '../../assets/img/logos/stitchSense-logo.png'
 
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
