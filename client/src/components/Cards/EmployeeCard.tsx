@@ -28,6 +28,7 @@ function EmployeeCard({
                     },
                     objectFit: 'cover'
                 }}
+                loading="lazy"
             >
             </Box>
 

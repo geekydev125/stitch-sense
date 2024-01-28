@@ -15,15 +15,21 @@ function OurClientsSection() {
         <Box component='section' sx={{ backgroundColor: 'black', width: '100%', minHeight: 'auto', maxHeight: '100%' }} mt={2} py={{ md: 3 }}>
             <Container>
                 <Box pt={1} pb={5}>
-                    <Typography my={1} mb={{xs: 2, sm: 3}} variant="h3" component='p' textAlign='center' color='custom.theme.almostWhite' >OUR CLIENTS</Typography>
+                    <Typography my={1} mb={{ xs: 2, sm: 3 }} variant="h3" component='p' textAlign='center' color='custom.theme.almostWhite' >OUR CLIENTS</Typography>
 
                     <Divider variant="middle" color='white' />
 
-                    <Grid container spacing={{xs: 1, sm: 0}} my={{xs: 1, sm: 0}} >
+                    <Grid container spacing={{ xs: 1, sm: 0 }} my={{ xs: 1, sm: 0 }} >
                         {clients.map(client => {
                             return (
                                 <Grid key={uniqid()} item xs={3} display='flex' justifyContent='center' alignItems='center'>
-                                    <Box component='img' src={getImageUrl('logos', client.imageSrc)} alt={`${client.title} Logo`} maxWidth='100%' />
+                                    <Box
+                                        component='img'
+                                        src={getImageUrl('logos', client.imageSrc)}
+                                        alt={`${client.title} Logo`}
+                                        maxWidth='100%'
+                                        loading='lazy'
+                                    />
                                 </Grid>
                             )
                         })}

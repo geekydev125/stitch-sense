@@ -129,6 +129,7 @@ function ServicesTabs() {
                                     component='img'
                                     src={getImageUrl('card-backgrounds', service.imageSrc)}
                                     alt={`${service.title} image `}
+                                    loading='lazy'
                                 />
                                 {/* <MasonryImageList images={service.images} cols={3} gap={8} /> */}
                             </Grid>
