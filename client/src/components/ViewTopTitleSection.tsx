@@ -58,7 +58,7 @@ function ViewTopTitleSection({
                     xs: '15vh',
                     sm: '20vh',
                     md: '20vh',
-                    lg: '30vh'
+                    lg: '26vh'
                 }
             }}
         >
