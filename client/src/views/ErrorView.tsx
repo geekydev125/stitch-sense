@@ -3,8 +3,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import useTheme from '@mui/material/styles/useTheme';
 
 import brokenLogo from '../assets/img/logos/stitchSense-black-broken-logo.png'
-import SectionTitle from "../components/SectionTitle";
 
+import SectionTitle from '../components/SectionTitle';
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
@@ -14,7 +14,6 @@ import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
 
 function ErrorView() {
 	const theme = useTheme();
@@ -45,8 +44,8 @@ function ErrorView() {
 							>
 								{
 									isXs
-										? <SectionTitle variant="h4" component="p" title="Oops... 404 Error" justify="left"></SectionTitle>
-										: <SectionTitle variant="h3" component="p" title="Oops... 404 Error" justify="left"></SectionTitle>
+										? <SectionTitle variant="h4" component="p" title="Oops... 404 Error" justify="left"/>
+										: <SectionTitle variant="h3" component="p" title="Oops... 404 Error" justify="left"/>
 								}
 
 								<Box p={2}>
