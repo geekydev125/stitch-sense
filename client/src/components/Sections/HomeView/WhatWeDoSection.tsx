@@ -5,7 +5,7 @@ import FlipCard from '../../Cards/FlipCard';
 import SectionTitle from '../../SectionTitle'
 
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 function WhatWeDoSection() {
 	
