@@ -1,13 +1,13 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import SectionTitle from '../../SectionTitle';
-import CustomDivider from '../../CustomDivider';
+import SectionTitle from '../SectionTitle';
+import CustomDivider from '../CustomDivider';
 
 interface Props {
     isDisplayedOnView?: 'home' | 'contactUs'
 }
-function ContactContent({
+function ContactContentLegacy({
     isDisplayedOnView = 'contactUs'
 }: Props) {
     return (
@@ -56,4 +56,4 @@ function ContactContent({
     )
 }
 
-export default ContactContent
+export default ContactContentLegacy

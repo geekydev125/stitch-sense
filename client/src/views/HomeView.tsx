@@ -12,8 +12,8 @@ import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSecti
 import WhyTrustUsSection from "../components/Sections/HomeView/WhyTrustUsSection"
 import OurClientsSection from "../components/Sections/HomeView/OurClientsSection"
 import CustomDivider from '../components/CustomDivider'
-import ContactContent from '../components/Sections/ContactUsView/ContactContent'
 import ContactForm from '../components/Sections/ContactUsView/ContactForm'
+import SectionTitle from '../components/SectionTitle'
 
 function HomeView() {
 	return (
@@ -46,29 +46,29 @@ function HomeView() {
 							<WhoWeAreSection />
 						</Container>
 
-						<CustomDivider my={{md: 2}} />
+						<CustomDivider my={{ md: 2 }} />
 					</Box>
 
 					<Container>
 						<WhatWeDoSection />
 
-						<CustomDivider my={{xs: 3, md: 5}} />
+						<CustomDivider my={{ xs: 3, md: 5 }} />
 
 					</Container>
 
 					<WhyChooseUsSection />
 
 					<Container>
-						<CustomDivider mt={{xs: 3, md: 5}} mb={{xs: 5, md: 4}} />
+						<CustomDivider mt={{ xs: 3, md: 5 }} mb={{ xs: 5, md: 4 }} />
 						<WhyTrustUsSection />
-						<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 4, md: 5}} />
+						<CustomDivider mt={{ xs: 4, md: 5 }} mb={{ xs: 4, md: 5 }} />
 					</Container>
 
 					<OurClientsSection />
 
-					<Box mt={{xs: 5, md: 10}} pb={{xs: 2, md: 8}}>
+					<Box mt={5} pb={{ xs: 2, md: 3 }}>
 						<Container>
-							<ContactContent isDisplayedOnView='home' />
+							<SectionTitle title="LET'S WORK TOGETHER!" mb={4} />
 							<ContactForm />
 						</Container>
 					</Box>
