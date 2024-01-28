@@ -23,7 +23,7 @@ function DesktopNavMenu({
     return (
             <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
                 <Container>
-                    <Stack direction='row' alignItems='center'>
+                    <Stack direction='row' alignItems='center' minHeight='10vh'>
                     {/* Logo */}
                     <Button component={NavLink} to='/' >
                         <Box component="img"
