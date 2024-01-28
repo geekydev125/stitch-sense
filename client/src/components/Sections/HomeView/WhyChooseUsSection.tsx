@@ -1,23 +1,55 @@
-import challengesImage from '../../../assets/img/challenges.svg'
+import { Parallax } from 'react-parallax';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-import Box from "@mui/material/Box"
-import Typography from "@mui/material/Typography"
+import manufactoringFacilityImage from '../../../assets/img/manufacturing-facility.png'
 
-import SectionTitle from '../../SectionTitle'
+import Box from '@mui/material/Box'
+import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+
 
 function WhyChooseUsSection() {
+    const theme = useTheme()
+    const isXs = useMediaQuery(theme.breakpoints.down('sm'));
+
     return (
-        <Box >
-            <SectionTitle title='WHY CHOOSE US?' p={2} />
+        <Box>
+            <Parallax blur={0} bgImage={manufactoringFacilityImage} bgImageAlt="Manufactoring Facility" strength={200}>
+                <Box sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
+                    <Container>
+                        <Box py={{ xs: 5, md: 10 }}>
+                            <Divider variant="middle" color='white' />
 
-            <Box mt={3} px={{xs: 0, md: 2}}>
-                <Typography variant="body1" component='p' mb={5} px={2} textAlign={{xs: 'justify', md: 'center'}}>
-                    Our <b>mission</b> is to help your business grow by impeccably handling all the manufacturing processes, so that you can get extra time to focus on nurturing your company and promote your own brand. We deeply care about your success, our first priority is to satisfy your needs by providing you with the highest possible quality products on time.
-                </Typography>
+                            <Box my={{ xs: 3, md: 7 }}>
+                                {
+                                    isXs
+                                        ? <>
+                                            <Typography variant="h3" component='p' textAlign='center' color='custom.theme.almostWhite' fontWeight='bold'>WHY CHOOSE US</Typography>
+                                            <br />
+                                            <Typography variant="body1" component='p' textAlign='center' color='custom.theme.almostWhite'>
+                                                <Box component='span' fontWeight='bold' textTransform="uppercase"> Our mission</Box> is to foster the growth of your business. By seamlessly managing all manufacturing processes, we free up your time to nurture and promote your brand. Your success is our utmost priority, and we are dedicated to meeting your needs by delivering products of the highest quality, always on time.
+                                            </Typography>
+                                        </>
+                                        : <>
+                                            <Typography variant="h2" component='p' textAlign='center' color='custom.theme.almostWhite' fontWeight='bold'>WHY CHOOSE US</Typography>
+                                            <br />
+                                            <Typography variant="h5" component='p' textAlign='center' color='custom.theme.almostWhite'>
+                                            <Box component='span' fontWeight='bold' textTransform="uppercase">Our mission</Box> is to foster the growth of your business. By seamlessly managing all manufacturing processes, we free up your time to nurture and promote your brand. Your success is our utmost priority, and we are dedicated to meeting your needs by delivering products of the highest quality, always on time.
+                                            </Typography>
 
-                <Box component='img' src={challengesImage} alt='Challenges' sx={{ width: '100%' }} />
-            </Box>
-        </Box>
+
+                                        </>
+                                }
+                            </Box>
+
+                            <Divider variant="middle" color='white' />
+                        </Box>
+                    </Container>
+                </Box>
+            </Parallax>
+        </Box >
     )
 }
 

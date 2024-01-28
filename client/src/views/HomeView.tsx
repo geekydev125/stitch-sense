@@ -5,11 +5,11 @@ import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
 import Box from '@mui/material/Box'
 
-import AboutSection from "../components/Sections/HomeView/WhoWeAreSection"
+import WhoWeAreSection from "../components/Sections/HomeView/WhoWeAreSection"
 import HeroSection from "../components/Sections/HomeView/HereSection/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
-import ManufactoringSection from "../components/Sections/HomeView/ManufactoringSection"
 import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSection"
+import WhyChooseUsSectionLegacy from "../components/Sections/HomeView/WhyChooseUsSectionLegacy"
 import WhyTrustUsSection from "../components/Sections/HomeView/WhyTrustUsSection"
 import OurClientsSection from "../components/Sections/HomeView/OurClientsSection"
 import CustomDivider from '../components/CustomDivider'
@@ -45,7 +45,7 @@ function HomeView() {
 								md: '30px'
 							},
 						}}>
-							<AboutSection />
+							<WhoWeAreSection />
 						</Container>
 
 						<CustomDivider my={{md: 2}} />
@@ -56,12 +56,9 @@ function HomeView() {
 
 						<CustomDivider my={{xs: 3, md: 5}} />
 
-						<WhyChooseUsSection />
-
-						<CustomDivider mt={1} mb={{xs: 2, md: 4}} />
 					</Container>
 
-					<ManufactoringSection />
+					<WhyChooseUsSection />
 
 					<Container>
 						<CustomDivider mt={{xs: 2, md: 5}} mb={{xs: 2, md: 5}} />
