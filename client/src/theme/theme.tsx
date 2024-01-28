@@ -13,8 +13,7 @@ let theme = createTheme({
         }
     },
     typography: {
-        fontFamily: "roc-grotesk-thin, sans-serif",
-        // fontFamily: 'Oswald, sans-serif',
+        fontFamily: "roc-grotesk, sans-serif",
         fontSize: 15,
         h1: {
             fontSize: '7rem'
