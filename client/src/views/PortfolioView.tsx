@@ -3,8 +3,8 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useState } from 'react'
 
 import isTitledView from '../HOC/isTitledView'
-import portfolioBackgroundSmallScreen from '/assets/img/title-backgrounds/portfolio-background-small-screen.jpg'
-import portfolioBackgroundLargeScreen from '/assets/img/title-backgrounds/portfolio-background-large-screen.jpg'
+import portfolioBackgroundSmallScreen from '../assets/img/title-backgrounds/services-background-small-screen.jpg'
+import portfolioBackgroundLargeScreen from '../assets/img/title-backgrounds/services-background-large-screen.jpg'
 
 import portfolio from '../data/portfolio.json'
 
@@ -92,6 +92,7 @@ function PortfolioView() {
 	const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
 	const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+	console.log('event:', event)
 
 		setValue(newValue);
 	};
