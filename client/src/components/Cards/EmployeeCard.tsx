@@ -32,7 +32,7 @@ function EmployeeCard({
             </Box>
 
             <Box textAlign='center' color='custom.theme.darkGray' mt={2} mb={4}>
-                <Typography textTransform='uppercase' variant="h5" component='p' >{firstName} {lastName}</Typography>
+                <Typography textTransform='uppercase' variant="h5" component='p' fontWeight='500'>{firstName} {lastName}</Typography>
                 <Typography variant="body1" component='p' >{position}</Typography>
             </Box>
         </Box>
