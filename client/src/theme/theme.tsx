@@ -15,12 +15,6 @@ let theme = createTheme({
     typography: {
         fontFamily: "roc-grotesk, sans-serif",
         fontSize: 15,
-        h1: {
-            fontSize: '7rem'
-        },
-        body2: {
-            fontSize: '1.2rem'
-        }
     }
 })
 
