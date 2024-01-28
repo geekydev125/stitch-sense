@@ -1,8 +1,9 @@
 import Box from "@mui/material/Box"
 import { IEmployee } from "../../views/AboutView"
 
-import missingPhoto from '/assets/img/employees/missing-photo.jpg'
+import missingPhoto from '../../assets/img/employees/missing-photo.jpg'
 import Typography from "@mui/material/Typography"
+import getImageUrl from "../../utils/image-util"
 
 interface Props extends IEmployee { }
 
@@ -16,7 +17,7 @@ function EmployeeCard({
         <Box>
             <Box
                 component="img"
-                src={imageSrc ? `/assets/img/employees/${imageSrc}` : missingPhoto}
+                src={imageSrc ? `${getImageUrl('employees', imageSrc)}` : missingPhoto}
                 alt={`${firstName} ${lastName} Photo`}
                 sx={{
                     width: '100%',
