@@ -12,16 +12,17 @@ import Box from '@mui/material/Box'
 
 function ServicesView() {
 	return (
-			<Box py={{xs: 5, md: 10}}>
-				<Container>
+		<Box py={{ xs: 5, md: 6 }}>
+			<Container>
+				<CustomDivider mb={{ xs: 3, md: 4 }} />
+				
+				<ServicesTabs />
 
-					<ServicesTabs />
+				<CustomDivider mt={{ xs: 3, md: 5 }} mb={{ xs: 3, md: 5 }} />
 
-					<CustomDivider mt={{xs: 3, md: 5}} mb={{xs: 3, md: 5}} />
-
-					<CallToActionSection />
-				</Container>
-			</Box>
+				<CallToActionSection />
+			</Container>
+		</Box>
 	)
 }
 
