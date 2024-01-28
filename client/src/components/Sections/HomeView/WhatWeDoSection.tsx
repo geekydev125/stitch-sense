@@ -11,7 +11,7 @@ function WhatWeDoSection() {
 	
 	return (
 		<>
-			<SectionTitle title='WHAT WE DO' mt={4} mb={2} p={2} />
+			<SectionTitle title='WHAT WE DO' mt={4} mb={2} />
 
 			<Typography variant='h4' component='p' textAlign={{xs: 'justify', md: 'center'}} mt={2} mb={4} color='custom.theme.darkGray'>
 				A complete private label solution for retailers and brand owners.

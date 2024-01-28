@@ -24,8 +24,8 @@ function SimpleBusinessCard({
 				sx={{
 					minHeight: {
 						xs: 'auto',
-						md: '530px',
-						lg: 'auto'
+						sm: '425px',
+						lg: '380px',
 					},
 					backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
 					borderRadius: '20px',
@@ -42,6 +42,7 @@ function SimpleBusinessCard({
 						textTransform='uppercase'
 						sx={{
 							color: variant === 'light' ? 'custom.theme.darkGray' : 'custom.theme.almostWhite',
+							minHeight: '64px'
 						}}
 					>
 						{title}

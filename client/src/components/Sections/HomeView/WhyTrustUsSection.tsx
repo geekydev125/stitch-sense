@@ -22,16 +22,16 @@ export interface Icard {
 function WhyTrustUsSection() {
     return (
         <Box>
-            <SectionTitle title='WHY TRUST US?' p={2} />
+            <SectionTitle title='WHY TRUST US?'/>
 
             <Box mt={5}>
 
                 <SectionTitle title='OUR IMPACT ON YOU' variant='h5' justify='left' p={2} />
 
-                <Grid container spacing={2} mt={0}>
+                <Grid container spacing={2} mt={0} alignItems="stretch" justifyContent="stretch">
                     {clientsImpactCardsContent.map((card) => {
                         return (
-                            <Grid key={uniqid()} item xs={12} md={4}>
+                            <Grid item key={uniqid()} xs={12} sm={4}>
                                 <SimpleBusinessCard {...card as Icard} />
                             </Grid>
                         )
@@ -45,7 +45,7 @@ function WhyTrustUsSection() {
                 <Grid container spacing={2} mt={0}>
                     {employeesImpactCardsContent.map(card => {
                         return (
-                            <Grid key={uniqid()} item xs={12} md={4}>
+                            <Grid key={uniqid()} item xs={12} sm={4}>
                                 <SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
                             </Grid>
                         )
