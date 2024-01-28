@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid'
 
 import uniqid from 'uniqid'
-import NumbersCard from '../../Cards/NumbersCard'
+import NumbersCard from '../Cards/NumbersCard'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
@@ -33,7 +33,7 @@ const numbersContent: InumbersContent[] = [
     }
 ]
 
-function NumbersSection() {
+function NumbersSectionLegacy() {
     return (
         <>
 
@@ -84,4 +84,4 @@ function NumbersSection() {
     )
 }
 
-export default NumbersSection
+export default NumbersSectionLegacy

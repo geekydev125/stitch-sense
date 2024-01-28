@@ -9,11 +9,9 @@ import WhoWeAreSection from "../components/Sections/HomeView/WhoWeAreSection"
 import HeroSection from "../components/Sections/HomeView/HereSection/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
 import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSection"
-import WhyChooseUsSectionLegacy from "../components/Sections/HomeView/WhyChooseUsSectionLegacy"
 import WhyTrustUsSection from "../components/Sections/HomeView/WhyTrustUsSection"
 import OurClientsSection from "../components/Sections/HomeView/OurClientsSection"
 import CustomDivider from '../components/CustomDivider'
-import NumbersSection from '../components/Sections/HomeView/NumbersSection'
 import ContactContent from '../components/Sections/ContactUsView/ContactContent'
 import ContactForm from '../components/Sections/ContactUsView/ContactForm'
 
@@ -61,9 +59,7 @@ function HomeView() {
 					<WhyChooseUsSection />
 
 					<Container>
-						<CustomDivider mt={{xs: 2, md: 5}} mb={{xs: 2, md: 5}} />
-						<NumbersSection />
-						<CustomDivider mt={{xs: 3, md: 8}} mb={{xs: 5, md: 8}} />
+						<CustomDivider mt={{xs: 3, md: 5}} mb={{xs: 5, md: 4}} />
 						<WhyTrustUsSection />
 						<CustomDivider mt={{xs: 4, md: 5}} mb={{xs: 4, md: 5}} />
 					</Container>
