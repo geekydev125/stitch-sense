@@ -3,6 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Link from '@mui/material/Link';
 import uniqid from 'uniqid';
+import getImageUrl from '../../../utils/image-util';
 
 interface Props {
 	folder: string,
@@ -36,8 +37,8 @@ export default function StandardImageList({
 					<Link href='#' target='_blank' key={uniqid()}>
 						<ImageListItem>
 							<img
-								srcSet={`/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
-								src={`/assets/img/portfolio/${folder}/${image.imageSrc}?w=248&fit=crop&auto=format`}
+								srcSet={ `${getImageUrl(`portfolio/${folder}`, image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+								src={`${getImageUrl(`portfolio/${folder}`, image.imageSrc)}?w=248&fit=crop&auto=format`}
 								alt={image.title}
 								loading="lazy"
 							/>
