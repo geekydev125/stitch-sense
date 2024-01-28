@@ -11,7 +11,7 @@ import CustomTabPanel from './CustomTabPanel';
 
 import services from '../../../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
-import MasonryImageList from './MasonryImageList';
+// import MasonryImageList from './MasonryImageList';
 import { useServiceTabsContext } from '../../../../contexts/ServiceTabsContext';
 import getImageUrl from '../../../../utils/image-util';
 
@@ -28,7 +28,7 @@ const tabsStyles = {
             borderRadius: '20px',
         },
         md: {
-            fontSize: '24px',
+            fontSize: '20px',
             borderRadius: '20px 20px 0 0',
             margin: '0 5px',
             '&:first-of-type': {
@@ -39,7 +39,7 @@ const tabsStyles = {
             }
         },
         lg: {
-            // fontSize: '30px',
+            fontSize: '25px',
         },
     },
     '& button.Mui-selected': {
@@ -112,15 +112,18 @@ function ServicesTabs() {
             {
                 services.map((service, index) => (
                     <CustomTabPanel key={uniqid()} value={activeTabIndex} index={index}>
-                        <Grid container spacing={2} >
-                            <Grid item xs={12} lg={5} >
+                        <Grid container spacing={{xs: 0, sm: 2}} mt={{xs: 1, md: 0}}>
+                            <Grid item xs={12} sm={6} md={5} >
                                 {/* <Grid item xs={12} lg={3} > With Masonry*/}
                                 <ServiceDescriptionColumn description={service.content} />
                             </Grid>
-                            <Grid item xs={12} lg={7} display='flex' direction='row' justifyContent='center'>
+                            <Grid item xs={12} sm={6} md={7} display='flex' direction='row' justifyContent='center'>
                                 {/* <Grid item xs={12} lg={9}> With Masonry*/}
-                                <Box  sx={{
-                                    height: 'auto',
+                                <Box sx={{
+                                    height: {
+                                        xs: '90%',
+                                        md: 'auto',
+                                    },
                                     width: 'auto',
                                 }}
                                     component='img'
