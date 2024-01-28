@@ -10,7 +10,7 @@ const StyledTitleBox = styled(Box)`
 	border-radius: 20px;
 `
 
-function ObjectivesSolutionSection() {
+function ObjectivesSolutionSectionLegacy() {
     return (
         <>
             <Grid container spacing={4}>
@@ -46,4 +46,4 @@ function ObjectivesSolutionSection() {
     )
 }
 
-export default ObjectivesSolutionSection
+export default ObjectivesSolutionSectionLegacy

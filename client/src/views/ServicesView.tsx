@@ -3,7 +3,6 @@ import servicesBackgroundLargeScreen from '../assets/img/title-backgrounds/servi
 
 import isTitledView from '../HOC/isTitledView'
 
-import ObjectivesSolutionSection from '../components/Sections/ServicesView/ObjectivesSolutionSection'
 import ServicesTabs from '../components/Sections/ServicesView/ServiceTabs/ServicesTabs'
 import CallToActionSection from '../components/CallToActionSection'
 import CustomDivider from '../components/CustomDivider'
@@ -17,10 +16,6 @@ function ServicesView() {
 				<Container>
 
 					<ServicesTabs />
-
-					<CustomDivider mt={{xs: 3, md: 2}} mb={{xs: 3, md: 5}} />
-
-					<ObjectivesSolutionSection />
 
 					<CustomDivider mt={{xs: 3, md: 5}} mb={{xs: 3, md: 5}} />
 
