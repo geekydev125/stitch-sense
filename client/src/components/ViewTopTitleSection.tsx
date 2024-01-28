@@ -64,7 +64,7 @@ function ViewTopTitleSection({
         >
             <Box className="overlay" height='100%'>
                 <Container sx={{ height: '100%' }} >
-                    <Stack pl={{ md: 10 }} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
+                    <Stack pl={{ md: 5 }} height='100%' direction='row' justifyContent='space-between' alignItems='center'>
                         {
                             isXs
                                 ? <Typography variant='h2' component='h2' color='custom.theme.almostWhite'>{viewTitle}</Typography>
