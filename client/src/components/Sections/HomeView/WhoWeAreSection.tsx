@@ -6,7 +6,7 @@ import SectionTitle from '../../SectionTitle'
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 
-function AboutSection() {
+function WhoWeAreSection() {
 	return (
 		<>
 			<Box id='about-section'>
@@ -48,4 +48,4 @@ function AboutSection() {
 	)
 }
 
-export default AboutSection
+export default WhoWeAreSection
