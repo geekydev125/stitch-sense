@@ -39,7 +39,7 @@ function SectionTitle({
     py,
     pl,
     pr,
-    px = {xs: 10},
+    px = {xs: 2, sm: 5},
     p
 }: Props) {
     return (
