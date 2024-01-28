@@ -1,109 +1,80 @@
-[{
-        "title": "Badinka",
-        "folder": "badinka",
-        "logo": "badinka-logo.png",
-        "images": [{
-                "title": "Love Hangover",
-                "imageSrc": "love-hangover.jpg"
-            },
-            {
-                "title": "Insatiable",
-                "imageSrc": "insatiable.jpg"
-            }, {
-                "title": "Wired",
-                "imageSrc": "wired.jpg"
-            },
-            {
-                "title": "Lucid Enchanted Wear",
-                "imageSrc": "lucid-enchanted-wear.jpg"
-            },
-            {
-                "title": "Neon",
-                "imageSrc": "neon.jpg"
-            },
-            {
-                "title": "Slumber Party",
-                "imageSrc": "slumber-party.jpg"
-            },
-            {
-                "title": "Glamourama",
-                "imageSrc": "glamourama.jpg"
-            },
-            {
-                "title": "Frequencies",
-                "imageSrc": "frequencies.jpg"
-            },
-            {
-                "title": "Cyber",
-                "imageSrc": "cyber.jpg"
-            },
-            {
-                "title": "Monochrome",
-                "imageSrc": "monochrome.jpg"
-            },
-            {
-                "title": "Goth",
-                "imageSrc": "goth.jpg"
-            },
-            {
-                "title": "Deadly Dolls",
-                "imageSrc": "deadly-dolls.jpg"
-            }
-
-        ]
+[
+    {
+        "title": "Love Hangover",
+        "imageSrc": "love-hangover.jpg"
     },
     {
-        "title": "Candy Catz",
-        "folder": "candyCatz",
-        "logo": "candy-catz-logo.png",
-        "images": [{
-                "title": "Best Woman's",
-                "imageSrc": "best-womans.jpg"
-            },
-            {
-                "title": "Best Man's",
-                "imageSrc": "best-mans.jpg"
-            },
-            {
-                "title": "Cyber",
-                "imageSrc": "cyber.jpg"
-            },
-            {
-                "title": "Neon Faves",
-                "imageSrc": "neon-faves.jpg"
-            }
-        ]
+        "title": "Insatiable",
+        "imageSrc": "insatiable.jpg"
+    }, {
+        "title": "Wired",
+        "imageSrc": "wired.jpg"
     },
     {
-        "title": "Rave Kitties",
-        "folder": "raveKitties",
-        "logo": "rave-kitties-logo.png",
-        "images": [{
-                "title": "Enchanting Dresses",
-                "imageSrc": "enchanting-dresses.jpg"
-            },
-            {
-                "title": "Female Costumes",
-                "imageSrc": "female-costumes.jpg"
-            },
-            {
-                "title": "Shine In Latex",
-                "imageSrc": "shine-in-latex.jpg"
-            },
-            {
-                "title": "Male Costumes",
-                "imageSrc": "male-costumes.jpg"
-            }
-        ]
-
+        "title": "Lucid Enchanted Wear",
+        "imageSrc": "lucid-enchanted-wear.jpg"
     },
     {
-        "title": "Super 5",
-        "folder": "super5",
-        "logo": "super5-logo.png",
-        "images": [{
-            "title": "Deadly Dolls",
-            "imageSrc": "deadly-dolls.jpg"
-        }]
+        "title": "Neon",
+        "imageSrc": "neon.jpg"
+    },
+    {
+        "title": "Slumber Party",
+        "imageSrc": "slumber-party.jpg"
+    },
+    {
+        "title": "Glamourama",
+        "imageSrc": "glamourama.jpg"
+    },
+    {
+        "title": "Frequencies",
+        "imageSrc": "frequencies.jpg"
+    },
+    {
+        "title": "Cyber",
+        "imageSrc": "cyber.jpg"
+    },
+    {
+        "title": "Monochrome",
+        "imageSrc": "monochrome.jpg"
+    },
+    {
+        "title": "Goth",
+        "imageSrc": "goth.jpg"
+    },
+    {
+        "title": "Deadly Dolls",
+        "imageSrc": "deadly-dolls.jpg"
+    },
+    {
+        "title": "Best Woman's",
+        "imageSrc": "best-womans.jpg"
+    },
+    {
+        "title": "Best Man's",
+        "imageSrc": "best-mans.jpg"
+    },
+    {
+        "title": "Cyber",
+        "imageSrc": "cyber2.jpg"
+    },
+    {
+        "title": "Neon Faves",
+        "imageSrc": "neon-faves.jpg"
+    }, {
+        "title": "Enchanting Dresses",
+        "imageSrc": "enchanting-dresses.jpg"
+    },
+    {
+        "title": "Female Costumes",
+        "imageSrc": "female-costumes.jpg"
+    },
+    {
+        "title": "Shine In Latex",
+        "imageSrc": "shine-in-latex.jpg"
+    },
+    {
+        "title": "Male Costumes",
+        "imageSrc": "male-costumes.jpg"
     }
 ]
