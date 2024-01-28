@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
+import getImageUrl from "../../utils/image-util";
 
 
 const CardMainContainer = styled(Paper)`
@@ -100,7 +101,7 @@ function FlipCard({
                 className='card-main-container'
                 elevation={6}
                 sx={{
-                    backgroundImage: `url('/assets/img/card-backgrounds/${imageSrc}')`,
+                    backgroundImage: `url(${getImageUrl('card-backgrounds',imageSrc)})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     height: {
