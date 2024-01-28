@@ -1,4 +1,4 @@
-import euFlag from '/assets/img/eu-flag-transparent.png'
+import euFlag from '../../../assets/img/eu-flag-transparent.png'
 
 import SectionTitle from '../../SectionTitle'
 

@@ -6,6 +6,7 @@ import Box from "@mui/material/Box"
 import { IStepArticle } from "../../../views/OurProcessView"
 import { useTheme } from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
+import getImageUrl from "../../../utils/image-util"
 
 interface Props extends IStepArticle {
 
@@ -31,7 +32,7 @@ function ProcessArticleCard({
 				<Typography variant="body1" component='p' color='custom.theme.darkGray' textAlign='justify'>{content}</Typography>
 			</Grid>
 			<Grid item xs={12} sm={6} md={5} order={ !isXs ? contentOrder === 'right' ? 1 : 2 : 2}>
-				<Box component='img' src={`/assets/img/${imageSrc}`} alt={`${title} image`} sx={{ width: '100%' }} />
+				<Box component='img' src={ getImageUrl(null, imageSrc) } alt={`${title} image`} sx={{ width: '100%' }} />
 			</Grid>
 		</Grid>
 	)

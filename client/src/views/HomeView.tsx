@@ -1,5 +1,5 @@
-import wavyLinesTop from '/assets/img/wavy-lines-top.svg'
-import wavyLinesBottom from '/assets/img/wavy-lines-bottom.svg'
+import wavyLinesTop from '../assets/img/wavy-lines-top.svg'
+import wavyLinesBottom from '../assets/img/wavy-lines-bottom.svg'
 
 import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
