@@ -105,8 +105,8 @@ function FlipCard({
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     height: {
-                        xs: '250px',
-                        sm: '340px'
+                        xs: '200px',
+                        sm: '280px'
                     }
                 }}
             >

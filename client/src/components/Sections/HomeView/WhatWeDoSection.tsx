@@ -13,8 +13,8 @@ function WhatWeDoSection() {
 		<>
 			<SectionTitle title='WHAT WE DO' mt={4} mb={2} p={2} />
 
-			<Typography variant='body1' component='p' textAlign={{xs: 'justify', md: 'center'}} mt={2} mb={4} color='custom.theme.darkGray'>
-				<b>StitchSense</b> specializes in sublimation on polyesters and a wide array of sewing services, with an emphasis on t-shirts, hoodies, sweaters, sportswear, loungewear, and costumes/jumpsuits. We pride ourselves in providing high-quality apparel products and speedy, customer-centric service.
+			<Typography variant='h4' component='p' textAlign={{xs: 'justify', md: 'center'}} mt={2} mb={4} color='custom.theme.darkGray'>
+				A complete private label solution for retailers and brand owners.
 			</Typography>
 
 			<Grid container spacing={{xs: 1, md: 2}}>
