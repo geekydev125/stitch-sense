@@ -15,8 +15,12 @@ import Box from '@mui/material/Box'
 import ImageList from '@mui/material/ImageList'
 import Link from '@mui/material/Link'
 import ImageListItem from '@mui/material/ImageListItem'
+import useTheme from '@mui/material/styles/useTheme'
+import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 
 function PortfolioView() {
+	const theme = useTheme()
+	const isXs = useMediaQuery(theme.breakpoints.down('sm'))
 
 	return (
 		<Box mt={{ xs: 5, md: 6 }} mb={{ xs: 7, md: 10 }}>
@@ -24,7 +28,7 @@ function PortfolioView() {
 
 				<CustomDivider mb={{ xs: 3, md: 4 }} />
 
-				<ImageList variant="standard" cols={4} gap={5}>
+				<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5}>
 					{portfolio.map((image) => (
 						<Link href='#' target='_blank' key={uniqid()}>
 							<ImageListItem>
