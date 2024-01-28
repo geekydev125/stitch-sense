@@ -17,10 +17,10 @@ const routes: IRoute[] = [
         route: "SERVICES",
         path: "/services"
     },
-    {
-        route: "OUR PROCESS",
-        path: "/our-process"
-    },
+    // {
+    //     route: "OUR PROCESS",
+    //     path: "/our-process"
+    // },
     {
         route: "PORTFOLIO",
         path: "/portfolio"
