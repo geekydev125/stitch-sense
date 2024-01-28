@@ -17,7 +17,7 @@ function GreenButtonWithLink({
 }: Props) {
 
 	return (
-		<RouterLink to={`/${linkTo}`}>
+		<RouterLink to={`/${linkTo}`} style={{textDecoration: 'none'}}>
 			<GreenButton
 				type={type}
 				variant={variant}
