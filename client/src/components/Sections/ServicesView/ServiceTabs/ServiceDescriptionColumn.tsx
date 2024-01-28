@@ -2,54 +2,34 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 
-import GreenButton from '../../../GreenButton'
+import GreenButtonWithLink from '../../../GreenButtonWithLink'
 
-function ServiceDescriptionColumn() {
+interface Props {
+    description: string
+}
+
+function ServiceDescriptionColumn({
+    description
+}: Props) {
     return (
         <>
-            <Stack minHeight={{
-                xs: 0,
-                lg: '620px',
-            }}>
-                <Box mb={2}>
-                    <Typography variant='body1' component='p'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
+            <Stack height={'100%'}>
+                <Stack pt={2} mb={2} >
+                    <Typography variant='body1' component='p' textAlign='justify'>
+                        {description}
                     </Typography>
-                    <br />
-                    <Typography variant='body1' component='p'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil facilis dolores deleniti iure at perferendis dolor nobis culpa natus vel ipsa minus dicta possimus, vero iusto ducimus aut nisi ratione dignissimos, aperiam repellat ullam? Reiciendis, eveniet earum placeat, cumque laboriosam quo nihil incidunt minima nostrum in minus itaque esse.
-                    </Typography>
-                    <br />
-                    <Typography variant='body1' component='p'>
-                        Lorem ipsum Lorem vel ipsa minus dicta possimus, vero.
-                    </Typography>
-                </Box>
+                </Stack>
 
-                <Box sx={{margin: 'auto auto 20px auto'}}>
-                    <GreenButton
+                <Box sx={{ margin: 'auto auto 20px auto' }}>
+                    <GreenButtonWithLink
                         variant='contained'
                         size='large'
                         boxShadow
+                        linkTo='contact-us'
                     >
                         GET A QUOTE
-                    </GreenButton>
+                    </GreenButtonWithLink>
                 </Box>
-
-
-                {/* 
-                <Button
-                    variant='contained'
-                    size='large'
-                    sx={{
-                        margin: 'auto auto 20px auto',
-                        backgroundColor: 'custom.theme.lightGreen',
-                        "&:hover": {
-                            backgroundColor: 'custom.theme.darkGreen',
-                        }
-                    }}
-                >
-                    GET A QUOTE
-                </Button> */}
             </Stack>
         </>
     )
