@@ -2,6 +2,8 @@ import uniqid from 'uniqid'
 
 import SimpleEmployeeCard from '../../Cards/SimpleEmployeeCard'
 import SectionTitle from '../../SectionTitle'
+import clientsImpactCardsContent from '../../../data/clientImpact.json'
+import employeesImpactCardsContent from '../../../data/employeesImpact.json'
 
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
@@ -11,52 +13,10 @@ import SimpleBusinessCard from '../../Cards/SimpleBusinessCard'
 export interface Icard {
     title: string,
     content: string,
-    imageSrc?: string,
-    alt?: string,
+    imageSrc: string,
+    alt: string,
     variant: 'light' | 'dark',
 }
-
-const clientsImpactCardsContent: Icard[] = [
-    {
-        title: 'CUSTOMER CARE',
-        content: 'We are here to provide you with exceptional customer service, help with designs, sourcing materials, and general consulting. We’ve got you covered.',
-        imageSrc: '/assets/img/icons/customer-care-icon.png',
-        alt: 'customer care icon',
-        variant: 'light'
-    },
-    {
-        title: 'VOLUME FLEXIBILITY',
-        content: 'We are dedicated to giving you as much flexibility as you need, so whether you need a large-scale or a small-scale order to befulfilled, we’ve got your back.',
-        imageSrc: '/assets/img/icons/arrows-icon.svg',
-        alt: 'arrows icon',
-        variant: 'light'
-    },
-    {
-        title: 'FINISHED PRODUCTS',
-        content: 'We can help you solve the puzzle by takingcare of all your manufacturing needs and providing you with a completely finished product so that you can be ready to enjoy your business succes.',
-        imageSrc: '/assets/img/icons/puzzle-icon.svg',
-        alt: 'puzzle icon',
-        variant: 'light'
-    }
-]
-
-export const employeesImpactCardsContent: Icard[] = [
-    {
-        title: 'FAIRLY PAID WORKERS',
-        content: 'Our factory workers are paid well for their work. We stand firmly against employee exploitation.',
-        variant: 'light'
-    },
-    {
-        title: 'GOOD WORKING CONDITIONS',
-        content: 'We provide good working conditions, because we care.',
-        variant: 'dark'
-    },
-    {
-        title: 'ETHICAL MINDSET',
-        content: 'We constantly try to improve and strive for the well-being of our employees.',
-        variant: 'light'
-    },
-]
 
 function WhyTrustUsSection() {
     return (
@@ -68,10 +28,10 @@ function WhyTrustUsSection() {
                 <SectionTitle title='OUR IMPACT ON YOU' variant='h5' justify='left' p={2} />
 
                 <Grid container spacing={2} mt={0}>
-                    {clientsImpactCardsContent.map(card => {
+                    {clientsImpactCardsContent.map((card) => {
                         return (
                             <Grid key={uniqid()} item xs={12} md={4}>
-                                <SimpleBusinessCard {...card} />
+                                <SimpleBusinessCard {...card as Icard} />
                             </Grid>
                         )
                     })}
@@ -85,7 +45,7 @@ function WhyTrustUsSection() {
                     {employeesImpactCardsContent.map(card => {
                         return (
                             <Grid key={uniqid()} item xs={12} md={4}>
-                                <SimpleEmployeeCard {...card} />
+                                <SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
                             </Grid>
                         )
                     })}

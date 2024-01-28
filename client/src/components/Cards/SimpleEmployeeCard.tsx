@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography"
 import { Icard } from "../Sections/HomeView/WhyTrustUsSection"
 import Paper from "@mui/material/Paper"
 
-interface Props extends Icard {
+interface Props extends Omit<Icard, "imageSrc" | "alt"> {
 }
 
 function SimpleEmployeeCard({

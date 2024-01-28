@@ -4,7 +4,8 @@ import isTitledView from '../HOC/isTitledView'
 
 import aboutBackgroundSmallScreen from '../assets/img/title-backgrounds/about-background-small-screen.jpg'
 import aboutBackgroundLargeScreen from '../assets/img/title-backgrounds/about-background-large-screen.jpg'
-import { employeesImpactCardsContent } from '../components/Sections/HomeView/WhyTrustUsSection'
+import employeesImpactCardsContent from '../data/employeesImpact.json'
+
 import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
 import EmployeeCard from '../components/Cards/EmployeeCard'
@@ -16,6 +17,7 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import CallToActionSection from '../components/CallToActionSection'
+import { Icard } from '../components/Sections/HomeView/WhyTrustUsSection'
 
 export interface IEmployee {
 	firstName: string
@@ -39,7 +41,7 @@ function AboutView() {
 					{employeesImpactCardsContent.map(card => {
 						return (
 							<Grid key={uniqid()} item xs={12} md={4}>
-								<SimpleEmployeeCard {...card} />
+								 <SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
 							</Grid>
 						)
 					})}

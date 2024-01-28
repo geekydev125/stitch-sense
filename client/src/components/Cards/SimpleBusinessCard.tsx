@@ -1,9 +1,13 @@
+import getImageUrl from "../../utils/image-util"
+
+import { Icard } from "../Sections/HomeView/WhyTrustUsSection"
+
 import Card from "@mui/material/Card"
 import Paper from "@mui/material/Paper"
-import { Icard } from "../Sections/HomeView/WhyTrustUsSection"
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import Stack from "@mui/material/Stack"
+
 
 interface Props extends Icard {
 }
@@ -44,7 +48,7 @@ function SimpleBusinessCard({
 					</Typography>
 
 					<Stack sx={{ width: '100%', height: { xs: '80px', md: '120px'} }} p={1} mt={{xs: 0, md: 2}} justifyContent='center' alignItems='center'>
-						<Box component={'img'} src={imageSrc} alt={alt} height="100%" />
+						<Box component={'img'} src={ getImageUrl('icons', imageSrc as string)} alt={alt} height="100%" />
 					</Stack>
 
 					<Typography
