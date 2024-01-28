@@ -5,7 +5,7 @@ import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
 import Box from '@mui/material/Box'
 
-import AboutSection from "../components/Sections/HomeView/AboutSection"
+import AboutSection from "../components/Sections/HomeView/WhoWeAreSection"
 import HeroSection from "../components/Sections/HomeView/HereSection/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
 import ManufactoringSection from "../components/Sections/HomeView/ManufactoringSection"
