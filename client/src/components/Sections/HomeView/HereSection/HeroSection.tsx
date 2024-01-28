@@ -35,11 +35,20 @@ function HeroSection() {
             <HeroSectionBackground customHeights={customHeights}>
                 <Container>
                     <Grid container>
-                        <Grid item xs={12} md={8} lg={6}>
-                            <Stack height='100%' display='column' justifyContent='center' alignItems='center' sx={{ height: { ...customHeights } }}>
+                        <Grid item xs={12} md={8} lg={7}>
+                            <Stack height='100%'
+                                display='column'
+                                justifyContent='center'
+                                alignItems='center'
+                                sx={{ height: { ...customHeights } }}
+                                px={{ xs: 5, md: 0 }}
+                            >
                                 <Typography variant='h1' component='h1' color={isXsSm ? 'custom.theme.almostWhite' : 'custom.theme.darkGray'} textAlign='center' >StitchSense</Typography>
-                                <Typography variant='h6' component='h3' color={isXsSm ? 'custom.theme.almostWhite' : 'custom.theme.darkGray'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
 
+                                {isXsSm
+                                    ? <Typography variant='body1' component='h3' color={'custom.theme.almostWhite'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
+                                    : <Typography variant='h6' component='h3' color={'custom.theme.darkGray'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
+                                }
                                 <HeroSectionLogo />
                             </Stack>
                         </Grid>
