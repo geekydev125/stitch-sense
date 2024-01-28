@@ -13,6 +13,7 @@ import services from '../../../../data/services.json'
 import ServiceDescriptionColumn from './ServiceDescriptionColumn';
 import MasonryImageList from './MasonryImageList';
 import { useServiceTabsContext } from '../../../../contexts/ServiceTabsContext';
+import getImageUrl from '../../../../utils/image-util';
 
 const tabsStyles = {
     '.MuiTabs-flexContainer': {
@@ -27,7 +28,7 @@ const tabsStyles = {
             borderRadius: '20px',
         },
         md: {
-            fontSize: '27px',
+            fontSize: '24px',
             borderRadius: '20px 20px 0 0',
             margin: '0 5px',
             '&:first-of-type': {
@@ -38,7 +39,7 @@ const tabsStyles = {
             }
         },
         lg: {
-            fontSize: '30px',
+            // fontSize: '30px',
         },
     },
     '& button.Mui-selected': {
@@ -83,7 +84,7 @@ function ServicesTabs() {
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
     const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
-    console.log('event:', event)
+        console.log('event:', event)
 
         changeActiveTab(newIndex);
     };
@@ -111,12 +112,22 @@ function ServicesTabs() {
             {
                 services.map((service, index) => (
                     <CustomTabPanel key={uniqid()} value={activeTabIndex} index={index}>
-                        <Grid container >
-                            <Grid item xs={12} lg={4} >
-                                <ServiceDescriptionColumn />
+                        <Grid container spacing={2} >
+                            <Grid item xs={12} lg={5} >
+                                {/* <Grid item xs={12} lg={3} > With Masonry*/}
+                                <ServiceDescriptionColumn description={service.content} />
                             </Grid>
-                            <Grid item xs={12} lg={8}>
-                                <MasonryImageList images={service.images} cols={3} gap={8} />
+                            <Grid item xs={12} lg={7} display='flex' direction='row' justifyContent='center'>
+                                {/* <Grid item xs={12} lg={9}> With Masonry*/}
+                                <Box  sx={{
+                                    height: 'auto',
+                                    width: 'auto',
+                                }}
+                                    component='img'
+                                    src={getImageUrl('card-backgrounds', service.imageSrc)}
+                                    alt={`${service.title} image `}
+                                />
+                                {/* <MasonryImageList images={service.images} cols={3} gap={8} /> */}
                             </Grid>
                         </Grid>
                     </CustomTabPanel>
