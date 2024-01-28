@@ -7,6 +7,7 @@ import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 import uniqid from 'uniqid'
 import SectionTitle from '../../SectionTitle'
+import getImageUrl from '../../../utils/image-util'
 
 function OurClientsSection() {
     return (
@@ -33,7 +34,7 @@ function OurClientsSection() {
                         {clients.map(client => {
                             return (
                                 <Grid key={uniqid()} item xs={6} md={3} display='flex' justifyContent='center' alignItems='center'>
-                                    <Box component='img' src={client.imageSrc} alt={`${client.title} Logo`} maxWidth='100%' />
+                                    <Box component='img' src={getImageUrl('logos',client.imageSrc)} alt={`${client.title} Logo`} maxWidth='100%' />
                                 </Grid>
                             )
                         })}
