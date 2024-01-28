@@ -25,7 +25,7 @@ function SimpleBusinessCard({
 					minHeight: {
 						xs: 'auto',
 						md: '530px',
-						lg: '430px'
+						lg: 'auto'
 					},
 					backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
 					borderRadius: '20px',
@@ -36,7 +36,7 @@ function SimpleBusinessCard({
 			>
 				<Box p={2}>
 					<Typography
-						variant='h4'
+						variant='h5'
 						component='h4'
 						textAlign='center'
 						textTransform='uppercase'

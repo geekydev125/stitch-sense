@@ -20,7 +20,7 @@ function SimpleEmployeeCard({
                     minHeight: {
                         xs: 'auto',
                         md: '300px',
-                        lg: '260px'
+                        lg: 'auto'
                     },
                     backgroundColor: variant === 'light' ? 'custom.theme.almostWhite' : 'custom.theme.darkGray',
                     borderRadius: '50px',
@@ -33,9 +33,9 @@ function SimpleEmployeeCard({
                     <Typography
                         minHeight={ {
                             xs: '0',
-                            md: '104px'
+                            md: '70px'
                         }}
-                        variant='h4'
+                        variant='h5'
                         component='h4'
                         textAlign='center'
                         textTransform='uppercase'
@@ -55,7 +55,7 @@ function SimpleEmployeeCard({
                         }}
                         mt={{
                             xs: 1,
-                            md: 3
+                            md: 1
                         }}
                         sx={{
                             color: variant === 'light' ? 'custom.theme.darkGray' : 'custom.theme.almostWhite',
