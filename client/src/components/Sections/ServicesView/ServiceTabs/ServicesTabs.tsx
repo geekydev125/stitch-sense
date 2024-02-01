@@ -117,7 +117,7 @@ function ServicesTabs() {
                                 {/* <Grid item xs={12} lg={3} > With Masonry*/}
                                 <ServiceDescriptionColumn description={service.content} />
                             </Grid>
-                            <Grid item xs={12} sm={6} md={7} display='flex' direction='row' justifyContent='center'>
+                            <Grid item xs={12} sm={6} md={7} display='flex' justifyContent='center'>
                                 {/* <Grid item xs={12} lg={9}> With Masonry*/}
                                 <Box sx={{
                                     height: {
