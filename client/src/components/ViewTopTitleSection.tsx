@@ -53,7 +53,7 @@ function ViewTopTitleSection({
                     xs: `url(${imageSrcSmallScreen})`,
                     lg: `url(${imageSrcLargeScreen})`,
                 },
-                backgroundSize: 'contain',
+                backgroundSize: 'contain', 
                 minHeight: {
                     xs: '15vh',
                     sm: '20vh',
