@@ -4,11 +4,16 @@ import isTitledView from '../HOC/isTitledView'
 
 import aboutBackgroundSmallScreen from '../assets/img/title-backgrounds/about-background-small-screen.jpg'
 import aboutBackgroundLargeScreen from '../assets/img/title-backgrounds/about-background-large-screen.jpg'
+
 import employeesImpactCardsContent from '../data/employeesImpact.json'
 
+import { Icard } from '../components/Sections/HomeView/WhyTrustUsSection'
+
+import SectionTitle from '../components/SectionTitle'
 import SimpleEmployeeCard from '../components/Cards/SimpleEmployeeCard'
 import CustomDivider from '../components/CustomDivider'
 import EmployeeCard from '../components/Cards/EmployeeCard'
+import CallToActionSection from '../components/CallToActionSection'
 
 import employeesData from '../data/employees.json'
 
@@ -16,15 +21,13 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import CallToActionSection from '../components/CallToActionSection'
-import { Icard } from '../components/Sections/HomeView/WhyTrustUsSection'
-import SectionTitle from '../components/SectionTitle'
 
 export interface IEmployee {
 	firstName: string
 	lastName: string
 	position: string
-	imageSrc: string | null
+	imageSrc: string | null,
+	imageSrcSmall: string
 }
 
 function AboutView() {
