@@ -28,10 +28,7 @@ function ServicesView() {
 export default isTitledView(ServicesView,
 	{
 		viewTitle: "Services",
-		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'services-background-small-screen-small.jpg'),
 		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'services-background-small-screen.jpg'),
-
-		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'services-background-large-screen-small.jpg'),
 		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'services-background-large-screen.jpg'),
 	}
 )

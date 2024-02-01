@@ -83,10 +83,7 @@ function AboutView() {
 export default isTitledView(AboutView,
 	{
 		viewTitle: "About Us",
-		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'about-background-small-screen-small.jpg'),
 		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'about-background-small-screen.jpg'),
-
-		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'about-background-large-screen-small.jpg'),
 		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'about-background-large-screen.jpg'),
 	}
 )

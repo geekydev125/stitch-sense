@@ -53,10 +53,7 @@ function PortfolioView() {
 export default isTitledView(PortfolioView,
 	{
 		viewTitle: "Portfolio",
-		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'portfolio-background-small-screen-small.jpg'),
 		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'portfolio-background-small-screen.jpg'),
-
-		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'portfolio-background-large-screen-small.jpg'),
 		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'portfolio-background-large-screen.jpg'),
 	}
 )

@@ -9,8 +9,6 @@ import Box from '@mui/material/Box';
 
 interface Props {
     viewTitle: string,
-    imagePreviewSmallScreen: string,
-    imagePreviewLargeScreen: string,
     imageSrcSmallScreen: string,
     imageSrcLargeScreen: string
 }
@@ -18,8 +16,6 @@ interface Props {
 function isTitledView<T>(
     WrappedComponent: React.ComponentType<T>, {
         viewTitle,
-        imagePreviewSmallScreen,
-        imagePreviewLargeScreen,
         imageSrcSmallScreen,
         imageSrcLargeScreen,
     }: Props) {
@@ -27,8 +23,6 @@ function isTitledView<T>(
         <>
             <ViewTopTitleSection
                 viewTitle={viewTitle}
-                imagePreviewSmallScreen={imagePreviewSmallScreen}
-                imagePreviewLargeScreen={imagePreviewLargeScreen}
                 imageSrcSmallScreen={imageSrcSmallScreen}
                 imageSrcLargeScreen={imageSrcLargeScreen}
             />

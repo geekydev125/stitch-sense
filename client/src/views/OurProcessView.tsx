@@ -114,10 +114,7 @@ function OurProcessView() {
 export default isTitledView(OurProcessView,
 	{
 		viewTitle: "Our Process",
-		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'our-process-background-small-screen-small.jpg'),
 		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'our-process-background-small-screen.jpg'),
-
-		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'our-process-background-large-screen-small.jpg'),
 		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'our-process-background-large-screen.jpg'),
 	}
 )

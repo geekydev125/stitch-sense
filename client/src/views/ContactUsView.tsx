@@ -24,10 +24,7 @@ function ContactUsView() {
 export default isTitledView(ContactUsView,
 	{
 		viewTitle: "Contact Us",
-		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'contact-background-small-screen-small.jpg'),
 		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'contact-background-small-screen.jpg'),
-
-		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'contact-background-large-screen-small.jpg'),
 		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'contact-background-large-screen.jpg'),
 	}
 )
