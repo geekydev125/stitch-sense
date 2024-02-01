@@ -9,14 +9,29 @@ import Box from '@mui/material/Box';
 
 interface Props {
     viewTitle: string,
+    imagePreviewSmallScreen: string,
+    imagePreviewLargeScreen: string,
     imageSrcSmallScreen: string,
     imageSrcLargeScreen: string
 }
 
-function isTitledView<T>(WrappedComponent: React.ComponentType<T>, { viewTitle, imageSrcSmallScreen, imageSrcLargeScreen }: Props) {
+function isTitledView<T>(
+    WrappedComponent: React.ComponentType<T>, {
+        viewTitle,
+        imagePreviewSmallScreen,
+        imagePreviewLargeScreen,
+        imageSrcSmallScreen,
+        imageSrcLargeScreen,
+    }: Props) {
     return (props: T) => (
         <>
-            <ViewTopTitleSection viewTitle={viewTitle} imageSrcSmallScreen={imageSrcSmallScreen} imageSrcLargeScreen={imageSrcLargeScreen} />
+            <ViewTopTitleSection
+                viewTitle={viewTitle}
+                imagePreviewSmallScreen={imagePreviewSmallScreen}
+                imagePreviewLargeScreen={imagePreviewLargeScreen}
+                imageSrcSmallScreen={imageSrcSmallScreen}
+                imageSrcLargeScreen={imageSrcLargeScreen}
+            />
             <Stack component='main' flexGrow={1}
                 sx={{
                     background: `url(${wavyLinesTop})`,

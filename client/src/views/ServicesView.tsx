@@ -1,5 +1,4 @@
-import servicesBackgroundSmallScreen from '../assets/img/title-backgrounds/services-background-small-screen.jpg'
-import servicesBackgroundLargeScreen from '../assets/img/title-backgrounds/services-background-large-screen.jpg'
+import getImageUrl from '../utils/image-util'
 
 import isTitledView from '../HOC/isTitledView'
 
@@ -29,7 +28,10 @@ function ServicesView() {
 export default isTitledView(ServicesView,
 	{
 		viewTitle: "Services",
-		imageSrcSmallScreen: servicesBackgroundSmallScreen,
-		imageSrcLargeScreen: servicesBackgroundLargeScreen
+		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'services-background-small-screen-small.jpg'),
+		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'services-background-small-screen.jpg'),
+
+		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'services-background-large-screen-small.jpg'),
+		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'services-background-large-screen.jpg'),
 	}
 )
