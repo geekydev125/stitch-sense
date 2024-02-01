@@ -1,3 +1,6 @@
+import useMediaQuery from '@mui/material/useMediaQuery'
+import useTheme from '@mui/system/useTheme'
+
 import styled from '@mui/material/styles/styled'
 
 import stitchSenseLogo from '../assets/img/logos/stitchSense-logo.png'
@@ -6,11 +9,9 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import useTheme from '@mui/system/useTheme'
+
 
 const BackgroundBox = styled(Box)`
-    
     background-repeat: no-repeat;
     background-attachment: fixed; 
 
@@ -70,7 +71,6 @@ function ViewTopTitleSection({
                                 ? <Typography variant='h2' component='h2' color='custom.theme.almostWhite'>{viewTitle}</Typography>
                                 : <Typography variant='h3' component='h2' color='custom.theme.almostWhite'>{viewTitle}</Typography>
                         }
-
                         <Box
                             component='img'
                             className='logo'
