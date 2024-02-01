@@ -1,22 +1,23 @@
 import uniqid from 'uniqid'
+import ProgressiveImage from 'react-progressive-image-loading'
 
 import portfolioBackgroundSmallScreen from '../assets/img/title-backgrounds/portfolio-background-small-screen.jpg'
 import portfolioBackgroundLargeScreen from '../assets/img/title-backgrounds/portfolio-background-large-screen.jpg'
-
 import getImageUrl from '../utils/image-util'
+
 import isTitledView from '../HOC/isTitledView'
 import CustomDivider from '../components/CustomDivider'
 import CallToActionSection from '../components/CallToActionSection'
 
 import portfolio from '../data/portfolio.json'
 
+import useTheme from '@mui/material/styles/useTheme'
+import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import ImageList from '@mui/material/ImageList'
 import Link from '@mui/material/Link'
 import ImageListItem from '@mui/material/ImageListItem'
-import useTheme from '@mui/material/styles/useTheme'
-import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 
 function PortfolioView() {
 	const theme = useTheme()
@@ -32,11 +33,11 @@ function PortfolioView() {
 					{portfolio.map((image) => (
 						<Link href='#' target='_blank' key={uniqid()}>
 							<ImageListItem>
-								<img
-									srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
-									src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
-									alt={image.title}
-									loading="lazy"
+								<ProgressiveImage
+									preview={getImageUrl('portfolio', image.imageSrcSmall)}
+									src={getImageUrl('portfolio', image.imageSrc)} 
+									initialBlur={5}
+									render={(src, style) => <img src={src} style={style} alt={image.title} />}
 								/>
 							</ImageListItem>
 						</Link>
