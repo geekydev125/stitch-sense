@@ -3,36 +3,42 @@
 		"firstName": "Ganimir",
 		"lastName": "Vangelov",
 		"position": "Chief Operations Officer",
-		"imageSrc": "ganimir-vangelov.jpg"
+		"imageSrc": "ganimir-vangelov.jpg",
+		"imageSrcSmall": "ganimir-vangelov-small.jpg"
 	},
 	{
 		"firstName": "Chavdar",
 		"lastName": "Dobrev",
 		"position": "Chief Operations Officer",
-		"imageSrc": "chavdar-dobrev.jpg"
+		"imageSrc": "chavdar-dobrev.jpg",
+		"imageSrcSmall": "chavdar-dobrev-small.jpg"
 	},
 	{
 		"firstName": "Plamen",
 		"lastName": "Petrov",
 		"position": "Chief Operations Officer",
-		"imageSrc": "plamen-petrov.jpg"
+		"imageSrc": "plamen-petrov.jpg",
+		"imageSrcSmall": "plamen-petrov-small.jpg"
 	},
 	{
 		"firstName": "Name",
 		"lastName": "Name",
 		"position": "Fashion Designer",
-		"imageSrc": null
+		"imageSrc": null,
+		"imageSrcSmall": "missing-photo-small.jpg"
 	},
 	{
 		"firstName": "Name",
 		"lastName": "Name",
 		"position": "Designer",
-		"imageSrc": null
+		"imageSrc": null,
+		"imageSrcSmall": "missing-photo-small.jpg"
 	},
 	{
 		"firstName": "Name",
 		"lastName": "Name",
 		"position": "Clothing Operations Manager",
-		"imageSrc": null
+		"imageSrc": null,
+		"imageSrcSmall": "missing-photo-small.jpg"
 	}
 ]
