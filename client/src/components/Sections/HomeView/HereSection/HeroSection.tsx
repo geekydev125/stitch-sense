@@ -1,9 +1,11 @@
+import { lazy } from 'react';
+
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import useTheme from '@mui/material/styles/useTheme';
 
 import HeroSectionBackground from './HeroSectionBackground';
 import AnimatedArrow from './AnimatedArrow';
-import BackgroundVideo from './BackgroundVideo';
+const LazyBackgroundVideo = lazy(() => import('./BackgroundVideo'));
 import HeroSectionLogo from './HeroSectionLogo';
 
 import Box from '@mui/material/Box';
@@ -11,6 +13,7 @@ import Stack from '@mui/system/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+
 
 export interface ICustomHeights {
     xs: string,
@@ -61,7 +64,7 @@ function HeroSection() {
                 </Box>
             </HeroSectionBackground>
 
-            <BackgroundVideo {...customHeights} />
+            <LazyBackgroundVideo {...customHeights} />
         </Box>
     )
 }
