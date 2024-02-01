@@ -216,7 +216,7 @@ function ContactForm() {
 
 
                                 </Grid>
-                                <Grid item xs={12} display='flex' direction='column' justifyContent='center' alignItems='center' height='auto' mb={5}>
+                                <Grid item xs={12} display='flex' justifyContent='center' alignItems='center' height='auto' mb={5}>
                                     {submissionError && <Typography mb={2} variant='body1' component='p' textAlign='center' color='error'>{submissionError}</Typography>}
                                     <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
                                 </Grid>

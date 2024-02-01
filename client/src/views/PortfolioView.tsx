@@ -1,5 +1,4 @@
 import uniqid from 'uniqid'
-import ProgressiveImage from 'react-progressive-image-loading'
 
 import getImageUrl from '../utils/image-util'
 
@@ -31,11 +30,11 @@ function PortfolioView() {
 					{portfolio.map((image) => (
 						<Link href='#' target='_blank' key={uniqid()}>
 							<ImageListItem>
-								<ProgressiveImage
-									preview={getImageUrl('portfolio', image.imageSrcSmall)}
-									src={getImageUrl('portfolio', image.imageSrc)} 
-									initialBlur={5}
-									render={(src, style) => <img src={src} style={style} alt={image.title} loading="lazy"/>}
+								<img
+									srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+									src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
+									alt={image.title}
+									loading="lazy"
 								/>
 							</ImageListItem>
 						</Link>

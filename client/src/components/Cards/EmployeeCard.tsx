@@ -1,5 +1,3 @@
-import ProgressiveImage from "react-progressive-image-loading"
-
 import missingPhoto from '../../assets/img/employees/missing-photo.jpg'
 
 import getImageUrl from "../../utils/image-util"
@@ -21,28 +19,20 @@ function EmployeeCard({
     return (
         <Box>
 
-            <ProgressiveImage
-                preview={getImageUrl('employees', imageSrcSmall)}
-                src={imageSrc ? getImageUrl('employees', imageSrc) : missingPhoto}
-                initialBlur={5}
-                render={(src, style) =>
-                    <Box
-                        component='img'
-                        sx={{
-                            width: '100%',
-                            height: {
-                                xs: "300px",
-                                sm: "400px",
-                                lg: "500px"
-                            },
-                            objectFit: 'cover'
-                        }}
-                        src={src}
-                        style={style}
-                        alt={`${firstName} ${lastName} Photo`}
-                        loading="lazy"
-                    />
-                }
+            <Box
+                component="img"
+                src={imageSrc ? `${getImageUrl('employees', imageSrc)}` : missingPhoto}
+                alt={`${firstName} ${lastName} Photo`}
+                sx={{
+                    width: '100%',
+                    height: {
+                        xs: "300px",
+                        sm: "400px",
+                        lg: "500px"
+                    },
+                    objectFit: 'cover'
+                }}
+                loading="lazy"
             />
             <Box textAlign='center' color='custom.theme.darkGray' mt={2} mb={4}>
                 <Typography textTransform='uppercase' variant="h5" component='p' fontWeight='500'>{firstName} {lastName}</Typography>

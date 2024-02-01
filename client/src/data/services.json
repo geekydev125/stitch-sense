@@ -2,6 +2,7 @@
         "title": "DESIGN",
         "content": "Elevate your designs with our experienced team. Choose from our sewing patterns or share your own vision—we offer design brainstorming, sewing patterns, or seamless execution of your completed design.",
         "imageSrc": "design.jpg",
+        "imageSrcSmall": "design-small.jpg",
         "linkTo": "services",
         "tabValue": 0,
         "images": [
@@ -71,6 +72,7 @@
         "title": "PRODUCTION",
         "content": "Streamlined and cost-effective, our production management spans in-house and 3rd-party, on-shore and off-shore. Operating multiple facilities, we have the capacity to produce millions of units annually.",
         "imageSrc": "production.jpg",
+        "imageSrcSmall": "production-small.jpg",
         "linkTo": "services",
         "tabValue": 1,
         "images":[]
@@ -79,6 +81,7 @@
         "title": "SUBLIMATION",
         "content": "A core area of our expertise lies in sublimation on polyester. Armed with cutting-edge technologies, we consistently deliver the highest quality and vibrant colors to elevate your designs.",
         "imageSrc": "sublimation.jpg",
+        "imageSrcSmall": "sublimation-small.jpg",
         "linkTo": "services",
         "tabValue": 2,
         "images":[]
@@ -87,6 +90,7 @@
         "title": "SOURCING",
         "content": "Our extensive fabric network, built on enduring relationships and decades of experience, ensures optimal sourcing solutions for diverse material needs. We meet specific requirements for materials and textiles seamlessly.",
         "imageSrc": "sourcing.jpg",
+        "imageSrcSmall": "sourcing-small.jpg",
         "linkTo": "services",
         "tabValue": 3,
         "images":[]
@@ -95,6 +99,7 @@
         "title": "DISTRIBUTION",
         "content": "Whether catering to individual consumers or supplying bulk orders to retail, our expertise and experience uniquely position us to meet all your order requirements with precision and efficiency.",
         "imageSrc": "distribution.jpg",
+        "imageSrcSmall": "distribution-small.jpg",
         "linkTo": "services",
         "tabValue": 4,
         "images":[]
@@ -103,6 +108,7 @@
         "title": "SAMPLING",
         "content": "Request a complimentary sample of your desired item with no extra cost. Your satisfaction is our priority, allowing you to assess the product's quality firsthand before proceeding with your order. Confidence in your investment is key.",
         "imageSrc": "sampling.jpg",
+        "imageSrcSmall": "sampling-small.jpg",
         "linkTo": "services",
         "tabValue": 5,
         "images":[]

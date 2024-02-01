@@ -9,7 +9,6 @@ import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import Divider from '@mui/material/Divider'
-import ProgressiveImage from 'react-progressive-image-loading'
 
 function OurClientsSection() {
     return (
@@ -24,20 +23,12 @@ function OurClientsSection() {
                         {clients.map(client => {
                             return (
                                 <Grid key={uniqid()} item xs={3} display='flex' justifyContent='center' alignItems='center'>
-                                    <ProgressiveImage
-                                        preview={getImageUrl('logos', client.imageSrcSmall)}
+                                    <Box
+                                        component='img'
                                         src={getImageUrl('logos', client.imageSrc)}
-                                        initialBlur={5}
-                                        render={(src) =>
-                                        <Box
-                                            component='img'
-                                            maxWidth='100%'
-                                            src={src}
-                                            alt={`${client.title} Logo`}
-                                            loading="lazy"
-                                            />
-                                        }
-
+                                        alt={`${client.title} Logo`}
+                                        maxWidth='100%'
+                                        loading='lazy'
                                     />
                                 </Grid>
                             )
