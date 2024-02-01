@@ -37,7 +37,7 @@ function PortfolioView() {
 									preview={getImageUrl('portfolio', image.imageSrcSmall)}
 									src={getImageUrl('portfolio', image.imageSrc)} 
 									initialBlur={5}
-									render={(src, style) => <img src={src} style={style} alt={image.title} />}
+									render={(src, style) => <img src={src} style={style} alt={image.title} loading="lazy"/>}
 								/>
 							</ImageListItem>
 						</Link>
