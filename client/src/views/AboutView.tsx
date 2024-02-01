@@ -2,10 +2,8 @@ import uniqid from 'uniqid'
 
 import isTitledView from '../HOC/isTitledView'
 
-import aboutBackgroundSmallScreen from '../assets/img/title-backgrounds/about-background-small-screen.jpg'
-import aboutBackgroundLargeScreen from '../assets/img/title-backgrounds/about-background-large-screen.jpg'
-
 import employeesImpactCardsContent from '../data/employeesImpact.json'
+import getImageUrl from '../utils/image-util'
 
 import { Icard } from '../components/Sections/HomeView/WhyTrustUsSection'
 
@@ -85,7 +83,10 @@ function AboutView() {
 export default isTitledView(AboutView,
 	{
 		viewTitle: "About Us",
-		imageSrcSmallScreen: aboutBackgroundSmallScreen,
-		imageSrcLargeScreen: aboutBackgroundLargeScreen
+		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'about-background-small-screen-small.jpg'),
+		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'about-background-small-screen.jpg'),
+
+		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'about-background-large-screen-small.jpg'),
+		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'about-background-large-screen.jpg'),
 	}
 )

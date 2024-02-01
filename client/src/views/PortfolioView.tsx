@@ -1,8 +1,6 @@
 import uniqid from 'uniqid'
 import ProgressiveImage from 'react-progressive-image-loading'
 
-import portfolioBackgroundSmallScreen from '../assets/img/title-backgrounds/portfolio-background-small-screen.jpg'
-import portfolioBackgroundLargeScreen from '../assets/img/title-backgrounds/portfolio-background-large-screen.jpg'
 import getImageUrl from '../utils/image-util'
 
 import isTitledView from '../HOC/isTitledView'
@@ -55,7 +53,10 @@ function PortfolioView() {
 export default isTitledView(PortfolioView,
 	{
 		viewTitle: "Portfolio",
-		imageSrcSmallScreen: portfolioBackgroundSmallScreen,
-		imageSrcLargeScreen: portfolioBackgroundLargeScreen
+		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'portfolio-background-small-screen-small.jpg'),
+		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'portfolio-background-small-screen.jpg'),
+
+		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'portfolio-background-large-screen-small.jpg'),
+		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'portfolio-background-large-screen.jpg'),
 	}
 )

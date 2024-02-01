@@ -1,9 +1,8 @@
-import { useTheme } from '@mui/material/styles'
+import useTheme from '@mui/material/styles/useTheme'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import uniqid from 'uniqid'
 
-import ourProcessBackgroundSmallScreen from '../assets/img/title-backgrounds/our-process-background-small-screen.jpg'
-import ourProcessBackgroundLargeScreen from '../assets/img/title-backgrounds/our-process-background-large-screen.jpg'
+import getImageUrl from '../utils/image-util'
 
 import isTitledView from '../HOC/isTitledView'
 import ProcessStepArticle from '../components/Sections/OurProcessView/ProcessStepArticle'
@@ -11,11 +10,11 @@ import ProcessStepArticle from '../components/Sections/OurProcessView/ProcessSte
 import ProcessStepCard from '../components/Cards/ProcessStepCard'
 import CustomDivider from '../components/CustomDivider'
 import CallToActionSection from '../components/CallToActionSection'
+import Arrow from '../components/Arrow'
 
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import Arrow from '../components/Arrow'
 
 export interface IStepArticle {
 	title: string,
@@ -115,7 +114,10 @@ function OurProcessView() {
 export default isTitledView(OurProcessView,
 	{
 		viewTitle: "Our Process",
-		imageSrcSmallScreen: ourProcessBackgroundSmallScreen,
-		imageSrcLargeScreen: ourProcessBackgroundLargeScreen
+		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'our-process-background-small-screen-small.jpg'),
+		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'our-process-background-small-screen.jpg'),
+
+		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'our-process-background-large-screen-small.jpg'),
+		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'our-process-background-large-screen.jpg'),
 	}
 )

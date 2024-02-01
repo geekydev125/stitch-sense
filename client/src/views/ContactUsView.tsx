@@ -1,5 +1,4 @@
-import contactBackgroundSmallScreen from '../assets/img/title-backgrounds/contact-background-small-screen.jpg'
-import contactBackgroundLargeScreen from '../assets/img/title-backgrounds/contact-background-large-screen.jpg'
+import getImageUrl from '../utils/image-util';
 
 import isTitledView from '../HOC/isTitledView';
 import ContactForm from '../components/Sections/ContactUsView/ContactForm';
@@ -25,7 +24,10 @@ function ContactUsView() {
 export default isTitledView(ContactUsView,
 	{
 		viewTitle: "Contact Us",
-		imageSrcSmallScreen: contactBackgroundSmallScreen,
-		imageSrcLargeScreen: contactBackgroundLargeScreen
+		imagePreviewSmallScreen: getImageUrl('title-backgrounds', 'contact-background-small-screen-small.jpg'),
+		imageSrcSmallScreen: getImageUrl('title-backgrounds', 'contact-background-small-screen.jpg'),
+
+		imagePreviewLargeScreen: getImageUrl('title-backgrounds', 'contact-background-large-screen-small.jpg'),
+		imageSrcLargeScreen: getImageUrl('title-backgrounds', 'contact-background-large-screen.jpg'),
 	}
 )
