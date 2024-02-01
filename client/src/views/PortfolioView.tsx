@@ -1,4 +1,6 @@
 import uniqid from 'uniqid'
+import useTheme from '@mui/material/styles/useTheme'
+import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 
 import getImageUrl from '../utils/image-util'
 
@@ -8,8 +10,6 @@ import CallToActionSection from '../components/CallToActionSection'
 
 import portfolio from '../data/portfolio.json'
 
-import useTheme from '@mui/material/styles/useTheme'
-import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import ImageList from '@mui/material/ImageList'

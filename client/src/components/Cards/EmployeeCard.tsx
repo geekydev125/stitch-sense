@@ -14,7 +14,6 @@ function EmployeeCard({
     lastName,
     position,
     imageSrc,
-    imageSrcSmall
 }: Props) {
     return (
         <Box>

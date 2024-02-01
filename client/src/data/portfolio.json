@@ -30,71 +30,57 @@
     },
     {
         "title": "Glamourama",
-        "imageSrc": "glamourama.jpg",
-        "imageSrcSmall": "glamourama-small.jpg"
+        "imageSrc": "glamourama.jpg"
     },
     {
         "title": "Frequencies",
-        "imageSrc": "frequencies.jpg",
-        "imageSrcSmall": "frequencies-small.jpg"
+        "imageSrc": "frequencies.jpg"
     },
     {
         "title": "Cyber",
-        "imageSrc": "cyber.jpg",
-        "imageSrcSmall": "cyber-small.jpg"
+        "imageSrc": "cyber.jpg"
     },
     {
         "title": "Monochrome",
-        "imageSrc": "monochrome.jpg",
-        "imageSrcSmall": "monochrome-small.jpg"
+        "imageSrc": "monochrome.jpg"
     },
     {
         "title": "Goth",
-        "imageSrc": "goth.jpg",
-        "imageSrcSmall": "goth-small.jpg"
+        "imageSrc": "goth.jpg"
     },
     {
         "title": "Deadly Dolls",
-        "imageSrc": "deadly-dolls.jpg",
-        "imageSrcSmall": "deadly-dolls-small.jpg"
+        "imageSrc": "deadly-dolls.jpg"
     },
     {
         "title": "Best Woman's",
-        "imageSrc": "best-womans.jpg",
-        "imageSrcSmall": "best-womans-small.jpg"
+        "imageSrc": "best-womans.jpg"
     },
     {
         "title": "Best Man's",
-        "imageSrc": "best-mans.jpg",
-        "imageSrcSmall": "best-mans-small.jpg"
+        "imageSrc": "best-mans.jpg"
     },
     {
         "title": "Cyber",
-        "imageSrc": "cyber2.jpg",
-        "imageSrcSmall": "cyber2-small.jpg"
+        "imageSrc": "cyber2.jpg"
     },
     {
         "title": "Neon Faves",
-        "imageSrc": "neon-faves.jpg",
-        "imageSrcSmall": "neon-faves-small.jpg"
+        "imageSrc": "neon-faves.jpg"
     }, {
         "title": "Enchanting Dresses",
-        "imageSrc": "enchanting-dresses.jpg",
-        "imageSrcSmall": "enchanting-dresses-small.jpg"
+        "imageSrc": "enchanting-dresses.jpg"
     },
     {
         "title": "Female Costumes",
-        "imageSrc": "female-costumes.jpg",
-        "imageSrcSmall": "female-costumes-small.jpg"
+        "imageSrc": "female-costumes.jpg"
     },
     {
         "title": "Shine In Latex",
-        "imageSrc": "shine-in-latex.jpg",
-        "imageSrcSmall": "shine-in-latex-small.jpg"
+        "imageSrc": "shine-in-latex.jpg"
     },
     {
         "title": "Male Costumes",
-        "imageSrc": "male-costumes.jpg",
-        "imageSrcSmall": "male-costumes-small.jpg"
+        "imageSrc": "male-costumes.jpg"
     }
 ]

@@ -25,7 +25,6 @@ export interface IEmployee {
 	lastName: string
 	position: string
 	imageSrc: string | null,
-	imageSrcSmall: string
 }
 
 function AboutView() {

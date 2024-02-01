@@ -1,21 +1,17 @@
 [{
     "title": "Badinka",
-    "imageSrc": "badinka-logo.jpg",
-    "imageSrcSmall": "badinka-logo-small.jpg"
+    "imageSrc": "badinka-logo.jpg"
 },
 
 {
     "title": "Rave Kitties",
-    "imageSrc": "rave-kitties-logo.jpg",
-    "imageSrcSmall": "rave-kitties-logo-small.jpg"
+    "imageSrc": "rave-kitties-logo.jpg"
 },
 {
     "title": "Super 5",
-    "imageSrc": "superbad-logo.jpg",
-    "imageSrcSmall": "superbad-logo-small.jpg"
+    "imageSrc": "superbad-logo.jpg"
 },
 {
     "title": "Candy Catz",
-    "imageSrc": "candy-catz-logo.jpg",
-    "imageSrcSmall": "candy-catz-logo-small.jpg"
+    "imageSrc": "candy-catz-logo.jpg"
 }]
