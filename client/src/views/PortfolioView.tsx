@@ -7,6 +7,7 @@ import getImageUrl from '../utils/image-util'
 import isTitledView from '../HOC/isTitledView'
 import CustomDivider from '../components/CustomDivider'
 import CallToActionSection from '../components/CallToActionSection'
+import HelmetSEO from '../components/HelmetSEO'
 
 import portfolio from '../data/portfolio.json'
 
@@ -21,31 +22,35 @@ function PortfolioView() {
 	const isXs = useMediaQuery(theme.breakpoints.down('sm'))
 
 	return (
-		<Box mt={{ xs: 5, md: 6 }} mb={{ xs: 7, md: 10 }}>
-			<Container>
+		<>
+			<HelmetSEO title="Portfolio" description="Explore Stitch Sense's captivating portfolio showcasing our exquisite designs, production prowess, and distribution excellence, curated for customers worldwide." />
 
-				<CustomDivider mb={{ xs: 3, md: 4 }} />
+			<Box mt={{ xs: 5, md: 6 }} mb={{ xs: 7, md: 10 }}>
+				<Container>
 
-				<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5}>
-					{portfolio.map((image) => (
-						<Link href='#' target='_blank' key={uniqid()}>
-							<ImageListItem>
-								<img
-									srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
-									src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
-									alt={image.title}
-									loading="lazy"
-								/>
-							</ImageListItem>
-						</Link>
-					))}
-				</ImageList>
+					<CustomDivider mb={{ xs: 3, md: 4 }} />
 
-				<CustomDivider mt={{ xs: 4, md: 5 }} mb={{ xs: 3, md: 4 }} />
+					<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5}>
+						{portfolio.map((image) => (
+							<Link href='#' target='_blank' key={uniqid()}>
+								<ImageListItem>
+									<img
+										srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+										src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
+										alt={image.title}
+										loading="lazy"
+									/>
+								</ImageListItem>
+							</Link>
+						))}
+					</ImageList>
 
-				<CallToActionSection />
-			</Container>
-		</Box>
+					<CustomDivider mt={{ xs: 4, md: 5 }} mb={{ xs: 3, md: 4 }} />
+
+					<CallToActionSection />
+				</Container>
+			</Box>
+		</>
 	)
 }
 

@@ -11,6 +11,7 @@ import ProcessStepCard from '../components/Cards/ProcessStepCard'
 import CustomDivider from '../components/CustomDivider'
 import CallToActionSection from '../components/CallToActionSection'
 import Arrow from '../components/Arrow'
+import HelmetSEO from '../components/HelmetSEO'
 
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
@@ -73,41 +74,46 @@ function OurProcessView() {
 	const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
 	return (
-		<Box mt={{ xs: 5, md: 10 }} mb={{ xs: 7, md: 10 }}>
-			<Container>
-				<Grid container gap={5} >
-					{stepArticlesContent.map((stepArticle) => (
-						<Grid item key={uniqid()}>
-							<ProcessStepArticle {...stepArticle} />
-							{
-								isXs ? null : <Arrow
-									arrowType={2}
-									height={50}
-									mt={1}
-									rotate={stepArticle.step === 2 ? 180 : 0}
-									scaleY={stepArticle.step === 2 ? -1 : 1}
-								/>
-							}
+		<>
+			<HelmetSEO title="Our Process" description="Discover Stitch Sense's streamlined process page, unveiling our meticulous approach to design, production, sublimation, and distribution, tailored for wholesalers and retailers." />
 
-						</Grid>
-					))}
-				</Grid>
 
-				<Grid container spacing={5} mt={0}>
-					{stepCardsContent.map((stepCard) => (
-						<Grid item xs={12} sm={6} md={4} key={uniqid()}>
-							<ProcessStepCard  {...stepCard} />
-						</Grid>
-					))
-					}
+			<Box mt={{ xs: 5, md: 10 }} mb={{ xs: 7, md: 10 }}>
+				<Container>
+					<Grid container gap={5} >
+						{stepArticlesContent.map((stepArticle) => (
+							<Grid item key={uniqid()}>
+								<ProcessStepArticle {...stepArticle} />
+								{
+									isXs ? null : <Arrow
+										arrowType={2}
+										height={50}
+										mt={1}
+										rotate={stepArticle.step === 2 ? 180 : 0}
+										scaleY={stepArticle.step === 2 ? -1 : 1}
+									/>
+								}
 
-				</Grid>
+							</Grid>
+						))}
+					</Grid>
 
-				<CustomDivider mt={{xs: 4, md: 10}} mb={4} />
+					<Grid container spacing={5} mt={0}>
+						{stepCardsContent.map((stepCard) => (
+							<Grid item xs={12} sm={6} md={4} key={uniqid()}>
+								<ProcessStepCard  {...stepCard} />
+							</Grid>
+						))
+						}
 
-				<CallToActionSection />
-			</Container>
-		</Box>
+					</Grid>
+
+					<CustomDivider mt={{ xs: 4, md: 10 }} mb={4} />
+
+					<CallToActionSection />
+				</Container>
+			</Box>
+		</>
 	)
 }
 

@@ -3,21 +3,24 @@ import getImageUrl from '../utils/image-util';
 import isTitledView from '../HOC/isTitledView';
 import ContactForm from '../components/Sections/ContactUsView/ContactForm';
 import Container from '@mui/material/Container';
+import SectionTitle from '../components/SectionTitle';
+import HelmetSEO from '../components/HelmetSEO';
 
 import Box from '@mui/material/Box';
-import SectionTitle from '../components/SectionTitle';
 
 function ContactUsView() {
-
 	return (
-		<Container>
-			<Box my={{ xs: 5, md: 5 }}>
-				<SectionTitle title="LET'S WORK TOGETHER!" mb={4} />
+		<>
+			<HelmetSEO title='Contact' description='Connect with Stitch Sense via our contact page for inquiries, collaborations, and partnerships in clothing manufacturing' />
 
-				<ContactForm />
-			</Box>
+			<Container>
+				<Box my={{ xs: 5, md: 5 }}>
+					<SectionTitle title="LET'S WORK TOGETHER!" mb={4} />
 
-		</Container>
+					<ContactForm />
+				</Box>
+			</Container>
+		</>
 	)
 }
 

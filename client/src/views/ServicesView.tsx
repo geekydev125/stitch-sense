@@ -5,24 +5,31 @@ import isTitledView from '../HOC/isTitledView'
 import ServicesTabs from '../components/Sections/ServicesView/ServiceTabs/ServicesTabs'
 import CallToActionSection from '../components/CallToActionSection'
 import CustomDivider from '../components/CustomDivider'
+import HelmetSEO from '../components/HelmetSEO'
 
 import Container from "@mui/material/Container"
 import Box from '@mui/material/Box'
 
+
 function ServicesView() {
 	return (
-		<Box py={{ xs: 5, md: 6 }}>
-			<Container>
-				<CustomDivider mb={{ xs: 3, md: 4 }} />
-				
-				<ServicesTabs />
+		<>
+			<HelmetSEO title="Services" description="Explore Stitch Sense's comprehensive services for top-quality fashion design, sublimation, production, and clothing distribution solutions." />
 
-				<CustomDivider mt={{ xs: 3, md: 5 }} mb={{ xs: 3, md: 5 }} />
+			<Box py={{ xs: 5, md: 6 }}>
+				<Container>
+					<CustomDivider mb={{ xs: 3, md: 4 }} />
 
-				<CallToActionSection />
-			</Container>
-		</Box>
+					<ServicesTabs />
+
+					<CustomDivider mt={{ xs: 3, md: 5 }} mb={{ xs: 3, md: 5 }} />
+
+					<CallToActionSection />
+				</Container>
+			</Box>
+		</>
 	)
+
 }
 
 export default isTitledView(ServicesView,

@@ -1,5 +1,6 @@
 import wavyLinesTop from '../assets/img/wavy-lines-top.svg'
 import wavyLinesBottom from '../assets/img/wavy-lines-bottom.svg'
+import HelmetSEO from '../components/HelmetSEO'
 
 import Container from "@mui/material/Container"
 import Header from "../components/Header/Header"
@@ -18,6 +19,8 @@ import SectionTitle from '../components/SectionTitle'
 function HomeView() {
 	return (
 		<>
+			<HelmetSEO title="Home" description="Your go-to wholesaler for fashion design, sublimation, production, and distribution of top-quality clothing, catering to customers worldwide." />
+
 			<HeroSection />
 
 			<Box position={"relative"} zIndex={1100}>
