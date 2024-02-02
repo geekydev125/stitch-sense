@@ -16,7 +16,7 @@ function ServicesView() {
 		<>
 			<HelmetSEO title="Services" description="Explore Stitch Sense's comprehensive services for top-quality fashion design, sublimation, production, and clothing distribution solutions." />
 
-			<Box py={{ xs: 5, md: 6 }}>
+			<Box py={{ xs: 5, md: 6 }} component='section'>
 				<Container>
 					<CustomDivider mb={{ xs: 3, md: 4 }} />
 

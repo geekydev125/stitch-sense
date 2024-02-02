@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography"
 function WhoWeAreSection() {
 	return (
 		<>
-			<Box id='about-section'>
+			<Box id='about-section' component='section'>
 				<SectionTitle title='WHO WE ARE' mt={4} mb={2} />
 				<Box p={{ xs: 0, md: 3 }} >
 					<Box

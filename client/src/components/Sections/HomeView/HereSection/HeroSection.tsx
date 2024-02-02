@@ -33,7 +33,7 @@ function HeroSection() {
     }
 
     return (
-        <Box position='relative'>
+        <Box position='relative' component='section'>
             <HeroSectionBackground customHeights={customHeights}>
                 <Container>
                     <Grid container>

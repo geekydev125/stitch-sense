@@ -25,12 +25,11 @@ function PortfolioView() {
 		<>
 			<HelmetSEO title="Portfolio" description="Explore Stitch Sense's captivating portfolio showcasing our exquisite designs, production prowess, and distribution excellence, curated for customers worldwide." />
 
-			<Box mt={{ xs: 5, md: 6 }} mb={{ xs: 7, md: 10 }}>
+			<Box mt={{ xs: 5, md: 6 }} mb={{ xs: 7, md: 10 }} >
 				<Container>
-
 					<CustomDivider mb={{ xs: 3, md: 4 }} />
 
-					<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5}>
+					<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5} component='section'>
 						{portfolio.map((image) => (
 							<Link href='#' target='_blank' key={uniqid()}>
 								<ImageListItem>

@@ -80,7 +80,7 @@ function ContactForm() {
     }
 
     return (
-        <Box my={5} px={{ xs: 0, md: 5 }}>
+        <Box my={5} px={{ xs: 0, md: 5 }} component='section'>
             <Container sx={{ backgroundColor: 'custom.theme.almostWhite', borderRadius: 5 }}>
                 {
                     submittedSuccessfully ? (

@@ -2,15 +2,16 @@ import uniqid from 'uniqid'
 
 import services from '../../../data/services.json'
 import SectionTitle from '../../SectionTitle'
+import FlipCard from '../../Cards/FlipCard';
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import FlipCard from '../../Cards/FlipCard';
+import Box from '@mui/material/Box';
 
 function WhatWeDoSection() {
 	
 	return (
-		<>
+		<Box component='section'>
 			<SectionTitle title='WHAT WE DO' mt={4} mb={2} />
 
 			<Typography variant='h4' component='p' textAlign={{xs: 'justify', md: 'center'}} mt={2} mb={4} color='custom.theme.darkGray'>
@@ -33,7 +34,7 @@ function WhatWeDoSection() {
 					)
 				})}
 			</Grid>
-		</>
+		</Box>
 	);
 }
 

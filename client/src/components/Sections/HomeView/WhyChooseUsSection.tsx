@@ -15,7 +15,7 @@ function WhyChooseUsSection() {
     const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <Box>
+        <Box component='section'>
             <Parallax blur={0} bgImage={manufactoringFacilityImage} bgImageAlt="Manufactoring Facility" strength={200}>
                 <Box sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
                     <Container>

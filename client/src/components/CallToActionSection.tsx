@@ -13,7 +13,7 @@ function CallToActionSection() {
 
     return (
 
-        <Box px={{ xs: 2, md: 10 }}>
+        <Box px={{ xs: 2, md: 10 }} component='section'>
             <Typography variant="body1" component="p" textAlign={{ xs: 'justify', md: 'center' }} color='custom.theme.darkGray'>
                 Elevate your fashion brand with StitchSense – revolutionize your designs, streamline your production, and bring your vision to life. Take the next step in crafting excellence, and experience the power of StitchSense for a seamless journey in the world of fashion.
             </Typography>

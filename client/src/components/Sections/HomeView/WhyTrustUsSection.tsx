@@ -21,7 +21,7 @@ export interface Icard {
 
 function WhyTrustUsSection() {
     return (
-        <Box>
+        <Box component='section'>
             <SectionTitle title='WHY TRUST US?'/>
 
             <Box mt={5}>

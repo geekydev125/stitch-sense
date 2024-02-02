@@ -33,9 +33,9 @@ function AboutView() {
 		<>
 			<HelmetSEO title='About' description="Learn about Stitch Sense's story, values, and commitment to excellence in clothing manufacturing, catering to wholesalers and retailers with dedication and expertise." />
 
-			<Box mt={5} mb={{ xs: 3, md: 8 }}>
+			<Box mt={5} mb={{ xs: 3, md: 8 }} >
 				<Container>
-					<Box p={{ xs: 1, md: 5 }}>
+					<Box p={{ xs: 1, md: 5 }} component='section'>
 						<Typography variant='body1' component='p' textAlign='justify' color='custom.theme.darkGray'>
 							With <Box component='span' textTransform='uppercase' fontWeight='bold'>over a decade of expertise in the dynamic realm of fashion</Box>, we proudly stand as a seasoned clothing manufacturer. Our commitment to excellence has propelled us into various facets of the industry.
 						</Typography>
@@ -49,29 +49,32 @@ function AboutView() {
 						</Typography>
 					</Box>
 
-
-					{/* <CustomDivider  mb={{ xs: 2, md: 4 }} /> */}
-					<SectionTitle title='OUR IMPACT ON EMPLOYEES' variant='h5' justify='left' p={2} mb={2} />
-					<Grid container spacing={{ xs: 1, md: 2 }} >
-						{employeesImpactCardsContent.map(card => {
-							return (
-								<Grid key={uniqid()} item xs={12} sm={4}>
-									<SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
-								</Grid>
-							)
-						})}
-					</Grid>
+					<Box component='section'>
+						{/* <CustomDivider  mb={{ xs: 2, md: 4 }} /> */}
+						<SectionTitle title='OUR IMPACT ON EMPLOYEES' variant='h5' justify='left' p={2} mb={2} />
+						<Grid container spacing={{ xs: 1, md: 2 }} >
+							{employeesImpactCardsContent.map(card => {
+								return (
+									<Grid key={uniqid()} item xs={12} sm={4}>
+										<SimpleEmployeeCard {...card as Omit<Icard, "imageSrc" | "alt">} />
+									</Grid>
+								)
+							})}
+						</Grid>
+					</Box>
 
 					<CustomDivider mt={{ xs: 3, md: 6 }} mb={{ xs: 3, md: 3 }} />
 
-					<SectionTitle title='OUR TEAM' variant='h5' justify='left' p={2} mb={2} />
-					<Grid container spacing={{ xs: 1, md: 2 }}>
-						{employeesData.map((employee: IEmployee) => (
-							<Grid key={uniqid()} item xs={6} sm={4}>
-								<EmployeeCard {...employee} />
-							</Grid>
-						))}
-					</Grid>
+					<Box component='section'>
+						<SectionTitle title='OUR TEAM' variant='h5' justify='left' p={2} mb={2} />
+						<Grid container spacing={{ xs: 1, md: 2 }}>
+							{employeesData.map((employee: IEmployee) => (
+								<Grid key={uniqid()} item xs={6} sm={4}>
+									<EmployeeCard {...employee} />
+								</Grid>
+							))}
+						</Grid>
+					</Box>
 
 
 					<CustomDivider mt={{ xs: 1, md: 3 }} mb={{ xs: 4, md: 5 }} />
