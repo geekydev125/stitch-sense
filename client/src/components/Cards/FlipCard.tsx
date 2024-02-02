@@ -2,72 +2,34 @@ import { useState } from "react";
 import styled from "@emotion/styled";
 import { HashLink } from "react-router-hash-link";
 
-import Typography from "@mui/material/Typography";
+import getImageUrl from "../../utils/image-util";
+import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
+
+import ReactCardFlip from "react-card-flip";
 
 import RotateLeftIcon from '@mui/icons-material/RotateLeft';
+
+import Typography from "@mui/material/Typography";
 import Icon from "@mui/material/Icon";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import { useServiceTabsContext } from "../../contexts/ServiceTabsContext";
-import getImageUrl from "../../utils/image-util";
-
+import Stack from "@mui/material/Stack";
 
 const CardMainContainer = styled(Paper)`
-    position: relative;
-    width: 100%;
+    height: 100%;
     border-radius: 25px;
 
+    .react-card-flip {
+        height: 100%;
+    }
+
     .card-overlay {
-        background-color: rgba(0,0,0,0.50);
+        background-color: rgba(0,0,0,0.5);
         height: 100%;
         width: 100%;
         border-radius: 25px;
         transition: all 0.5s ease;
-    }
-
-    .card {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        &:hover {
-            transform: rotateY(180deg);
-        }
-    }
-
-    .card-front {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .rotate-icon {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-    }
-
-    .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-
-        text-align: justify;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
 `;
 
@@ -86,11 +48,11 @@ function FlipCard({
     linkTo,
     tabValue
 }: Props) {
-    const [hovered, setHovered] = useState<boolean>(false);
+    const [isFlipped, setFlipped] = useState(false);
     const { changeActiveTab } = useServiceTabsContext();
 
     const handleFlip = () => {
-        setHovered(!hovered)
+        setFlipped(!isFlipped)
     }
 
     return (
@@ -101,23 +63,47 @@ function FlipCard({
                 className='card-main-container'
                 elevation={6}
                 sx={{
-                    backgroundImage: `url(${getImageUrl('card-backgrounds',imageSrc)})`,
+                    backgroundImage: `url(${getImageUrl('card-backgrounds', imageSrc)})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     height: {
-                        xs: '200px',
+                        xs: '250px',
                         sm: '280px'
                     }
                 }}
             >
-                <Box className="card-overlay" style={hovered ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
-                    <Box className='card' style={hovered ? { transform: "rotateY(180deg)" } : undefined}>
-                        <Box className='card-front' color='custom.theme.almostWhite'>
+                <Box className="card-overlay" style={isFlipped ? { backgroundColor: 'rgba(0,0,0,0.8)' } : undefined}>
+                    <ReactCardFlip isFlipped={isFlipped}>
+                        {/* Front of card */}
+                        <Stack
+                            height='100%'
+                            color='custom.theme.almostWhite'
+                            direction='row'
+                            justifyContent='center'
+                            alignItems='center'
+                        >
                             <Typography variant="h3" component="h4" color='custom.theme.almostWhite'>{title}</Typography>
-                            <Icon className="rotate-icon" component={RotateLeftIcon} />
-                        </Box>
-                        <Box className='card-back' py={{xs: 1.5, sm: 1, md: 3}} px={{xs: 1.5, sm: 2, md: 3}}>
-                            <Typography variant="body1" component="p" color='custom.theme.almostWhite'>{content}</Typography>
+                            <Icon
+                                component={RotateLeftIcon}
+                                sx={{
+                                    position: 'absolute',
+                                    top: '10px',
+                                    right: '10px'
+                                }}
+                            />
+                        </Stack>
+
+                        {/* Back of card */}
+                        <Stack
+                            py={{ xs: 1.5, sm: 1, md: 3 }}
+                            px={{ xs: 1.5, sm: 2, md: 3 }}
+                            height='100%'
+                            direction='column'
+                            justifyContent='space-between'
+                            alignItems='center'
+                        >
+
+                            <Typography variant="body1" component="p" color='custom.theme.almostWhite' textAlign='justify'>{content}</Typography>
 
                             <Button
                                 onClick={() => changeActiveTab(tabValue)}
@@ -134,8 +120,8 @@ function FlipCard({
                                     },
                                 }}
                             >Learn More</Button>
-                        </Box>
-                    </Box>
+                        </Stack>
+                    </ReactCardFlip>
                 </Box>
             </CardMainContainer>
         </>

@@ -1,11 +1,11 @@
 import uniqid from 'uniqid'
 
 import services from '../../../data/services.json'
-import FlipCard from '../../Cards/FlipCard';
 import SectionTitle from '../../SectionTitle'
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import FlipCard from '../../Cards/FlipCard';
 
 function WhatWeDoSection() {
 	
