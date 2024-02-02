@@ -10,7 +10,7 @@ function TopFooter() {
         <Box sx={{ backgroundColor: 'black' }} py={3}>
             <Container>
                 <Grid container>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Stack height='100%' spacing={2} py={2} flexDirection='column' justifyContent='space-around'>
                             <Box>
                                 <Typography variant='h4' component='h4' color='custom.theme.darkGreen'>LET’S WORK TOGETHER!</Typography>
@@ -37,7 +37,7 @@ function TopFooter() {
                             </Box>
                         </Stack>
                     </Grid>
-                    <Grid item xs={12} md={8}>
+                    <Grid item xs={12} sm={6} md={8}>
                         <Map />
                     </Grid>
                 </Grid>
