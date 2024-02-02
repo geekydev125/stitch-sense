@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 import { IRoute } from './Header'
 
 import stitchSenseLogo from '../../assets/img/logos/stitchSense-logo.png'
+import DesktopNavItem from './DesktopNavItem';
 
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
-import DesktopNavItem from './DesktopNavItem';
 
 interface Props {
     routes: IRoute[]
@@ -18,10 +18,8 @@ interface Props {
 function DesktopNavMenu({
     routes
 }: Props) {
-
-    
     return (
-            <Toolbar sx={{ display: { xs: 'none', md: 'block' } }} >
+            <Toolbar component='nav'>
                 <Container>
                     <Stack direction='row' alignItems='center' minHeight='10vh'>
                     {/* Logo */}

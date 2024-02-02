@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -6,10 +7,11 @@ import { IRoute } from "./Header";
 import stitchSenseLogo from '../../assets/img/logos/stitchSense-logo.png'
 import stitchSenseLogoWithTitle from '../../assets/img/logos/stitchSense-logo-with-title.png'
 
+import MenuIcon from "@mui/icons-material/Menu";
+
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import Divider from "@mui/material/Divider";
@@ -18,7 +20,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Stack from "@mui/material/Stack";
-import uniqid from "uniqid";
 
 const drawerWidth = 240;
 interface Props {
@@ -34,7 +35,7 @@ function MobileNavMenu({
     };
 	
 	return (
-		<Toolbar sx={{ display: { xs: 'block', md: 'none' } }}>
+		<Toolbar component='nav'>
 			<Stack width='100%' direction='row' justifyContent='space-between' alignContent='center'>
 				<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
 					<IconButton
