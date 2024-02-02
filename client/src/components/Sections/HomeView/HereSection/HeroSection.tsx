@@ -49,7 +49,7 @@ function HeroSection() {
 
                                 {isXsSm
                                     ? <Typography variant='body1' component='h3' color={'custom.theme.almostWhite'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
-                                    : <Typography variant='h6' component='h3' color={'custom.theme.darkGray'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
+                                    : <Typography variant='h6' component='h2' color={'custom.theme.darkGray'} textAlign='center'>WHERE YOUR BUSINESS PRODUCTION NEEDS ARE MET</Typography>
                                 }
                                 <HeroSectionLogo />
                             </Stack>

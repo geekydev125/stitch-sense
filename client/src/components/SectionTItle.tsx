@@ -26,7 +26,7 @@ function SectionTitle({
     title,
     justify = 'center',
     variant = 'h3',
-    component='h4',
+    component='h3',
     mt,
     mb,
     my,

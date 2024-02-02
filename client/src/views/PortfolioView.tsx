@@ -38,6 +38,7 @@ function PortfolioView() {
 										src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
 										alt={image.title}
 										loading="lazy"
+										title={image.title}
 									/>
 								</ImageListItem>
 							</Link>
