@@ -1,10 +1,9 @@
-import googleMapPlaceHolder from '../..//assets/img/google-map.png'
-
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
+import Map from '../Map'
 
 function TopFooter() {
     return (
@@ -39,9 +38,7 @@ function TopFooter() {
                         </Stack>
                     </Grid>
                     <Grid item xs={12} md={8}>
-                        <Stack flexDirection='column' justifyContent='center' p={1} height='100%'>
-                            <img src={googleMapPlaceHolder} alt='Google Map Placeholder' />
-                        </Stack>
+                        <Map />
                     </Grid>
                 </Grid>
             </Container>
