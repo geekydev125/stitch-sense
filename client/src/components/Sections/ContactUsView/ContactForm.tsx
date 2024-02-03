@@ -16,6 +16,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Radio from '@mui/material/Radio';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 
 
 const fieldStyles = {
@@ -216,9 +217,11 @@ function ContactForm() {
 
 
                                 </Grid>
-                                <Grid item xs={12} display='flex' justifyContent='center' alignItems='center' height='auto' mb={5}>
+                                <Grid item xs={12}  height='auto' mb={5}>
+                                    <Stack display='flex' justifyContent='center' alignItems='center'>
                                     {submissionError && <Typography mb={2} variant='body1' component='p' textAlign='center' color='error'>{submissionError}</Typography>}
                                     <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
+                                    </Stack>
                                 </Grid>
                             </Grid>
                         </form>
