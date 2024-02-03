@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express'
 import path from 'path'
+import { fileURLToPath } from 'url';
 import logger from 'morgan/index.js'
 import router from './router/router.js';
 import cors from 'cors';
@@ -10,6 +11,9 @@ env.config()
 const PORT = process.env.PORT || 3000;
 
 const app: Application = express()
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname + '/public')))
 
