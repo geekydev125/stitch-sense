@@ -74,7 +74,7 @@ function ContactForm() {
             })
             .catch(err => {
                 console.log(err.message);
-                
+
                 setSubmissionError("An unexpected error has occurred and we are unable to process your request. Please try again later.");
                 setTimeout(() => setSubmissionError(''), 5000);
             })
@@ -217,10 +217,10 @@ function ContactForm() {
 
 
                                 </Grid>
-                                <Grid item xs={12}  height='auto' mb={5}>
+                                <Grid item xs={12} height='auto' mb={5}>
                                     <Stack display='flex' justifyContent='center' alignItems='center'>
-                                    {submissionError && <Typography mb={2} variant='body1' component='p' textAlign='center' color='error'>{submissionError}</Typography>}
-                                    <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
+                                        {submissionError && <Typography mb={2} variant='body1' component='p' textAlign='center' color='error'>{submissionError}</Typography>}
+                                        <GreenButton boxShadow type='submit' variant='contained' disabled={!(isDirty && isValid)}>SEND</GreenButton>
                                     </Stack>
                                 </Grid>
                             </Grid>
