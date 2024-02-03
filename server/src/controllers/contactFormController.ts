@@ -1,8 +1,5 @@
 import { Router, Request, Response } from 'express'
 import nodemailer from 'nodemailer'
-import * as env from 'dotenv'
-
-env.config()
 
 const router = Router();
 
@@ -42,18 +39,18 @@ router.post('/', async (req: Request, res: Response) => {
         port: 587,
         secure: false,
         auth: {
-            user: process.env.EMAILFROM,
+            user: process.env.EMAIL_FROM,
             pass: process.env.PASSWORD,
         },
-        from: process.env.EMAILFROM,
+        from: process.env.EMAIL_FROM,
         tls: {
             rejectUnauthorized: false,
         },
     });
 
     const options = {
-        from: `Stitch Sense <${process.env.EMAILFROM}>`,
-        to: process.env.EMAILTO,
+        from: `Stitch Sense <${process.env.EMAIL_FROM}>`,
+        to: process.env.EMAIL_TO,
         subject: 'Stitch Sense form submission',
         text: 'Stitch Sense form submission',
         html: output,
