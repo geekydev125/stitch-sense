@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Stitch Sense Api",
   "main": "dist/server.js",
-  "type": "module",
   "scripts": {
     "dev": "concurrently \"npx tsc -w\" \"nodemon ./dist/server.js\"",
     "start": "node ./dist/server.js",
