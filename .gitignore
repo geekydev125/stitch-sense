@@ -10,7 +10,7 @@ lerna-debug.log*
 TODO.txt
 
 */node_modules
-*/dist
+*/client/dist
 */dist-ssr
 */*.local
 */.prettierrc
