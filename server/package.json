@@ -1,7 +1,7 @@
 {
-  "name": "stitch-sense-server",
+  "name": "stitch-sense-api",
   "version": "1.0.0",
-  "description": "Stitch Sense server",
+  "description": "Stitch Sense Api",
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
