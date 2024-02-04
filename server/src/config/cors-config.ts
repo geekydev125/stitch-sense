@@ -1,3 +1,6 @@
+import * as env from 'dotenv';
+env.config();
+
 let allowedOrigins: string[] | [];
 
 if (process.env.NODE_ENV === 'development') {
