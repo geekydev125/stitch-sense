@@ -21,8 +21,6 @@ if (process.env.NODE_ENV === 'development') {
    app.use(logger('dev'))
 } 
 
-console.log(process.env.NODE_ENV);
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
