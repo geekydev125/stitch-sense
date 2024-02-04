@@ -4,14 +4,19 @@ import useTheme from '@mui/material/styles/useTheme';
 import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery';
 import Box from '@mui/material/Box';
 
-const googleMapsAPI = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 const center = {
 	lat: 42.647780,
 	lng: 23.399793
 };
 
-function Map() {
+interface Props {
+	mapApiKey: string
+}
+
+function Map({
+	mapApiKey
+}:Props) {
 	const theme = useTheme()
 	const isXs = useMediaQuery(theme.breakpoints.only('xs'))
 	const isSm = useMediaQuery(theme.breakpoints.only('sm'))
@@ -19,7 +24,7 @@ function Map() {
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
-		googleMapsApiKey: googleMapsAPI
+		googleMapsApiKey: mapApiKey
 	})
 
 	return isLoaded ? (
@@ -68,7 +73,6 @@ function Map() {
 					options={{
 						icon: getImageUrl('logos', 'stitchSense-google-map-marker.png'),
 						title: 'Stitch Sense',
-
 					}}
 				/>
 			</GoogleMap>
