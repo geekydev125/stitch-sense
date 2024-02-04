@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+import * as googleMapService from "../../services/googleMapService"
 import Map from '../Map'
 
 import Box from "@mui/material/Box"
@@ -12,9 +13,7 @@ function TopFooter() {
     const [mapApiKey, setMapApiKey] = useState<string>('')
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/google-map', {
-            method: 'GET',
-        })
+        googleMapService.getKey
             .then(response => response.json())
             .then(data => {
                 setMapApiKey(data.mapApiKey)
@@ -28,18 +27,18 @@ function TopFooter() {
         <Box sx={{ backgroundColor: 'black' }} py={3}>
             <Container>
                 <Grid container>
-                    <Grid item 
-                        xs={12} 
-                        sm={mapApiKey ? 6 : 12} 
+                    <Grid item
+                        xs={12}
+                        sm={mapApiKey ? 6 : 12}
                         md={mapApiKey ? 4 : 12}>
-                        <Stack 
-                            height='100%' 
-                            spacing={2} 
-                            py={2} 
-                            direction={ mapApiKey ? 'column' : 'row'}
-                            justifyContent='space-around' 
+                        <Stack
+                            height='100%'
+                            spacing={2}
+                            py={2}
+                            direction={mapApiKey ? 'column' : 'row'}
+                            justifyContent='space-around'
                             alignItems={mapApiKey ? 'flex-start' : 'center'}
-                            >
+                        >
                             <Box>
                                 <Typography variant='h4' component='h4' color='custom.theme.darkGreen'>LET’S WORK TOGETHER!</Typography>
                             </Box>
@@ -66,7 +65,7 @@ function TopFooter() {
                         </Stack>
                     </Grid>
                     <Grid item xs={12} sm={6} md={8}>
-                        { mapApiKey && <Map mapApiKey={mapApiKey}/>}
+                        {mapApiKey && <Map mapApiKey={mapApiKey} />}
                     </Grid>
                 </Grid>
             </Container>
