@@ -9,6 +9,8 @@ import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { ServiceTabsProvider } from "./contexts/ServiceTabsContext";
 import CssBaseline from "@mui/material/CssBaseline/CssBaseline";
 import { HelmetProvider } from "react-helmet-async";
+import { Suspense } from "react";
+import Loader from "./components/Loader";
 
 
 function App() {
@@ -18,10 +20,12 @@ function App() {
                 <CssBaseline />
                 <ThemeProvider theme={theme}>
                     <ServiceTabsProvider>
-                        <RouterProvider router={router} />
+                        <Suspense fallback={<Loader />}>
+                            <RouterProvider router={router} />
+                        </Suspense>
                     </ServiceTabsProvider>
                 </ThemeProvider>
-           </HelmetProvider>
+            </HelmetProvider>
         </>
     );
 }
