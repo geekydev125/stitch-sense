@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 
-import * as googleMapService from "../../services/googleMapService"
 import Map from '../Map'
 
 import Box from "@mui/material/Box"
@@ -8,13 +7,16 @@ import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
+import baseUrl from "../../config/base-url"
 
 function TopFooter() {
     const [mapApiKey, setMapApiKey] = useState<string>('')
 
     useEffect(() => {
-        googleMapService.getKey
-            .then(response => response.json())
+        fetch(`${baseUrl}/google-map`, {
+            method: 'GET',
+        })
+            .then((res) => res.json())
             .then(data => {
                 setMapApiKey(data.mapApiKey)
             })
