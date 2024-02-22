@@ -1,4 +1,6 @@
+import useTheme from '@mui/material/styles/useTheme'
 import { useEffect, useState } from "react"
+import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
 
 import Map from '../Map'
 
@@ -11,6 +13,8 @@ import baseUrl from "../../config/base-url"
 
 function TopFooter() {
     const [mapApiKey, setMapApiKey] = useState<string>('')
+    const theme = useTheme()
+    const isXsSM = useMediaQuery(theme.breakpoints.down('md'))
 
     useEffect(() => {
         fetch(`${baseUrl}/google-map`, {
@@ -25,6 +29,12 @@ function TopFooter() {
             })
     }, [])
 
+    const letsWorkTogether = (
+        <Box>
+            <Typography variant='h4' component='h4' color='custom.theme.darkGreen' textAlign={isXsSM ? "center" : "initial"}>LET’S WORK TOGETHER!</Typography>
+        </Box>
+    )
+
     return (
         <Box sx={{ backgroundColor: 'black' }} py={3}>
             <Container>
@@ -33,26 +43,29 @@ function TopFooter() {
                         xs={12}
                         sm={mapApiKey ? 6 : 12}
                         md={mapApiKey ? 4 : 12}>
+                        {
+                            isXsSM && letsWorkTogether
+                        }
                         <Stack
                             height='100%'
                             spacing={2}
                             py={2}
                             direction={mapApiKey ? 'column' : 'row'}
                             justifyContent='space-around'
-                            alignItems={mapApiKey ? 'flex-start' : 'center'}
+                            alignItems={mapApiKey ? 'flex-start' : isXsSM ? 'flex-start' : 'center'}
                         >
-                            <Box>
-                                <Typography variant='h4' component='h4' color='custom.theme.darkGreen'>LET’S WORK TOGETHER!</Typography>
-                            </Box>
+                            {
+                                !isXsSM && letsWorkTogether
+                            }
                             <Box>
                                 <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Contact Details:</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
                                     Name:&nbsp;
-                                    <Box component="span" color='custom.theme.darkGreen'><b>Ganimir Vangelov (Sales Director)</b></Box>
+                                    <Box component="span" color='custom.theme.darkGreen'>Ganimir Vangelov (Sales Director)</Box>
                                 </Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
                                     Email:&nbsp;
-                                    <Box component="span" color='custom.theme.darkGreen'><b>ganimir@badinka.com</b></Box>
+                                    <Box component="span" color='custom.theme.darkGreen'>ganimir@badinka.com</Box>
                                 </Typography>
                             </Box>
                             <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'}>
