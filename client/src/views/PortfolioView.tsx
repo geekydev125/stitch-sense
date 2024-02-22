@@ -1,3 +1,4 @@
+import styled from '@emotion/styled'
 import uniqid from 'uniqid'
 import useTheme from '@mui/material/styles/useTheme'
 import useMediaQuery from '@mui/material/useMediaQuery/useMediaQuery'
@@ -14,12 +15,20 @@ import portfolio from '../data/portfolio.json'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import ImageList from '@mui/material/ImageList'
-import Link from '@mui/material/Link'
 import ImageListItem from '@mui/material/ImageListItem'
+
+const StyledImage = styled('img')`
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		scale: 1.02;
+	}
+`
+
 
 function PortfolioView() {
 	const theme = useTheme()
 	const isXs = useMediaQuery(theme.breakpoints.down('sm'))
+	const isMd = useMediaQuery(theme.breakpoints.down('lg'))
 
 	return (
 		<>
@@ -29,19 +38,18 @@ function PortfolioView() {
 				<Container>
 					<CustomDivider mb={{ xs: 3, md: 4 }} />
 
-					<ImageList variant="standard" cols={isXs ? 2 : 4} gap={5} component='section'>
+					<ImageList variant="standard" cols={isXs ? 2 : 4} gap={isMd ? 5 : 10} component='section'>
 						{portfolio.map((image) => (
-							<Link href='#' target='_blank' key={uniqid()}>
-								<ImageListItem>
-									<img
-										srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
-										src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
-										alt={image.title}
-										loading="lazy"
-										title={image.title}
-									/>
-								</ImageListItem>
-							</Link>
+							<ImageListItem key={uniqid()}>
+								<StyledImage
+									
+									srcSet={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format&dpr=2 2x`}
+									src={`${getImageUrl('portfolio', image.imageSrc)}?w=248&fit=crop&auto=format`}
+									alt={image.title}
+									loading="lazy"
+									title={image.title}
+								/>
+							</ImageListItem>
 						))}
 					</ImageList>
 

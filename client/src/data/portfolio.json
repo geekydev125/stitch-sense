@@ -1,86 +1,114 @@
 [
     {
-        "title": "Love Hangover",
-        "imageSrc": "love-hangover.jpg",
-        "imageSrcSmall": "love-hangover-small.jpg"
+        "title": "Portfolio Image 1",
+        "imageSrc": "1.jpg"
     },
     {
-        "title": "Insatiable",
-        "imageSrc": "insatiable.jpg",
-        "imageSrcSmall": "insatiable-small.jpg"
-    }, {
-        "title": "Wired",
-        "imageSrc": "wired.jpg",
-        "imageSrcSmall": "wired-small.jpg"
+        "title": "Portfolio Image 2",
+        "imageSrc": "2.jpg"
     },
     {
-        "title": "Lucid Enchanted Wear",
-        "imageSrc": "lucid-enchanted-wear.jpg",
-        "imageSrcSmall": "lucid-enchanted-wear-small.jpg"
+        "title": "Portfolio Image 3",
+        "imageSrc": "3.jpg"
     },
     {
-        "title": "Neon",
-        "imageSrc": "neon.jpg",
-        "imageSrcSmall": "neon-small.jpg"
+        "title": "Portfolio Image 4",
+        "imageSrc": "4.jpg"
     },
     {
-        "title": "Slumber Party",
-        "imageSrc": "slumber-party.jpg",
-        "imageSrcSmall": "slumber-party-small.jpg"
+        "title": "Portfolio Image 5",
+        "imageSrc": "5.jpg"
     },
     {
-        "title": "Glamourama",
-        "imageSrc": "glamourama.jpg"
+        "title": "Portfolio Image 6",
+        "imageSrc": "6.jpg"
     },
     {
-        "title": "Frequencies",
-        "imageSrc": "frequencies.jpg"
+        "title": "Portfolio Image 7",
+        "imageSrc": "7.jpg"
     },
     {
-        "title": "Cyber",
-        "imageSrc": "cyber.jpg"
+        "title": "Portfolio Image 8",
+        "imageSrc": "8.jpg"
     },
     {
-        "title": "Monochrome",
-        "imageSrc": "monochrome.jpg"
+        "title": "Portfolio Image 9",
+        "imageSrc": "9.jpg"
     },
     {
-        "title": "Goth",
-        "imageSrc": "goth.jpg"
+        "title": "Portfolio Image 10",
+        "imageSrc": "10.jpg"
     },
     {
-        "title": "Deadly Dolls",
-        "imageSrc": "deadly-dolls.jpg"
+        "title": "Portfolio Image 11",
+        "imageSrc": "11.jpg"
     },
     {
-        "title": "Best Woman's",
-        "imageSrc": "best-womans.jpg"
+        "title": "Portfolio Image 12",
+        "imageSrc": "12.jpg"
     },
     {
-        "title": "Best Man's",
-        "imageSrc": "best-mans.jpg"
+        "title": "Portfolio Image 13",
+        "imageSrc": "13.jpg"
     },
     {
-        "title": "Cyber",
-        "imageSrc": "cyber2.jpg"
+        "title": "Portfolio Image 14",
+        "imageSrc": "14.jpg"
     },
     {
-        "title": "Neon Faves",
-        "imageSrc": "neon-faves.jpg"
-    }, {
-        "title": "Enchanting Dresses",
-        "imageSrc": "enchanting-dresses.jpg"
+        "title": "Portfolio Image 15",
+        "imageSrc": "15.jpg"
     },
     {
-        "title": "Female Costumes",
-        "imageSrc": "female-costumes.jpg"
+        "title": "Portfolio Image 16",
+        "imageSrc": "16.jpg"
     },
     {
-        "title": "Shine In Latex",
-        "imageSrc": "shine-in-latex.jpg"
+        "title": "Portfolio Image 17",
+        "imageSrc": "17.jpg"
     },
     {
-        "title": "Male Costumes",
-        "imageSrc": "male-costumes.jpg"
+        "title": "Portfolio Image 18",
+        "imageSrc": "18.jpg"
+    },
+    {
+        "title": "Portfolio Image 19",
+        "imageSrc": "19.jpg"
+    },
+    {
+        "title": "Portfolio Image 20",
+        "imageSrc": "20.jpg"
+    },
+    {
+        "title": "Portfolio Image 21",
+        "imageSrc": "21.jpg"
+    },
+    {
+        "title": "Portfolio Image 22",
+        "imageSrc": "22.jpg"
+    },
+    {
+        "title": "Portfolio Image 23",
+        "imageSrc": "23.jpg"
+    },
+    {
+        "title": "Portfolio Image 24",
+        "imageSrc": "24.jpg"
+    },
+    {
+        "title": "Portfolio Image 25",
+        "imageSrc": "25.jpg"
+    },
+    {
+        "title": "Portfolio Image 26",
+        "imageSrc": "26.jpg"
+    },
+    {
+        "title": "Portfolio Image 27",
+        "imageSrc": "27.jpg"
+    },
+    {
+        "title": "Portfolio Image 28",
+        "imageSrc": "28.jpg"
     }
 ]
