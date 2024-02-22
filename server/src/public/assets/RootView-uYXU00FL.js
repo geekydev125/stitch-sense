@@ -1,0 +1,1 @@
+import{u as t,j as o,S as a,H as e,B as n,O as i,F as r}from"./index-7w7CMKgL.js";function j(){const s=t().pathname==="/";return o.jsxs(o.Fragment,{children:[o.jsx(a,{}),!s&&o.jsx(e,{}),o.jsx(n,{component:"main",children:o.jsx(i,{})}),o.jsx(r,{})]})}export{j as default};
