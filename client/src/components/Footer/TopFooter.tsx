@@ -48,15 +48,11 @@ function TopFooter() {
                                 <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Contact Details:</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
                                     Name:&nbsp;
-                                    <Box component="span" color='custom.theme.darkGreen'><b>Ganimir Vangelov (COO)</b></Box>
-                                </Typography>
-                                <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
-                                    Phone:&nbsp;
-                                    <Box component="span" color='custom.theme.darkGreen'><b>+(359) 888 81 11 32</b></Box>
+                                    <Box component="span" color='custom.theme.darkGreen'><b>Ganimir Vangelov (Sales Director)</b></Box>
                                 </Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.almostWhite'>
                                     Email:&nbsp;
-                                    <Box component="span" color='custom.theme.darkGreen'><b>ganimirvangelov@gmail.com</b></Box>
+                                    <Box component="span" color='custom.theme.darkGreen'><b>ganimir@badinka.com</b></Box>
                                 </Typography>
                             </Box>
                             <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'}>
