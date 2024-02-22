@@ -3,7 +3,6 @@ import getImageUrl from '../utils/image-util'
 import isTitledView from '../HOC/isTitledView'
 
 import ServicesTabs from '../components/Sections/ServicesView/ServiceTabs/ServicesTabs'
-import CallToActionSection from '../components/CallToActionSection'
 import CustomDivider from '../components/CustomDivider'
 import HelmetSEO from '../components/HelmetSEO'
 
@@ -22,9 +21,9 @@ function ServicesView() {
 
 					<ServicesTabs />
 
-					<CustomDivider mt={{ xs: 3, md: 5 }} mb={{ xs: 3, md: 5 }} />
+					<CustomDivider mt={{ xs: 3, md: 3 }} mb={{ xs: 3, md: 3 }} />
 
-					<CallToActionSection />
+					{/* <CallToActionSection /> */}
 				</Container>
 			</Box>
 		</>

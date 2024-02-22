@@ -112,19 +112,18 @@ function ServicesTabs() {
             {
                 services.map((service, index) => (
                     <CustomTabPanel key={uniqid()} value={activeTabIndex} index={index}>
-                        <Grid container spacing={{xs: 0, sm: 2}} mt={{xs: 1, md: 0}}>
-                            <Grid item xs={12} sm={6} md={5} >
+                        <Grid container spacing={{xs: 0, md: 2}} mt={{xs: 1, md: 0}}>
+                            <Grid item order={{xs: 2, md: 1}} xs={12} md={7} px={2} >
                                 {/* <Grid item xs={12} lg={3} > With Masonry*/}
                                 <ServiceDescriptionColumn description={service.content} />
                             </Grid>
-                            <Grid item xs={12} sm={6} md={7} display='flex' justifyContent='center'>
+                            <Grid item order={{xs: 1, md: 2}} xs={12} md={5} display='flex' justifyContent='center' alignItems='center'>
                                 {/* <Grid item xs={12} lg={9}> With Masonry*/}
                                 <Box sx={{
                                     height: {
                                         xs: '90%',
                                         md: 'auto',
                                     },
-                                    width: 'auto',
                                 }}
                                     component='img'
                                     src={getImageUrl('card-backgrounds', service.imageSrc)}
