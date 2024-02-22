@@ -35,7 +35,8 @@ const CardMainContainer = styled(Paper)`
 
 interface Props {
     title: string,
-    content: string,
+    contentFlipCard: string,
+    content: string[],
     imageSrc: string,
     linkTo: string,
     tabValue: number
@@ -43,7 +44,7 @@ interface Props {
 
 function FlipCard({
     title,
-    content,
+    contentFlipCard,
     imageSrc,
     linkTo,
     tabValue
@@ -103,7 +104,9 @@ function FlipCard({
                             alignItems='center'
                         >
 
-                            <Typography variant="body1" component="p" color='custom.theme.almostWhite' textAlign='justify'>{content}</Typography>
+                            <Typography variant="body1" component="p" color='custom.theme.almostWhite' textAlign='justify'>
+                                {contentFlipCard}
+                            </Typography>
 
                             <Button
                                 onClick={() => changeActiveTab(tabValue)}

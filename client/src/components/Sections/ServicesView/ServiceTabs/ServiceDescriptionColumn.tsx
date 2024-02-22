@@ -1,3 +1,5 @@
+import uniqid from 'uniqid'
+
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
@@ -5,7 +7,7 @@ import Typography from '@mui/material/Typography'
 import GreenButtonWithLink from '../../../GreenButtonWithLink'
 
 interface Props {
-    description: string
+    description: string[]
 }
 
 function ServiceDescriptionColumn({
@@ -15,9 +17,18 @@ function ServiceDescriptionColumn({
         <>
             <Stack height={'100%'}>
                 <Stack pt={2} mb={2} >
-                    <Typography variant='body1' component='p' textAlign='justify'>
-                        {description}
-                    </Typography>
+                    {
+                        description.length > 0
+                            ? description.map((desc: string) => (
+                                <Typography mb={1} variant='body1' component='p' textAlign='justify' key={uniqid()}>
+                                    {desc}
+                                </Typography>
+                            ))
+                            : <Typography variant='body1' component='p' textAlign='justify' key={uniqid()}>
+                                {description}
+                            </Typography>
+                    }
+
                 </Stack>
 
                 <Box sx={{ margin: 'auto auto 20px auto' }}>
@@ -33,6 +44,7 @@ function ServiceDescriptionColumn({
             </Stack>
         </>
     )
+    
 }
 
 export default ServiceDescriptionColumn

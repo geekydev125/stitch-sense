@@ -24,11 +24,7 @@ function WhatWeDoSection() {
 					return (
 						<Grid item xs={12} sm={6} lg={4} key={uniqid()}>
 							<FlipCard
-								title={service.title}
-								content={service.content}
-								imageSrc={service.imageSrc}
-								linkTo={service.linkTo}
-								tabValue={service.tabValue}
+								{...service}
 							/>
 						</Grid>
 					)
