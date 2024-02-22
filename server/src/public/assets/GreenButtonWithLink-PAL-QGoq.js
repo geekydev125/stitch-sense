@@ -1,0 +1,1 @@
+import{j as t,L as x}from"./index-m2ALcMPt.js";import{G as u}from"./GreenButton-3iI4S3ZT.js";function p({type:e,disabled:n,variant:o="text",children:r,boxShadow:i,size:s="medium",linkTo:m}){return t.jsx(x,{to:`/${m}`,style:{textDecoration:"none"},children:t.jsx(u,{type:e,variant:o,disabled:n,size:s,boxShadow:i,children:r})})}export{p as G};
