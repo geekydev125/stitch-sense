@@ -35,8 +35,6 @@ const router = createBrowserRouter([
 			{
 				path: "/portfolio",
 				element:<LazyPortfolioView />
-					
-
 			},
 			{
 				path: "/about-us",

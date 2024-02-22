@@ -1,9 +1,10 @@
+import useTheme from "@mui/material/styles/useTheme";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import AppBar from "@mui/material/AppBar";
 
 import DesktopNavMenu from "./DesktopNavMenu";
 import MobileNavMenu from "./MobileNavMenu";
-import useTheme from "@mui/material/styles/useTheme";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 export interface IRoute {
     route: string;

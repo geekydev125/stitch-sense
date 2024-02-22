@@ -14,9 +14,3 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #9e9e9e;
 }
-
-/* @supports (scrollbar-color: red blue) {
-    * {
-        scrollbar-color: #9e9e9e #2e2e2e ;
-    }
-} */
