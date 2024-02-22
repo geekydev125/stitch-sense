@@ -7,7 +7,7 @@ import Header from "../components/Header/Header"
 import Box from '@mui/material/Box'
 
 import WhoWeAreSection from "../components/Sections/HomeView/WhoWeAreSection"
-import HeroSection from "../components/Sections/HomeView/HereSection/HeroSection"
+import HeroSection from "../components/Sections/HomeView/HeroSection/HeroSection"
 import WhatWeDoSection from "../components/Sections/HomeView/WhatWeDoSection"
 import WhyChooseUsSection from "../components/Sections/HomeView/WhyChooseUsSection"
 import WhyTrustUsSection from "../components/Sections/HomeView/WhyTrustUsSection"
