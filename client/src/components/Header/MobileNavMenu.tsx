@@ -1,6 +1,6 @@
 import uniqid from "uniqid";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { IRoute } from "./Header";
 
@@ -23,17 +23,32 @@ import Stack from "@mui/material/Stack";
 
 const drawerWidth = 240;
 interface Props {
-    routes: IRoute[]
+	routes: IRoute[]
 }
 function MobileNavMenu({
-    routes
+	routes
 }: Props) {
-	const [mobileOpen, setMobileOpen] = useState<boolean>(false);
+	const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
+	const { pathname } = useLocation();
+	const navigate = useNavigate()
 
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-	
+	const handleDrawerToggle = () => {
+		setIsDrawerOpen((prevState) => !prevState);
+	};
+
+	useEffect(() => {
+		setIsDrawerOpen(false)
+	}, [pathname])
+
+	// This functionality is to close the drawer when a link is clicked. The Drawer component has a bug that the backdrop does not disappear every now and then, when lazy views are being loaded
+	const onSelectItem = (path: string) => {
+		if (path === pathname) {
+			setIsDrawerOpen(false);
+			return;
+		}
+		navigate(path);
+	};
+
 	return (
 		<Toolbar component='nav'>
 			<Stack width='100%' direction='row' justifyContent='space-between' alignContent='center'>
@@ -51,7 +66,7 @@ function MobileNavMenu({
 
 					<Drawer
 						variant="temporary"
-						open={mobileOpen}
+						open={isDrawerOpen}
 						onClose={handleDrawerToggle}
 						ModalProps={{
 							keepMounted: true, // Better open performance on mobile.
@@ -98,7 +113,7 @@ function MobileNavMenu({
 												}
 											}}
 
-											onClick={handleDrawerToggle}
+											onClick={() => onSelectItem(route.path)}
 											component={NavLink}
 											to={route.path}
 										>
