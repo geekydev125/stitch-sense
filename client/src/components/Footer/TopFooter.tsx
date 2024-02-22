@@ -68,7 +68,7 @@ function TopFooter() {
                                     <Box component="span" color='custom.theme.darkGreen'>ganimir@badinka.com</Box>
                                 </Typography>
                             </Box>
-                            <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'}>
+                            <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'} mb={1}>
                                 <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Location:</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.darkGreen'>280 Tsarigradski Complex,</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.darkGreen'>Sofia, Bulgaria</Typography>
