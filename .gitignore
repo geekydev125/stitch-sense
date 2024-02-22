@@ -9,6 +9,7 @@ lerna-debug.log*
 
 TODO.txt
 
+/.vscode
 */node_modules
 */dist
 */dist-ssr
