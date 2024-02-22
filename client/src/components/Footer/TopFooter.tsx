@@ -42,7 +42,9 @@ function TopFooter() {
                     <Grid item
                         xs={12}
                         sm={mapApiKey ? 6 : 12}
-                        md={mapApiKey ? 4 : 12}>
+                        md={mapApiKey ? 4 : 12}
+                        mb={isXsSM ? 2 : 0}
+                    >
                         {
                             isXsSM && letsWorkTogether
                         }
@@ -68,7 +70,7 @@ function TopFooter() {
                                     <Box component="span" color='custom.theme.darkGreen'>ganimir@badinka.com</Box>
                                 </Typography>
                             </Box>
-                            <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'} mb={1}>
+                            <Box alignSelf={mapApiKey ? 'inherit' : 'flex-start'}>
                                 <Typography variant='h5' component='h5' color='custom.theme.almostWhite' fontWeight='bold' mb={1}>Location:</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.darkGreen'>280 Tsarigradski Complex,</Typography>
                                 <Typography variant='body1' component='p' color='custom.theme.darkGreen'>Sofia, Bulgaria</Typography>
