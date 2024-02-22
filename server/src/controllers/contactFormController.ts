@@ -5,7 +5,6 @@ const router = Router();
 
 router.post('/', async (req: Request, res: Response) => {
     let { firstName, lastName, phone, email, contactMethod, message } = req.body;
-    // console.log(firstName, lastName, phone, email, contactMethod, message)
 
     switch(contactMethod){
         case 'phone':
@@ -35,7 +34,7 @@ router.post('/', async (req: Request, res: Response) => {
 
     const transporter = nodemailer.createTransport({
         service: 'hotmail',
-        host: 'smtp.live.com',
+        host: process.env.EMAIL_HOST,
         port: 587,
         secure: false,
         auth: {
