@@ -1,0 +1,1 @@
+import{j as t,L as x}from"./index-0iU4hia0.js";import{G as u}from"./GreenButton-4IdD8B1g.js";function p({type:e,disabled:n,variant:o="text",children:r,boxShadow:i,size:s="medium",linkTo:m}){return t.jsx(x,{to:`/${m}`,style:{textDecoration:"none"},children:t.jsx(u,{type:e,variant:o,disabled:n,size:s,boxShadow:i,children:r})})}export{p as G};
