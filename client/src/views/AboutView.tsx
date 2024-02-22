@@ -69,7 +69,7 @@ function AboutView() {
 						<SectionTitle title='OUR TEAM' variant='h5' justify='left' p={2} mb={2} />
 						<Grid container spacing={{ xs: 1, md: 2 }}>
 							{employeesData.map((employee: IEmployee) => (
-								<Grid key={uniqid()} item xs={6} sm={4}>
+								<Grid key={uniqid()} item xs={12} sm={4} >
 									<EmployeeCard {...employee} />
 								</Grid>
 							))}
