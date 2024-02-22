@@ -1,7 +1,7 @@
 [{
 		"firstName": "Ganimir",
 		"lastName": "Vangelov",
-		"position": "Chief Operations Officer",
+		"position": "Sales Director",
 		"imageSrc": "ganimir-vangelov.jpg"
 	},
 	{
@@ -13,25 +13,7 @@
 	{
 		"firstName": "Plamen",
 		"lastName": "Petrov",
-		"position": "Chief Operations Officer",
+		"position": "Marketing Director",
 		"imageSrc": "plamen-petrov.jpg"
-	},
-	{
-		"firstName": "Name",
-		"lastName": "Name",
-		"position": "Fashion Designer",
-		"imageSrc": null
-	},
-	{
-		"firstName": "Name",
-		"lastName": "Name",
-		"position": "Designer",
-		"imageSrc": null
-	},
-	{
-		"firstName": "Name",
-		"lastName": "Name",
-		"position": "Clothing Operations Manager",
-		"imageSrc": null
 	}
 ]
