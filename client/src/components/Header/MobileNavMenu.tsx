@@ -1,6 +1,6 @@
 import uniqid from "uniqid";
 import { useEffect, useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import { IRoute } from "./Header";
 
@@ -30,7 +30,6 @@ function MobileNavMenu({
 }: Props) {
 	const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 	const { pathname } = useLocation();
-	const navigate = useNavigate()
 
 	const handleDrawerToggle = () => {
 		setIsDrawerOpen((prevState) => !prevState);
@@ -46,7 +45,6 @@ function MobileNavMenu({
 			setIsDrawerOpen(false);
 			return;
 		}
-		navigate(path);
 	};
 
 	return (
