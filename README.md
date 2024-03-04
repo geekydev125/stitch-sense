@@ -4,7 +4,7 @@
 
 <div style='font-family: "Montserrat", sans-serif; font-optical-sizing: autoм font-weight: 400; font-style: normal;'>
 
-<h1 align="center" style="text-transform: uppercase">Stitch Sense</h1>
+<h1 align="center" style="text-transform: uppercase;">STITCH SENSE</h1>
 <h3 align="center" style="margin-top: 1px; text-align: center;" >Where your business production needs are met</h3>
 
 <br />
