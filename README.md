@@ -75,7 +75,7 @@ npm run dev
 npm run dev
 ```
 
-6. The <b>server side</b> of the application will run the development server on [http://localhost:3000/](http://localhost:3000/)
+7. The <b>server side</b> of the application will run the development server on [http://localhost:3000/](http://localhost:3000/)
 </blockquote>
 
 <br />
@@ -109,7 +109,7 @@ npm run build
 npm start
 ```
 
-7. If the port 3000 is available, the production build will be served on [http://localhost:3000](http://localhost:3000)
+8. If the port 3000 is available, the production build will be served on [http://localhost:3000](http://localhost:3000)
 </blockquote>
 
 <br />
@@ -142,11 +142,11 @@ npm start
 <br/>
 Emotion</blockquote>
 
-<h3>Server-Side Runtime</h3>
+<h3>Runtime (Server-Side)</h3>
 
 <blockquote>Node</blockquote>
 
-<h3>Server-Side Application Network</h3>
+<h3>Application Framework (Server-Side)</h3>
 
 <blockquote>Express</blockquote>
 
