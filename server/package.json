@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "concurrently \"npx tsc -w\" \"nodemon ./dist/server.js\"",
     "start": "node ./dist/server.js",
-    "build": "rimraf dist && npx tsc && cp -r src/public dist"
+    "build": "rimraf dist && npx tsc && cp -r src/public dist",
+    "deploy": "vercel --prod"
   },
   "author": "Ariel Behar",
   "license": "ISC",
