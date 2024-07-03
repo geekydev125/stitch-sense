@@ -4,7 +4,7 @@ import uniqid from 'uniqid'
 
 import routes from '@/routes/routes.json'
 
-import { Route } from '@/types/types'
+import { IRoute } from '@/types/types'
 
 import NavLink from './NavLink'
 
@@ -19,7 +19,7 @@ function DesktopMenu() {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     {
-                        (routes as Route[]).map((route) => (
+                        (routes as IRoute[]).map((route) => (
                             <NavLink key={uniqid()} route={route} />
                         ))
                     }

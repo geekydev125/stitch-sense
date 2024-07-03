@@ -2,10 +2,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 
-import { Route } from "@/types/types";
+import { IRoute } from "@/types/types";
 
 interface Props {
-    route: Route
+    route: IRoute
 }
 
 function NavLink({
