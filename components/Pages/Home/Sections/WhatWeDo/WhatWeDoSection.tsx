@@ -3,7 +3,7 @@ import uniqid from 'uniqid'
 import SectionTitle from '@/components/Common/Titles/SectionTitle'
 
 import services from '@/data/services.json'
-import FlipCard from './FlipCard/FlipCard'
+import FlipCard from '../../../../Cards/FlipCard/FlipCard'
 
 function WhatWeDoSection() {
     return (
