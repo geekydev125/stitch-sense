@@ -10,7 +10,7 @@ import NavLink from './NavLink'
 
 function DesktopMenu() {
     return (
-        <div className='container'>
+        <div className='container hidden md:block'>
             <div className="flex-1">
                 <Link href="/">
                     <Image src="/assets/img/logos/stitchSense-logo-white.png" alt='Stitch Sense Logo' width={75} height={75} />
