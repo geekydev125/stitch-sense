@@ -4,6 +4,7 @@ export interface IRoute {
 }
 
 export interface IIconProps {
-    sizeClassName?: "size-1" | "size-2" | "size-3" | "size-4" | "size-5" | "size-6" | "size-7" | "size-8" | "size-9" | "size-10",
-    strokeColor?: string
+    sizeClassName?: "size-1" | "size-2" | "size-3" | "size-4" | "size-5" | "size-6" | "size-7" | "size-8" | "size-9" | "size-10" | "size-11" | "size-12",
+    strokeColor?: string,
+    strokeWidth?: number
 }
