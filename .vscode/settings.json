@@ -6,5 +6,8 @@
         "loungewear",
         "scrollwheel",
         "uniqid"
-    ]
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+      }
 }
