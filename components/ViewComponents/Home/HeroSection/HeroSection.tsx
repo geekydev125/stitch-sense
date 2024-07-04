@@ -1,7 +1,10 @@
+"use client"
 import Image from 'next/image'
+
 
 import BackgroundVideoMask from './BackgroundVideoMask'
 import BackgroundVideo from './BackgroundVideo'
+import AnimatedIconArrowDown from './AnimatedIconArrowDown'
 
 function HeroSection() {
 
@@ -17,12 +20,16 @@ function HeroSection() {
                             <Image className='md:hidden' src='/assets/img/logos/stitchSense-logo-white.png' width={65} height={65} alt='Arrow down' />
                             <Image className='hidden md:block' src='/assets/img/logos/stitchSense-logo-black.png' width={150} height={150} alt='Arrow down' />
                         </div>
-                        
+
                     </div>
                 </div>
-
             </BackgroundVideoMask>
+
+            <AnimatedIconArrowDown />
+
             <BackgroundVideo />
+
+
 
         </section>
     )
