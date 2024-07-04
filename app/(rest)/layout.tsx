@@ -22,7 +22,9 @@ export default function RootLayout({
 			<body className={groteskFont.className}>
 				<Header />
 
-				{children}
+				<main className="py-5 md:py-10">
+					{children}
+				</main>
 
 			</body>
 		</html>

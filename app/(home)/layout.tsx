@@ -26,7 +26,9 @@ export default function HomeRootLayout({
 				<HeroSection />
 
 				<Header />
-				{children}
+				<main className="py-5 md:py-10">
+					{children}
+				</main>
 
 			</body>
 		</html>
