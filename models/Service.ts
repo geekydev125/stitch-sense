@@ -1,4 +1,4 @@
-export default interface Service {
+export default interface IService {
     title: string
     contentFlipCard: string
     content: string[]
