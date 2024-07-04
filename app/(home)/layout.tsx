@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header/Header";
-import HeroSection from "@/components/ViewComponents/Home/HeroSection/HeroSection";
+import HeroSection from "@/components/Pages/Home/Sections/Hero/HeroSection";
 
 const groteskFont = Space_Grotesk({ subsets: ["latin"] });
 

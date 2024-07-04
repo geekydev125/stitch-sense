@@ -1,4 +1,5 @@
-import WhoWeAreSection from "@/components/ViewComponents/Home/WhoWeAreSection/WhoWeAreSection";
+import Divider from "@/components/Common/Divider";
+import WhoWeAreSection from "@/components/Pages/Home/Sections/WhoWeAre/WhoWeAreSection";
 import { Metadata } from "next";
 
 
@@ -11,6 +12,8 @@ export default function Home() {
 	return (
 		<>
 			<WhoWeAreSection />
+
+			<Divider />
 
 		</>
 	);
