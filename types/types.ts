@@ -8,3 +8,13 @@ export interface IIconProps {
     strokeColor?: string,
     strokeWidth?: number
 }
+
+export interface IImpact {
+    title: string,
+    content: string,
+}
+
+export interface IClientImpact extends IImpact {
+    image: string,
+    alt: string,
+}
