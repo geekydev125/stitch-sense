@@ -3,21 +3,18 @@
         "title": "CUSTOMER CARE",
         "content": "Expect nothing less than exceptional customer service from us. Whether you need assistance with designs, material sourcing, or general consulting, we've got you covered.",
         "imageSrc": "customer-care-icon.png",
-        "alt": "customer care icon",
-        "variant": "light"
+        "alt": "customer care icon"
     },
     {
         "title": "VOLUME FLEXIBILITY",
         "content": "Dedicated to providing you with the flexibility you require, we support both large-scale and small-scale orders. No matter the volume, we've got your back.",
         "imageSrc": "arrows-icon.svg",
-        "alt": "arrows icon",
-        "variant": "light"
+        "alt": "arrows icon"
     },
     {
         "title": "FINISHED PRODUCTS",
         "content": "Simplify the puzzle of manufacturing with our comprehensive services. We take care of all your manufacturing needs, delivering finished products that set you up for business success.",
         "imageSrc": "puzzle-icon.svg",
-        "alt": "puzzle icon",
-        "variant": "light"
+        "alt": "puzzle icon"
     }
 ]
