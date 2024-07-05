@@ -15,7 +15,7 @@ function WhatWeDoSection() {
             <div className='grid grid-cols-12 gap-4'>
 
                 {services.map((service) => (
-                    <div key={uniqid()} className='col-span-12 md:col-span-4 rounded-3xl shadow-2xl'>
+                    <div key={uniqid()} className='col-span-12 sm:col-span-4 rounded-3xl shadow-2xl'>
                         <FlipCard service={service} />
                     </div>
                 ))}

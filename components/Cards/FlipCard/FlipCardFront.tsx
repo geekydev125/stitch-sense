@@ -15,7 +15,7 @@ function FlipCardFront({
                 <IconRotateLeft fillColor='#f1f1f1' width='25px' height='25px' />
             </div>
 
-            <h5 className='text-5xl text-light'>{service.title}</h5>
+            <h5 className='text-5xl sm:text-3xl md:text-4xl lg:text-5xl text-light'>{service.title}</h5>
         </div>
     )
 }

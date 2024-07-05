@@ -19,7 +19,7 @@ function ImpactCard({
 					)
 				}
 
-				<p className="text-justify mb-2 md:mb-0">{card.content}</p>
+				<p className="text-justify mb-2">{card.content}</p>
 			</div>
 		</div>
 	)
