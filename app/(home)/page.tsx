@@ -2,6 +2,7 @@ import Divider from "@/components/Common/Divider";
 import WhatWeDoSection from "@/components/Pages/Home/Sections/WhatWeDo/WhatWeDoSection";
 import WhoWeAreSection from "@/components/Pages/Home/Sections/WhoWeAre/WhoWeAreSection";
 import WhyChooseUsSection from "@/components/Pages/Home/Sections/WhyChooseUs/WhyChooseUsSection";
+import WhyTrustUsSection from "@/components/Pages/Home/Sections/WhyTrustUs/WhyTrustUsSection";
 import { Metadata } from "next";
 
 
@@ -22,6 +23,10 @@ export default function Home() {
 			<Divider />
 
 			<WhyChooseUsSection />
+
+			<Divider />
+
+			<WhyTrustUsSection />
 		</>
 	);
 }
