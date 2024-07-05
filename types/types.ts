@@ -15,6 +15,6 @@ export interface IImpact {
 }
 
 export interface IClientImpact extends IImpact {
-    image: string,
+    icon: string,
     alt: string,
 }
