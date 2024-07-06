@@ -4,6 +4,7 @@ import "../globals.css";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import PageTitleSection from "@/components/Common/PageTitleSection";
 
 const groteskFont = Space_Grotesk({ subsets: ["latin"] });
 
@@ -24,7 +25,8 @@ export default function RootLayout({
 			<body className={groteskFont.className}>
 				<Header />
 
-				<main className="py-5 md:py-10">
+				<main className="pb-5 md:pb-10">
+					<PageTitleSection />
 					{children}
 				</main>
 
