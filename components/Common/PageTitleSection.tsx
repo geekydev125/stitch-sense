@@ -13,7 +13,7 @@ function PageTitleSection() {
     return (
         <section
             style={{
-                backgroundImage: `url('/assets/img/title-backgrounds/${pathName.slice(1)}.jpg')`
+                backgroundImage: `url('/assets/img/page-title-backgrounds/${pathName.slice(1)}.jpg')`
             }}
             className="h-[15vh] sm:h-[20vh] lg:h-[26vh] bg-no-repeat bg-cover bg-center relative mb-5 md:mb-10"
         >
