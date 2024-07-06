@@ -18,3 +18,8 @@ export interface IClientImpact extends IImpact {
     icon: string,
     alt: string,
 }
+
+export interface IClient {
+    name: string,
+    logo: string,
+}
