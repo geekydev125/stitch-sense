@@ -1,4 +1,5 @@
 import Divider from "@/components/Common/Divider";
+import OurClientsSection from "@/components/Pages/Home/Sections/OurClients/OurClientsSection";
 import WhatWeDoSection from "@/components/Pages/Home/Sections/WhatWeDo/WhatWeDoSection";
 import WhoWeAreSection from "@/components/Pages/Home/Sections/WhoWeAre/WhoWeAreSection";
 import WhyChooseUsSection from "@/components/Pages/Home/Sections/WhyChooseUs/WhyChooseUsSection";
@@ -27,6 +28,10 @@ export default function Home() {
 			<Divider />
 
 			<WhyTrustUsSection />
+
+			<Divider />
+
+			<OurClientsSection />
 		</>
 	);
 }
