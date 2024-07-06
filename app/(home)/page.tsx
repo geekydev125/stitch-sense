@@ -1,4 +1,5 @@
 import Divider from "@/components/Common/Divider";
+import ContactSection from "@/components/Pages/Common/Sections/Contact/ContactSection";
 import OurClientsSection from "@/components/Pages/Home/Sections/OurClients/OurClientsSection";
 import WhatWeDoSection from "@/components/Pages/Home/Sections/WhatWeDo/WhatWeDoSection";
 import WhoWeAreSection from "@/components/Pages/Home/Sections/WhoWeAre/WhoWeAreSection";
@@ -32,6 +33,8 @@ export default function Home() {
 			<Divider />
 
 			<OurClientsSection />
+
+			<ContactSection />
 		</>
 	);
 }

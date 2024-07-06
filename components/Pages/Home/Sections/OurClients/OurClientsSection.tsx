@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function OurClientsSection() {
     return (
-        <section className="bg-black py-10">
+        <section className="bg-black py-10 mb-10">
             <div className="container">
                 <h3 className="text-center text-light text-5xl uppercase mb-5">Our clients</h3>
                 
