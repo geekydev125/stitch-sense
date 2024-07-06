@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "../globals.css";
+
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const groteskFont = Space_Grotesk({ subsets: ["latin"] });
 
@@ -26,6 +28,7 @@ export default function RootLayout({
 					{children}
 				</main>
 
+				<Footer />
 			</body>
 		</html>
 	);
