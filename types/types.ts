@@ -23,3 +23,8 @@ export interface IClient {
     name: string,
     logo: string,
 }
+
+export interface IPortfolioItem {
+    title: string,
+    image: string
+}
