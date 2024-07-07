@@ -5,7 +5,7 @@ import EmployeesCards from "./EmployeesCards"
 
 function WhyTrustUsSection() {
     return (
-        <section className="container">
+        <>
             <SectionTitle>Why trust us?</SectionTitle>
 
             <SecondaryTitle>Our impact on you</SecondaryTitle>
@@ -16,7 +16,7 @@ function WhyTrustUsSection() {
 
             <EmployeesCards />
             
-        </section>
+        </>
     )
 }
 
