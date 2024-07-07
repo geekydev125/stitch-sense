@@ -1,5 +1,6 @@
 import SecondaryTitle from "@/components/Common/Titles/SecondaryTitle";
 import AboutSection from "@/components/Pages/About/Sections/AboutSection";
+import TeamCardsSection from "@/components/Pages/About/Sections/TeamCardsSection";
 import EmployeesCards from "@/components/Pages/Home/Sections/WhyTrustUs/EmployeesCards";
 import { Metadata } from "next";
 
@@ -18,6 +19,8 @@ function AboutPage() {
 			<EmployeesCards />
 
 			<SecondaryTitle>Our team</SecondaryTitle>
+
+			<TeamCardsSection />
 
 		</>
 	)
