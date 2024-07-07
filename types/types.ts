@@ -28,3 +28,10 @@ export interface IPortfolioItem {
     title: string,
     image: string
 }
+
+export interface ITeamMember {
+    firstName: string,
+    lastName: string,
+    position: string,
+    image: string
+}
