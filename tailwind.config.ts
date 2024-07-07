@@ -23,6 +23,7 @@ const config: Config = {
 		themes: [
 			{
 				mytheme: {
+					"primary": "#45B6B2",
 				}
 			}
 		]
