@@ -1,3 +1,6 @@
+import CallToAction from "@/components/Common/CallToAction";
+import Divider from "@/components/Common/Divider";
+import PortfolioSection from "@/components/Pages/Portfolio/Sections/PortfolioSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,9 +9,17 @@ export const metadata: Metadata = {
 };
 
 function PortfolioPage() {
-  return (
-    <div>PortfolioPage</div>
-  )
+	return (
+		<>
+			<Divider />
+
+			<PortfolioSection />
+
+			<Divider />
+
+			<CallToAction />
+		</>
+	)
 }
 
 export default PortfolioPage
