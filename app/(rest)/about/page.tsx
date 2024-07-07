@@ -1,3 +1,6 @@
+import SecondaryTitle from "@/components/Common/Titles/SecondaryTitle";
+import AboutSection from "@/components/Pages/About/Sections/AboutSection";
+import EmployeesCards from "@/components/Pages/Home/Sections/WhyTrustUs/EmployeesCards";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,9 +9,18 @@ export const metadata: Metadata = {
 };
 
 function AboutPage() {
-  return (
-    <div>AboutPage</div>
-  )
+	return (
+		<>
+			<AboutSection />
+			
+			<SecondaryTitle>Our impact on employees</SecondaryTitle>
+
+			<EmployeesCards />
+
+			<SecondaryTitle>Our team</SecondaryTitle>
+
+		</>
+	)
 }
 
 export default AboutPage
