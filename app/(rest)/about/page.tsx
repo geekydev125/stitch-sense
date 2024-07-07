@@ -1,3 +1,5 @@
+import CallToAction from "@/components/Common/CallToAction";
+import Divider from "@/components/Common/Divider";
 import SecondaryTitle from "@/components/Common/Titles/SecondaryTitle";
 import AboutSection from "@/components/Pages/About/Sections/AboutSection";
 import TeamCardsSection from "@/components/Pages/About/Sections/TeamCardsSection";
@@ -18,10 +20,15 @@ function AboutPage() {
 
 			<EmployeesCards />
 
+			<Divider />
+
 			<SecondaryTitle>Our team</SecondaryTitle>
 
 			<TeamCardsSection />
 
+			<Divider />
+
+			<CallToAction />
 		</>
 	)
 }
