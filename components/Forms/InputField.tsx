@@ -15,7 +15,7 @@ function InputField({
     placeholder = ""
 }: Props) {
     return (
-        <input required={required} placeholder={placeholder} {...register(name as keyof IContactFormData)} type="text" className="input input-bordered w-full" />
+        <input required={required} placeholder={`${placeholder} ${required ? "*" : ''}`} {...register(name as keyof IContactFormData)} type="text" className="input input-bordered w-full focus:outline-none focus:border-primary" />
     )
 }
 
