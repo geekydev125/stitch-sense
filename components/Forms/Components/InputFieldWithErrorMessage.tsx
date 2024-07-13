@@ -1,5 +1,5 @@
 import { FieldErrors, UseFormRegister } from "react-hook-form"
-import { IContactFormData } from "./ContactForm"
+import { IContactFormData } from "../ContactForm"
 import FieldErrorMessage from "./FieldErrorMessage"
 import InputField from "./InputField"
 

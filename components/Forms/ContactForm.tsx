@@ -4,9 +4,9 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import contactFormSchema from '@/validations/contactFormSchema'
 
-import InputFieldWithErrorMessage from './InputFieldWithErrorMessage'
-import RadioButtonsGroup from './RadioButtonsGroup'
-import TextAreaWithErrorMessage from './TextAreaWithErrorMessage'
+import InputFieldWithErrorMessage from './Components/InputFieldWithErrorMessage'
+import RadioButtonsGroup from './Components/RadioButtonsGroup'
+import TextAreaWithErrorMessage from './Components/TextAreaWithErrorMessage'
 
 export interface IContactFormData {
 	firstName: string,

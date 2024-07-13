@@ -1,7 +1,7 @@
 import { UseFormRegister } from "react-hook-form"
 
 import RadioButton from "./RadioButton"
-import { IContactFormData } from "./ContactForm"
+import { IContactFormData } from "../ContactForm"
 
 interface Props {
     register: UseFormRegister<IContactFormData>,

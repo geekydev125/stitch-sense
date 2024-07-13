@@ -1,5 +1,5 @@
 import { UseFormRegister } from "react-hook-form"
-import { IContactFormData } from "./ContactForm"
+import { IContactFormData } from "../ContactForm"
 
 interface Props {
     name: IContactFormData[keyof IContactFormData]
