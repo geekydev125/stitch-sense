@@ -1,3 +1,4 @@
+import ContactForm from "@/components/Forms/ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,9 +7,11 @@ export const metadata: Metadata = {
 };
 
 function ContactPage() {
-  return (
-    <div>ContactPage</div>
-  )
+	return (
+		<section className="container">
+			<ContactForm />
+		</section>
+	)
 }
 
 export default ContactPage
