@@ -2,13 +2,13 @@ import SectionTitle from "@/components/Common/Titles/SectionTitle"
 import ContactForm from "@/components/Forms/ContactForm"
 
 function ContactSection() {
-  return (
-    <section>
-        <SectionTitle>Let's work together!</SectionTitle>
+	return (
+		<section className="container">
+			<SectionTitle>Let's work together!</SectionTitle>
 
-        <ContactForm />
-    </section>
-  )
+			<ContactForm />
+		</section>
+	)
 }
 
 export default ContactSection
