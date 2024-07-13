@@ -46,8 +46,10 @@ function ContactForm() {
 			</div>
 
 			<div className='flex flex-col items-center'>
-				<RadioButtonsGroup register={register} />
+				<RadioButtonsGroup required register={register} />
 			</div>
+
+			
 		</form>
 	)
 }
