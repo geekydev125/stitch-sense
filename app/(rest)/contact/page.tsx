@@ -1,3 +1,4 @@
+import SectionTitle from "@/components/Common/Titles/SectionTitle";
 import ContactForm from "@/components/Forms/ContactForm";
 import { Metadata } from "next";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 function ContactPage() {
 	return (
 		<section className="container">
+			<SectionTitle>Let's Work Together!</SectionTitle>
+			
 			<ContactForm />
 		</section>
 	)
