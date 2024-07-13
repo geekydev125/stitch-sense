@@ -1,11 +1,12 @@
 "use client"
 import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
 import contactFormSchema from '@/validations/contactFormSchema'
+
 import InputFieldWithErrorMessage from './InputFieldWithErrorMessage'
 import RadioButtonsGroup from './RadioButtonsGroup'
+import TextAreaWithErrorMessage from './TextAreaWithErrorMessage'
 
 export interface IContactFormData {
 	firstName: string,
@@ -45,10 +46,13 @@ function ContactForm() {
 				<InputFieldWithErrorMessage errors={errors} register={register} name='email' required placeholder="Email" />
 			</div>
 
-			<div className='flex flex-col items-center'>
+			<div className='flex flex-col items-center mb-5'>
 				<RadioButtonsGroup required register={register} />
 			</div>
 
+			<div>
+				<TextAreaWithErrorMessage errors={errors} register={register} name='message' placeholder="Message" />
+			</div>
 			
 		</form>
 	)
