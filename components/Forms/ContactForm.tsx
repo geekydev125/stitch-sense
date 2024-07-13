@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import contactFormSchema from '@/validations/contactFormSchema'
 import InputFieldWithErrorMessage from './InputFieldWithErrorMessage'
+import RadioButtonsGroup from './RadioButtonsGroup'
 
 export interface IContactFormData {
 	firstName: string,
@@ -42,6 +43,10 @@ function ContactForm() {
 			<div className='flex gap-x-4 mb-2'>
 				<InputFieldWithErrorMessage errors={errors} register={register} name='phone' required placeholder="Phone Number" />
 				<InputFieldWithErrorMessage errors={errors} register={register} name='email' required placeholder="Email" />
+			</div>
+
+			<div className='flex flex-col items-center'>
+				<RadioButtonsGroup register={register} />
 			</div>
 		</form>
 	)
