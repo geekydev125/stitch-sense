@@ -7,6 +7,7 @@ import contactFormSchema from '@/validations/contactFormSchema'
 import InputFieldWithErrorMessage from './Components/InputFieldWithErrorMessage'
 import RadioButtonsGroup from './Components/RadioButtonsGroup'
 import TextAreaWithErrorMessage from './Components/TextAreaWithErrorMessage'
+import SubmitButton from './Components/SubmitButton'
 
 export interface IContactFormData {
 	firstName: string,
@@ -50,10 +51,16 @@ function ContactForm() {
 				<RadioButtonsGroup required register={register} />
 			</div>
 
-			<div>
-				<TextAreaWithErrorMessage errors={errors} register={register} name='message' placeholder="Message" />
+			<TextAreaWithErrorMessage errors={errors} register={register} name='message' placeholder="Message" />
+
+			<div className='flex justify-center'>
+				<SubmitButton
+					isDisabled={!isValid || !isDirty || isSubmitting}
+					isLoading={isLoading}
+				>
+					Send
+				</SubmitButton>
 			</div>
-			
 		</form>
 	)
 }
