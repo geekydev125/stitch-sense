@@ -19,7 +19,7 @@ function TabTitle({
             name="service-tabs"
             role="tab"
             onClick={() => handleTabChange(index + 1)}
-            checked={index + 1 === activeTab}
+            defaultChecked={index + 1 === activeTab}
             className={`tab text-2xl mx-1 h-14 rounded-t-box ${index + 1 === activeTab ? 'bg-primary text-white': 'bg-light'} hover:bg-primary hover:text-white`}
             aria-label={service.title}
         />
