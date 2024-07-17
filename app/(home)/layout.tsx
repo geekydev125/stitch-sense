@@ -6,6 +6,7 @@ import "../globals.css";
 import Header from "@/components/Header/Header";
 import HeroSection from "@/components/Pages/Home/Sections/Hero/HeroSection";
 import Footer from "@/components/Footer/Footer";
+import Main from "@/components/Common/Main";
 
 const groteskFont = Space_Grotesk({ subsets: ["latin"] });
 
@@ -40,9 +41,10 @@ export default function HomeRootLayout({
 				<HeroSection />
 
 				<Header />
-				<main className="py-5 md:py-10">
+
+				<Main>
 					{children}
-				</main>
+				</Main>
 
 				<Footer />
 			</body>

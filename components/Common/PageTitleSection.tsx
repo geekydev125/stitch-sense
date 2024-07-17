@@ -15,7 +15,7 @@ function PageTitleSection() {
             style={{
                 backgroundImage: `url('/assets/img/page-title-backgrounds/${pathName.slice(1)}.jpg')`
             }}
-            className="h-[15vh] sm:h-[20vh] lg:h-[26vh] bg-no-repeat bg-cover bg-center relative mb-5 md:mb-10"
+            className="h-[15vh] sm:h-[20vh] lg:h-[26vh] bg-no-repeat bg-cover bg-center relative"
         >
             <div className="bg-[rgba(0,0,0,0.6)] w-full h-full absolute top-0 left-0 z-[1]">
                 <div className="container flex flex-row justify-between items-center h-full">
