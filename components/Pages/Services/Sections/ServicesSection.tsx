@@ -5,9 +5,11 @@ import Tabs from "@/components/Tabs/Tabs"
 function ServicesSection() {
     return (
         <>
+            <Divider className="md:mt-0 md:mb-10"/>
+
             <Tabs />
 
-            <Divider />
+            <Divider className="md:mt-7 md:mb-5"/>
         </>
     )
 }

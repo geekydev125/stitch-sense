@@ -1,8 +1,14 @@
 import Image from "next/image"
 
-function Divider() {
+interface Props {
+    className?: string
+}
+
+function Divider({
+    className
+}: Props) {
     return (
-        <div className="flex justify-center my-3 md:my-10">
+        <div className={`flex justify-center ${className}`}>
             <Image
                 className="transform scale-50 md:scale-100"
                 src="/assets/img/arrows-divider/divider.png"
