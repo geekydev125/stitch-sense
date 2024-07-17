@@ -7,20 +7,15 @@ const center = {
     lng: 23.399793
 };
 
-interface Props {
-    handleMapLoad: (isLoaded: boolean) => void
-}
 
-function Map({
-    handleMapLoad
-}: Props) {
+function Map() {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
     })
 
     return (
-        <div className="h-[300px] md:h-[340px] overflow-hidden w-full relative before:bg-no-repeat before:h-full before:md:bg-[url('/assets/img/black-fade.png')] before:bg-contain before:md:w-[22%] before:absolute before:z-[1]">
+        <div className="h-[300px] md:h-[340px] overflow-hidden w-full relative before:bg-no-repeat before:h-full before:md:bg-[url('/assets/img/black-fade.png')] before:bg-contain before:md:w-[24%] before:lg:w-[15%] before:xl:w-[10%] before:absolute before:z-[1] mb-5 md:mb-0">
             {
                 isLoaded ? (
                     <GoogleMap
@@ -38,7 +33,6 @@ function Map({
                             minZoom: 10,
                             scrollwheel: true
                         }}
-                        onLoad={() => handleMapLoad(true)}
                     >
                         { /* Child components, such as markers, info windows, etc. */}
                         <MarkerF
