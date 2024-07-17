@@ -40,7 +40,7 @@ function Tabs() {
 
     return (
         <>
-            <div className='flex flex-row justify-between border-b-[1px] border-darkGreen'>
+            <div className='mt-5 md:mt-0 flex flex-row flex-wrap gap-2 md:gap-0 justify-center md:justify-between md:border-b-[1px] border-darkGreen'>
                 {
                     (services as IService[]).map((service, index) => {
                         return (
