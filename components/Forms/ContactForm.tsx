@@ -48,7 +48,7 @@ function ContactForm() {
 				.then(() => {
 					reset()
 					setMessageSentSuccess(true)
-				}).catch((error:Error) => {
+				}).catch((error: Error) => {
 					setMessageSentError(error.message)
 					setTimeout(() => {
 						setMessageSentError('')
@@ -63,11 +63,11 @@ function ContactForm() {
 				messageSentSuccess
 					? <MessageSentSuccess />
 					: <form onSubmit={handleSubmit(onSubmit)} className='bg-light p-5 rounded-2xl'>
-						<div className='flex gap-x-4 mb-2'>
+						<div className='flex flex-col sm:flex-row gap-x-4'>
 							<InputFieldWithErrorMessage errors={errors} register={register} name='firstName' required placeholder="First Name" />
 							<InputFieldWithErrorMessage errors={errors} register={register} name='lastName' required placeholder="Last Name" />
 						</div>
-						<div className='flex gap-x-4 mb-2'>
+						<div className='flex flex-col sm:flex-row gap-x-4'>
 							<InputFieldWithErrorMessage errors={errors} register={register} name='phone' required placeholder="Phone Number" />
 							<InputFieldWithErrorMessage errors={errors} register={register} name='email' required placeholder="Email" />
 						</div>
@@ -88,8 +88,6 @@ function ContactForm() {
 								Send
 							</SubmitButton>
 						</div>
-
-						
 					</form>
 			}
 		</>
