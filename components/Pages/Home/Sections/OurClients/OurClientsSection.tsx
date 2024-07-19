@@ -8,15 +8,21 @@ function OurClientsSection() {
     return (
         <section className="bg-black py-10 mb-10">
             <div className="container">
-                <h3 className="text-center text-light text-5xl uppercase mb-5">Our clients</h3>
+                <h3 className="text-center text-light text-3xl md:text-5xl uppercase mb-5">Our clients</h3>
                 
                 <hr className="border-white my-2" />
 
-                <div className="flex justify-around items-center">
+                <div className="flex justify-around items-center ">
                     {
                         (clients as IClient[]).map((client) => (
-                            <Image key={uniqid()} src={`/assets/img/logos/${client.logo}`} alt={client.name} width={228} height={228} />
-
+                            <div className="relative 
+                                w-[100px] h-[100px] 
+                                sm:w-[150px] sm:h-[150px]
+                                md:w-[190px] md:h-[190px] 
+                                lg:w-[228px] lg:h-[228px] 
+                            ">
+                            <Image key={uniqid()} src={`/assets/img/logos/${client.logo}`} alt={client.name} fill />
+                            </div>
                         ))
                     }
                 </div>
