@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import Divider from "@/components/Common/Divider";
 import ContactSection from "@/components/Pages/Common/Sections/Contact/ContactSection";
 import OurClientsSection from "@/components/Pages/Home/Sections/OurClients/OurClientsSection";
@@ -5,7 +7,6 @@ import WhatWeDoSection from "@/components/Pages/Home/Sections/WhatWeDo/WhatWeDoS
 import WhoWeAreSection from "@/components/Pages/Home/Sections/WhoWeAre/WhoWeAreSection";
 import WhyChooseUsSection from "@/components/Pages/Home/Sections/WhyChooseUs/WhyChooseUsSection";
 import WhyTrustUsSection from "@/components/Pages/Home/Sections/WhyTrustUs/WhyTrustUsSection";
-import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
@@ -18,19 +19,19 @@ export default function Home() {
 		<>
 			<WhoWeAreSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10" />
 
 			<WhatWeDoSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10" />
 
 			<WhyChooseUsSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10" />
 
 			<WhyTrustUsSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10" />
 
 			<OurClientsSection />
 			
