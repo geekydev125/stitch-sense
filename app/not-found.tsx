@@ -16,11 +16,11 @@ function NotFoundPage() {
 				</div>
 
 				<div className="flex flex-col text-center gap-y-2">
-					<h4 className="text-4xl sm:text-5xl mb-2">Oops... 404 Error</h4>
+					<h4 className="text-2xl sm:text-3xl">Oops... 404 error</h4>
 
-					<p className="sm:text-lg mb-2"><span className="font-bold">StitchSense</span> does not recognize this page.</p>
+					<p className="text-lg sm:text-2xl mb-2 text-error bg-light rounded-md p-2">StitchSense does not recognize this page.</p>
 
-					<Link href="/" className="text-darkGreen font-bold uppercase text-xl">Click here to go home</Link>
+					<Link href="/" className="text-darkGreen font-bold uppercase text-xl">Go home</Link>
 				</div>
 
 			</section>
