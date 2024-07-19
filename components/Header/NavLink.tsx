@@ -15,7 +15,7 @@ function NavLink({
 
     return (
         <li className={`menu-item ${pathname === route.path ? 'border-b-4 border-white' : ""}`}>
-            <Link href={route.path} className="uppercase font-bold text-lg md:text-lg">
+            <Link href={route.path} className={`uppercase text-lg md:text-lg ${pathname === route.path ? 'font-semibold' : ""}`}>
                 {route.title}
             </Link>
         </li>
