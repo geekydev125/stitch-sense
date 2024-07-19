@@ -14,19 +14,21 @@ export const metadata: Metadata = {
 function AboutPage() {
 	return (
 		<>
+			<Divider className="mb-5 md:mb-7 " />
+
 			<AboutSection />
-			
+
 			<SecondaryTitle>Our impact on employees</SecondaryTitle>
 
 			<EmployeesCards />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10"/>
 
 			<SecondaryTitle>Our team</SecondaryTitle>
 
 			<TeamCardsSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10"/>
 
 			<CallToAction />
 		</>
