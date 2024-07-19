@@ -1,7 +1,8 @@
+import { Metadata } from "next";
+
 import CallToAction from "@/components/Common/CallToAction";
 import Divider from "@/components/Common/Divider";
 import PortfolioSection from "@/components/Pages/Portfolio/Sections/PortfolioSection";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Portfolio",
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
 function PortfolioPage() {
 	return (
 		<>
-			<Divider />
+			<Divider className="mb-5 sm:mb-7 lg:mb-10"/>
 
 			<PortfolioSection />
 
-			<Divider />
+			<Divider className="my-5 sm:my-7 lg:my-10"/>
 
 			<CallToAction />
 		</>
