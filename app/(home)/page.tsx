@@ -10,7 +10,7 @@ import WhyTrustUsSection from "@/components/Pages/Home/Sections/WhyTrustUs/WhyTr
 
 
 export const metadata: Metadata = {
-	title: "Stitch Sense | Home",
+	title: "Home",
 	description: "Your go-to wholesaler for fashion design, sublimation, production, and distribution of top-quality clothing, catering to customers worldwide."
 };
 
