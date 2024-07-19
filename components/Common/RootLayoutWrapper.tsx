@@ -9,7 +9,7 @@ function RootLayoutWrapper({
 }: Props) {
     return (
         <html lang="en" className='text-[15px] md:text-[16px]'>
-            <body>
+            <body className='flex flex-col min-h-[100vh]'>
                 <NextTopLoader
                     color="#35908d"
                     height={3}
