@@ -9,7 +9,7 @@ function RootLayoutWrapper({
     children
 }: Props) {
     return (
-        <html lang="en">
+        <html lang="en" className='text-[15px] md:text-[16px]'>
             <body>
                 <NextTopLoader
                     color="#35908d"
