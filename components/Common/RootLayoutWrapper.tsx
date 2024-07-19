@@ -1,5 +1,6 @@
 import NextTopLoader from 'nextjs-toploader'
 import SplashScreenManager from '../SplashScreen/SplashScreenManager'
+import ScrollRestoration from './ScrollRestoration'
 
 interface Props {
     children: React.ReactNode
@@ -10,6 +11,8 @@ function RootLayoutWrapper({
 }: Props) {
     return (
         <html lang="en" className='text-[15px] md:text-[16px]'>
+            <ScrollRestoration />
+
             <body className='flex flex-col min-h-[100vh]'>
                 <NextTopLoader
                     color="#35908d"
@@ -25,7 +28,6 @@ function RootLayoutWrapper({
                 <SplashScreenManager>
                     {children}
                 </SplashScreenManager>
-
             </body>
         </html>
     )
