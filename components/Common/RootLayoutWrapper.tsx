@@ -1,5 +1,4 @@
 import NextTopLoader from 'nextjs-toploader'
-import Footer from '../Footer/Footer'
 
 interface Props {
     children: React.ReactNode
@@ -23,8 +22,7 @@ function RootLayoutWrapper({
                 />
 
                 {children}
-
-                <Footer />
+                
             </body>
         </html>
     )
