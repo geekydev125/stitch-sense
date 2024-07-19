@@ -1,4 +1,5 @@
 import NextTopLoader from 'nextjs-toploader'
+import SplashScreenManager from '../SplashScreen/SplashScreenManager'
 
 interface Props {
     children: React.ReactNode
@@ -21,8 +22,10 @@ function RootLayoutWrapper({
                     speed={200}
                 />
 
-                {children}
-                
+                <SplashScreenManager>
+                    {children}
+                </SplashScreenManager>
+
             </body>
         </html>
     )
