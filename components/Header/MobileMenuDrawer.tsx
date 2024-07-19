@@ -37,8 +37,8 @@ function MobileMenuDrawer() {
                     <ul className='menu menu-vertical items-center text-xl gap-y-4 pt-5 '>
                         {
                             (routes as IRoute[]).map((route) => (
-                                <span onClick={() => closeButtonRef.current?.click()}>
-                                    <NavLink key={uniqid()} route={route} />
+                                <span key={uniqid()} onClick={() => closeButtonRef.current?.click()}>
+                                    <NavLink  route={route} />
                                 </span>
                             ))
 
