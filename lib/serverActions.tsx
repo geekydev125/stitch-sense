@@ -67,7 +67,7 @@ export const sendContactMessage = async (formData: IContactFormData) => {
             html: output,
         }
 
-        transporter.verify(function (error, success) {
+        transporter.verify(function (error) {
             if (error) {
                 console.log(error);
             } else {
