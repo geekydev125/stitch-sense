@@ -6,9 +6,8 @@ function SplashScreen() {
     return (
         <div className='flex h-screen items-center justify-center bg-primary' >
             <div>
-                <div className='w-[100px] h-[100px] relative mb-7'>
-                    <Image id="logo" src="/assets/img/logos/stitchSense-logo-white.png" fill alt="Logo" />
-                </div>
+                <Image src="/assets/img/logos/stitchSense-logo-white.png" className='mb-7' alt="Logo" width={100} height={100} />
+
                 <BouncingDots />
             </div>
         </div>
