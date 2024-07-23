@@ -2,7 +2,7 @@ import TopFooterContentWrapper from './TopFooterContentWrapper'
 
 function TopFooter() {
     return (
-        <section className='bg-black'>
+        <section className='bg-black' >
             <TopFooterContentWrapper />
         </section>
     )
