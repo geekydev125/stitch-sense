@@ -11,7 +11,7 @@ function NotFoundPage() {
 
 			<section className="container flex-grow flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-10 ">
 
-				<div className="h-[110px] w-[110px] relative">
+			<div className="h-[90px] w-[90px] sm:h-[110px] sm:w-[110px] relative">
 					<Image src="/assets/img/logos/stitchSense-black-broken-logo.png" alt="Stitch Sense Logo" fill />
 				</div>
 

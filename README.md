@@ -46,7 +46,8 @@
 
 <h2>Release Date</h2>
 
-<blockquote>February 2024</blockquote>
+<blockquote>August 2024 (Next.JS - Version 2.0)</blockquote>
+<blockquote>February 2024 (React - Version 1.0)</blockquote>
 
 <br />
 
@@ -56,7 +57,7 @@
 
 <blockquote style="padding-top:5px; padding-bottom: 5px">
 
-1. In the terminal, navigate to the project's <b>client</b> folder
+1. In the terminal, navigate to the project's folder
 
 2. Execute the following command:
 
@@ -64,19 +65,7 @@
 npm run dev
 ```
 
-3. The <b>client side</b> of the application will run the development server on [http://localhost:5173/](http://localhost:5173/)
-
-4. Open a second session in the terminal
-
-5. Navigate to the project's <b>server</b> folder
-
-6. Execute the following command:
-
-```bash
-npm run dev
-```
-
-7. The <b>server side</b> of the application will run the development server on [http://localhost:3000/](http://localhost:3000/)
+3. The development server will run on [http://localhost:3000](http://localhost:3000)
 </blockquote>
 
 <br />
@@ -85,33 +74,16 @@ npm run dev
 
 <blockquote style="padding-top:5px; padding-bottom: 5px">
 
-1. In the terminal, navigate to the project's <b>client</b> folder
-
-2. Execute the following command:
-
+1. Execute the following command to create a production build for the project:
 ```bash
 npm run build
 ```
 
-3. Copy the whole content of the generated <b>client/dist</b> folder
-
-4. Delete the files in folder <b>server/src/public</b> and paste the copied content from <b>client/dist</b> into it
-
-5. In the terminal, navigate to the project's <b>server</b> folder
-
-6. Execute the following command:
-
-```bash
-npm run build
-```
-
-7. Once done, execute the following command: 
-
+2. Once the creation of the production build has been finalized, execute the following command:
 ```bash
 npm start
 ```
-
-8. If the port 3000 is available, the production build will be served on [http://localhost:3000](http://localhost:3000)
+3. If the port 3000 is available, the production build will be served on [http://localhost:3000](http://localhost:3000)
 </blockquote>
 
 <br />
@@ -120,10 +92,10 @@ npm start
 
 <blockquote style="padding-top: 5px; padding-bottom: 5px;">
 <h4>Front End</h4>
-<p>The Stitch Sense web app, built with React and TypeScript, utilizes Material UI and Emotion to streamline styling and UI design. React Hook Form and Yup handle form management and user input validation, while Framer Motion adds smooth animations to enhance interactivity. Together, these tools create a dynamic and user-friendly interface for Stitch Sense.</p>
+<p>The current version of Stitch Sense is built with Next.JS and TypeScript. Unlike the previous version, it utilizes Tailwind CSS and DaisyUI to streamline styling and UI design. React Hook Form and Yup handle form management and user input validation, while Framer Motion adds smooth animations to enhance interactivity. Together, these tools create a dynamic and user-friendly interface for Stitch Sense.</p>
 
 <h4>Back End</h4>
-<p>The back end of Stitch Sense uses Node & Express for handling server-side operations efficiently. Nodemailer has been used to facilitate and process forms' user input and email communications. Together, these technologies provide an efficient enough server-side foundation, ensuring smooth and reliable performance for the app.</p>
+<p>The back end side of Stitch Sense utilizes Next.JS server actions </p>
 </blockquote>
 
 <br />
@@ -132,7 +104,7 @@ npm start
 
 <h3>Javascript Framework (Client-Side)</h3> 
 
-<blockquote>React</blockquote>
+<blockquote>Next.JS</blockquote>
 
 <h3>Javascript Superscript</h3> 
 
@@ -140,17 +112,13 @@ npm start
 
 <h3>CSS Frameworks/Libraries</h3>
 
-<blockquote>Material UI
+<blockquote>Tailwind CSS
 <br/>
-Emotion</blockquote>
-
-<h3>Runtime (Server-Side)</h3>
-
-<blockquote>Node</blockquote>
+DaisyUI</blockquote>
 
 <h3>Application Framework (Server-Side)</h3>
 
-<blockquote>Express</blockquote>
+<blockquote>Next.JS</blockquote>
 
 <br />
 
