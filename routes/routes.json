@@ -1,0 +1,23 @@
+[
+    {
+        "path": "/",
+        "title": "Home"
+    },
+
+    {
+        "path": "/services",
+        "title": "Services"
+    },
+    {
+        "path": "/portfolio",
+        "title": "Portfolio"
+    },
+    {
+        "path": "/about",
+        "title": "About Us"
+    },
+    {
+        "path": "/contact",
+        "title": "Contact Us"
+    }
+]

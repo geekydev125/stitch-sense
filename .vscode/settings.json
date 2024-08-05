@@ -1,0 +1,13 @@
+{
+    "cSpell.ignoreWords": [
+        "Icard",
+        "UUGG",
+        "hgge",
+        "loungewear",
+        "scrollwheel",
+        "uniqid"
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+      }
+}
