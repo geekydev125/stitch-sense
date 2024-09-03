@@ -31,7 +31,7 @@
         <a align="center" href="https://www.stitch-sense.com/" target="_blank">www.stitch-sense.com</a>
     </td>
     <td align="center">
-        <a href="https://github.com/ariel-behar/stitch-sense" target="_blank">github.com/ariel-behar/stitch-sense</a>
+        <a href="https://github.com/geekydev125/stitch-sense" target="_blank">github.com/geekydev125/stitch-sense</a>
     </td>
   </tr>
 </table>
